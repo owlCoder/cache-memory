@@ -1,6 +1,6 @@
 ## Cache Memory
 
-#### Example:
+#### O Projektu
 
 Cache Memory je projekat iz predmeta Elementi Razvoja Softvera koji se sluša u V semestru na Fakultetu tehničkih nauka u Novom Sadu.  
 
