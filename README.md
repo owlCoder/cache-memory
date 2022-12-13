@@ -20,7 +20,7 @@ Projekat je i dalje u početnoj fazi razvoja. Nisu implementirani dodaci.
 
 ## Izgled Aplikacije
 ![Intro Window](screenshots/main_w.png)
-<br/>
+<br/><br/>
 ![About Window](screenshots/about_w.png)
 
 
