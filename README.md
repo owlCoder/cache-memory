@@ -25,19 +25,19 @@ Projekat je i dalje u početnoj fazi razvoja. Nisu implementirani dodaci.
 
 
 ## Pokretanje Projekta
-Clone repository and run Visual Studio Project.  
+Pokreće se kao Visual Studio projekat.  
 
 ## Reflekcija
 
-  - What was the context for this project?
-  - What did you set out to build?
-  - Why was this project challenging and therefore a really good learning experience?
-  - What were some unexpected obstacles?
-  - What tools did you use to implement this project?
-      - This might seem obvious because you are IN this codebase, but to all other humans now is the time to talk about why you chose webpack instead of create react app, or D3, or vanilla JS instead of a framework etc. Brag about your choices and justify them here.  
+  - Koji je bio kontekst ovog projekta?
+  - Šta ste hteli da sagradite?
+  - Zašto je ovaj projekat bio izazovan i samim tim zaista dobro iskustvo učenja?
+  - Koje su bile neke neočekivane prepreke?
+  - Koje alatke ste koristili za implementaciju ovog projekta?
+      - Ovo može izgledati očigledno jer ste u ovoj bazi kodova, ali svim drugim ljudima sada je vreme da pričaju o tome zašto ste izabrali SQLite umesto OracleDB itd.
 
 ## Defleksija  
 
-This was a 3 week long project. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.  
+Ovo je bio projekat dug 4 nedelje. Ciljevi projekta podrazumevali su korišćenje tehnologija naučenih do ovog trenutka i upoznavanje sa dokumentacijom za nove funkcije.  
 
-One of the main challenges I ran into was Authentication. This lead me to spend a few days on a research spike into OAuth, Auth0, and two-factor authentication using Firebase or other third parties. Due to project time constraints, I had to table authentication and focus more on data visualization from parts of the API that weren't restricted to authenticated users.
+Jedan od glavnih izazova na koje smo naleteli bila je potvrda identiteta. To nas je dovelo do toga da provedemo nekoliko dana na istraživačkom radu o OAuth, Auth0, i autentifikaciji sa dva faktora koristeći SQLite Provider. Zbog vremenskih ograničenja projekta, morali smo da zatražimo potvrdu identiteta i fokusiramo se na vizuelizaciju podataka i delova API-ja koji nisu ograničeni defakto faktore.
