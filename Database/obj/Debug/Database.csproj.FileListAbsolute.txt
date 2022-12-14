@@ -18,3 +18,14 @@ D:\ERS Projekat\Cache Memory\Database\bin\Debug\EntityFramework.SqlServer.dll
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\EntityFramework.xml
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\EntityFramework.SqlServer.xml
 D:\ERS Projekat\Cache Memory\Database\obj\Debug\Database.csproj.AssemblyReference.cache
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Text.Encodings.Web.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Text.Json.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.ValueTuple.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Text.Encodings.Web.xml
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Text.Json.xml
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.ValueTuple.xml

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Database.Servisi
 {
-    public class ILogin
+    public interface ILogin
     {
+        // Prijava korisnika sa odredjenim kreditijalima
+        bool LogIn();
     }
 }

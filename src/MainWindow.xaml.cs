@@ -17,6 +17,8 @@ using ControlzEx.Theming;
 using System.Diagnostics;
 using MahApps.Metro.Controls.Dialogs;
 using Database;
+using System.Data.Common;
+using System.Data;
 
 namespace UserInterface
 {
@@ -34,7 +36,7 @@ namespace UserInterface
             ThemeManager.Current.SyncTheme();
 
             // konekcija sa bazom
-            
+
         }
         private void learnMoreBtn_Click(object sender, RoutedEventArgs e)
         {

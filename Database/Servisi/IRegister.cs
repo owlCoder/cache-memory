@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Database.Servisi
 {
-    public class IRegister
+    public interface IRegister
     {
+        bool Register();
     }
 }
