@@ -153,6 +153,7 @@ namespace DatabaseTests
         #endregion
 
         #region TESTOVI ZA KREIRANJE KONEKCIJE KA BAZI PODATAKA
+        // vraca postojecu konekciju
         [Test]
         [TestCase ()]
         public void DobraKonekcija()
@@ -178,7 +179,7 @@ namespace DatabaseTests
             Assert.AreEqual(-2, result);
         }
 
-        // dobri upiti vraca broj ubacenih redova u tabelu (1 red po test case)
+        // dobri upiti vraca broj ubacenih/obrisanih redova u tabelu (1 red po test case)
         [Test]
         [TestCase ("INSERT INTO KORISNICI VALUES(20, 'danijel', 'sifra', 'Alekse Santica 4')")]
         [TestCase ("INSERT INTO KORISNICI VALUES(21, 'hannalam', 'lammaana', 'Trg 12')")]
@@ -194,7 +195,39 @@ namespace DatabaseTests
         #endregion
 
         #region TESTIRANJE USERLOGIN KLASE
+        // login nepostojeceg korisnika
+        [Test]
+        [TestCase ("dani", "sifra")]
+        [TestCase("user", "sifra")]
+        [TestCase("", "sifra")]
+        [TestCase("dani", "")]
+        public void NepostojeciKorisnik(string username, string password)
+        {
+            Database.Servisi.UserLogin prijava = new Database.Servisi.UserLogin();
+            bool prijavaUspesna = prijava.LogIn(username, password);
 
+            Assert.AreEqual(false, prijavaUspesna);
+        }
+
+        // kreiranje i login postojeceg korisnika
+        [Test]
+        [TestCase("dani", "sifra")]
+        [TestCase("user", "sifra")]
+        public void PostojeciKorisnik(string username, string password)
+        {
+            // kreiranje privremenog korisnika
+            Database.Servisi.PushData phd = new Database.Servisi.PushData();
+            phd.ExecuteNonQuery("INSERT INTO KORISNICI VALUES(100, '" + username + "', '" + password + "', 'Alekse Santica 4')");
+
+            // prijava korisnika
+            Database.Servisi.UserLogin prijava = new Database.Servisi.UserLogin();
+            bool prijavaUspesna = prijava.LogIn(username, password);
+
+            Assert.AreEqual(true, prijavaUspesna);
+
+            // brisanje dodatog korisnika
+            phd.ExecuteNonQuery("DELETE FROM KORISNICI WHERE USERID = 100");
+        }
         #endregion
 
         #region TESTIRANJE USERREGISTER KLASE
