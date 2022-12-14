@@ -40,7 +40,6 @@ namespace Database.Servisi
 
 
                     // zatvaranje konekcije ka bazi
-                    // zatvaranje konekcije ka bazi
                     if (command != null)
                     {
                         command.Dispose();
