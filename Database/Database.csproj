@@ -106,6 +106,7 @@
     <Compile Include="Servisi\ILogin.cs" />
     <Compile Include="Servisi\IRegister.cs" />
     <Compile Include="Servisi\UserLogin.cs" />
+    <Compile Include="Servisi\UserRegister.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

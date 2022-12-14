@@ -94,5 +94,69 @@ namespace UserInterface
                 }
             }
         }
+
+        private async void registracijaTile_Click(object sender, RoutedEventArgs e)
+        {
+            if (Database.Servisi.UserLogin.Korisnik != null)
+            {
+                ShowMessage("Već ste prijavljeni na sistem", "Registracija je dostupna samo za nove korisnike.");
+            }
+            else
+            {
+                // registracija korisnika
+                LoginDialogData result = await this.ShowLoginAsync("Registracija na sistem", "Unesite korisničko ime i lozinku", new LoginDialogSettings { ColorScheme = MetroDialogOptions.ColorScheme, AffirmativeButtonText = " Sledeći korak ", DialogButtonFontSize = 16 });
+
+                if (result == null)
+                {
+                    ShowMessage("Registracija na sistem neuspešna", "Odustali ste od registracije na sistem.");
+                    throw new ArgumentNullException();
+                }
+                else
+                {
+                    string username = result.Username;
+                    string password = result.Password;
+
+                    if(username == null || password == null)
+                    {
+                        ShowMessage("Registracija na sistem neuspešna", "Uneli ste nevalidne podatke.");
+                        throw new ArgumentNullException();
+                    }
+                    else
+                    {
+                        if(username.Trim().Equals(string.Empty) || password.Trim().Equals(string.Empty))
+                        {
+                            ShowMessage("Registracija na sistem neuspešna", "Uneli ste nevalidne podatke.");
+                            throw new ArgumentException();
+                        }
+                        else
+                        {
+                            // username i password su korektni, mozemo nastaviti dalji unos podataka
+                            var resultInput = await this.ShowInputAsync("Registracija na sistem", "Unesite vašu adresu", new LoginDialogSettings { ColorScheme = MetroDialogOptions.ColorScheme, AffirmativeButtonText = " Sledeći korak ", DialogButtonFontSize = 16 });
+
+                            if (resultInput == null)
+                            {
+                                ShowMessage("Registracija na sistem neuspešna", "Odustali ste od registracije na sistem.");
+                            }
+                            else
+                            {
+                                // provera da li je uneta adresa prazna ili null
+                                if(resultInput.Trim().Equals(string.Empty))
+                                {
+                                    ShowMessage("Registracija na sistem neuspešna", "Uneli ste praznu adresu.");
+                                    throw new ArgumentException();
+                                }
+                                else
+                                {
+                                    // registracija uspesna
+                                    // sacuvane podatke proslediti konstruktoru za registraciju
+                                    // i upisati u bazu podataka novu torku podataka
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
