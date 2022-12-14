@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Database
+namespace Database.Servisi
 {
-    public class Class1
+    public class IRegister
     {
     }
 }
