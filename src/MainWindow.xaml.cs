@@ -73,7 +73,7 @@ namespace UserInterface
                 
                 if (result == null)
                 {
-                    ShowMessage("Greška", "Prijava na sistem neuspešna!");
+                    ShowMessage("Prijava na sistem neuspešna", "Odustali ste od prijave na sistem.");
                 }
                 else
                 {
@@ -85,11 +85,11 @@ namespace UserInterface
 
                     if(prijavaUspesna) // prijava uspesna
                     {
-                        ShowMessage("Informacija", "Prijava na sistem uspešna!\n\nMožete unositi nove zapise i pregledati postojeće.");
+                        ShowMessage("Prijava na sistem uspešna", "Možete unositi nove zapise i pregledati postojeće.");
                     }
                     else
                     {
-                        ShowMessage("Greška", "Prijava na sistem neuspešna!");
+                        ShowMessage("Prijava na sistem neuspešna", "Uneti podaci nisu validni ili korisnik ne postoji.");
                     }
                 }
             }
