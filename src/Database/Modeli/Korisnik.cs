@@ -7,10 +7,24 @@ namespace Database.Modeli
     {
         public Korisnik(int uid, string username, string password, string adresa)
         {
+            // provera da li su null
+            if (username == null || password == null || adresa == null)
+            {
+                throw new ArgumentNullException();
+            }
+
+            // provera da li su prazni stringovi
+            if (username.Trim().Equals("") || password.Trim().Equals("") || adresa.Trim().Equals(""))
+            {
+                throw new ArgumentException();
+            }
+
+
+            // validni su parametri - podesi polja
             Uid = uid;
-            Username = username ?? throw new ArgumentNullException(nameof(username));
-            Password = password ?? throw new ArgumentNullException(nameof(password));
-            Adresa = adresa ?? throw new ArgumentNullException(nameof(adresa));
+            Username = username;
+            Password = password;
+            Adresa = adresa;
         }
 
         public int Uid { get; set; }

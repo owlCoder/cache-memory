@@ -20,9 +20,6 @@ namespace UserInterface
             // Tema aplikacije bazirana na trenutnoj Windows Temi
             ThemeManager.Current.ThemeSyncMode = ThemeSyncMode.SyncWithAppMode;
             ThemeManager.Current.SyncTheme();
-
-            // konekcija sa bazom
-
         }
         private void learnMoreBtn_Click(object sender, RoutedEventArgs e)
         {
