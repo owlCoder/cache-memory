@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface", "UserInterf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{5A778FF0-68C1-476A-B5F6-2E8944D6398C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseTests", "DatabaseTests\DatabaseTests.csproj", "{2C4053AB-8961-49BF-8880-BB3DDA47C4A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5A778FF0-68C1-476A-B5F6-2E8944D6398C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A778FF0-68C1-476A-B5F6-2E8944D6398C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A778FF0-68C1-476A-B5F6-2E8944D6398C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4053AB-8961-49BF-8880-BB3DDA47C4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4053AB-8961-49BF-8880-BB3DDA47C4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4053AB-8961-49BF-8880-BB3DDA47C4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4053AB-8961-49BF-8880-BB3DDA47C4A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

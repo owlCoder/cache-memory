@@ -12,11 +12,12 @@ namespace Database.Konekcija
         {
             if (instance == null || instance.State == ConnectionState.Closed)
             {
-                OracleConnectionStringBuilder ocsb = new OracleConnectionStringBuilder();
-
-                ocsb.DataSource = DatabaseConnectionParams.LOCAL_DATA_SOURCE;
-                ocsb.UserID = DatabaseConnectionParams.USER_ID;
-                ocsb.Password = DatabaseConnectionParams.PASSWORD;
+                OracleConnectionStringBuilder ocsb = new OracleConnectionStringBuilder
+                {
+                    DataSource = DatabaseConnectionParams.LOCAL_DATA_SOURCE,
+                    UserID = DatabaseConnectionParams.USER_ID,
+                    Password = DatabaseConnectionParams.PASSWORD
+                };
 
                 instance = new OracleConnection(ocsb.ConnectionString);
             }
