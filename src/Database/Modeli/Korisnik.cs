@@ -26,5 +26,14 @@ namespace Database.Modeli
                    Password == korisnik.Password &&
                    Adresa == korisnik.Adresa;
         }
+        public override int GetHashCode()
+        {
+            int hashCode = -201515749;
+            hashCode = hashCode * -1521134295 + Uid.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Username);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Password);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Adresa);
+            return hashCode;
+        }
     }
 }

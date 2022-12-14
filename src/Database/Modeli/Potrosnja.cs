@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Database.Modeli
 {
@@ -26,6 +27,16 @@ namespace Database.Modeli
                    Mesec == potrosnja.Mesec &&
                    Grad == potrosnja.Grad &&
                    ZabelezenaPotrosnja == potrosnja.ZabelezenaPotrosnja;
+        }
+        public override int GetHashCode()
+        {
+            int hashCode = -1775485255;
+            hashCode = hashCode * -1521134295 + UserId.GetHashCode();
+            hashCode = hashCode * -1521134295 + BrojiloId.GetHashCode();
+            hashCode = hashCode * -1521134295 + Mesec.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Grad);
+            hashCode = hashCode * -1521134295 + ZabelezenaPotrosnja.GetHashCode();
+            return hashCode;
         }
     }
 }
