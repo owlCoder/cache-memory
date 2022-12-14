@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using Database;
 using System;
 using System.Data;
 
@@ -179,8 +178,19 @@ namespace DatabaseTests
             Assert.AreEqual(-2, result);
         }
 
+        // dobri upiti vraca broj ubacenih redova u tabelu (1 red po test case)
+        [Test]
+        [TestCase ("INSERT INTO KORISNICI VALUES(20, 'danijel', 'sifra', 'Alekse Santica 4')")]
+        [TestCase ("INSERT INTO KORISNICI VALUES(21, 'hannalam', 'lammaana', 'Trg 12')")]
+        [TestCase ("DELETE FROM KORISNICI WHERE USERID = 20")]
+        [TestCase("DELETE FROM KORISNICI WHERE USERID = 21")]
+        public void CorrectQuery(string sql)
+        {
+            Database.Servisi.PushData toSend = new Database.Servisi.PushData();
+            int result = toSend.ExecuteNonQuery(sql);
 
-
+            Assert.AreEqual(1, result); // jedan red je dodat/obrisan
+        }
         #endregion
 
         #region TESTIRANJE USERLOGIN KLASE
