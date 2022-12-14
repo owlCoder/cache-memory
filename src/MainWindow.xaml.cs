@@ -90,6 +90,7 @@ namespace UserInterface
                     else
                     {
                         ShowMessage("Prijava na sistem neuspešna", "Uneti podaci nisu validni ili korisnik ne postoji.");
+                        throw new ArgumentException();
                     }
                 }
             }
@@ -131,16 +132,16 @@ namespace UserInterface
                         else
                         {
                             // username i password su korektni, mozemo nastaviti dalji unos podataka
-                            var resultInput = await this.ShowInputAsync("Registracija na sistem", "Unesite vašu adresu", new LoginDialogSettings { ColorScheme = MetroDialogOptions.ColorScheme, AffirmativeButtonText = " Sledeći korak ", DialogButtonFontSize = 16 });
+                            var adresa = await this.ShowInputAsync("Registracija na sistem", "Unesite vašu adresu", new LoginDialogSettings { ColorScheme = MetroDialogOptions.ColorScheme, AffirmativeButtonText = " Sledeći korak ", DialogButtonFontSize = 16 });
 
-                            if (resultInput == null)
+                            if (adresa == null)
                             {
                                 ShowMessage("Registracija na sistem neuspešna", "Odustali ste od registracije na sistem.");
                             }
                             else
                             {
                                 // provera da li je uneta adresa prazna ili null
-                                if(resultInput.Trim().Equals(string.Empty))
+                                if(adresa.Trim().Equals(string.Empty))
                                 {
                                     ShowMessage("Registracija na sistem neuspešna", "Uneli ste praznu adresu.");
                                     throw new ArgumentException();
@@ -150,7 +151,20 @@ namespace UserInterface
                                     // registracija uspesna
                                     // sacuvane podatke proslediti konstruktoru za registraciju
                                     // i upisati u bazu podataka novu torku podataka
+                                    Database.Servisi.UserRegister registracija = new Database.Servisi.UserRegister();
+                                    bool registracijaUspesna = registracija.Register(username, password, adresa);
 
+                                    Trace.WriteLine(username + " " + password + " "+ adresa);
+
+                                    if (registracijaUspesna) // registracija uspesna
+                                    {
+                                        ShowMessage("Registracija na sistem uspešna", "Možete unositi nove zapise i pregledati postojeće.");
+                                    }
+                                    else
+                                    {
+                                        ShowMessage("Registracija na sistem neuspešna", "Uneti podaci nisu validni ili korisnik ne postoji.");
+                                        throw new ArgumentException();
+                                    }
                                 }
                             }
                         }

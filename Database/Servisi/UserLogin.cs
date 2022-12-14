@@ -16,8 +16,6 @@ namespace Database.Servisi
     public class UserLogin : ILogin
     {
         private static Korisnik korisnik = null;
-
-
         public bool LogIn(string username, string password)
         {
             // Korisnik se prijavljuje tako sto unosi svoje korisnicko ime i lozinku
