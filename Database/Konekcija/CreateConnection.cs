@@ -6,18 +6,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Data.Sqlite;
+using System.Data.SQLite;
 
 namespace Database.Konekcija
 {
     public class CreateConnection
     {
-        SqliteConnection baza = null;
+        SQLiteConnection baza = null;
         public CreateConnection(string path)
         {
             try
             {
-                baza = new SQLiteConnection("Data Source=evidention.db; Version = 3; New = True; Compress = True; ");
+                baza = new SQLiteConnection("Data Source=evidention.db;Version=3;New=True;Compress=True; ");
                 baza.Open();
             }             
             catch(Exception e)

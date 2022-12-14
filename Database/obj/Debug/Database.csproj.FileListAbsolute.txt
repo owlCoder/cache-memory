@@ -13,7 +13,6 @@ D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Buffers.xml
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Memory.xml
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Numerics.Vectors.xml
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\ERS Projekat\Cache Memory\Database\obj\Debug\Database.csproj.AssemblyReference.cache
 D:\ERS Projekat\Cache Memory\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
 D:\ERS Projekat\Cache Memory\Database\obj\Debug\Database.csproj.CopyComplete
 D:\ERS Projekat\Cache Memory\Database\obj\Debug\Database.dll
@@ -21,3 +20,11 @@ D:\ERS Projekat\Cache Memory\Database\obj\Debug\Database.pdb
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\Database.dll.config
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\SQLitePCLRaw.batteries_v2.dll
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\EntityFramework.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\EntityFramework.SqlServer.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Data.SQLite.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Data.SQLite.EF6.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Data.SQLite.Linq.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\EntityFramework.xml
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\EntityFramework.SqlServer.xml
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Data.SQLite.xml
