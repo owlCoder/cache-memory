@@ -1,24 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using ControlzEx.Theming;
 using MahApps.Metro.Controls;
-using ControlzEx.Theming;
-using System.Diagnostics;
 using MahApps.Metro.Controls.Dialogs;
-using Database;
-using System.Data.Common;
-using System.Data;
+using System;
+using System.Diagnostics;
+using System.Windows;
 
 namespace UserInterface
 {
@@ -41,9 +26,9 @@ namespace UserInterface
         private void learnMoreBtn_Click(object sender, RoutedEventArgs e)
         {
             // Prikaz poruke o programu
-            this.ShowMessageAsync("Cache Memory", "Cache Memory je projekat iz predmeta Elementi Razvoja Softvera" +  
+            this.ShowMessageAsync("Cache Memory", "Cache Memory je projekat iz predmeta Elementi Razvoja Softvera" +
                                   " koji se sluša u V semestru na Fakultetu tehničkih nauka u Novom Sadu.\n\n" +
-                                  "Aplikacija prikuplja podatke od korisnika o trenutnoj potrošnji toplotne energije ili o potrošnji" + 
+                                  "Aplikacija prikuplja podatke od korisnika o trenutnoj potrošnji toplotne energije ili o potrošnji" +
                                   " u nekom od prethodnih perioda.\n\n" +
                                   "Moguća je pretraga podataka po određenim kriterijumima, unos podataka, filtriranje podataka.");
         }
@@ -52,7 +37,7 @@ namespace UserInterface
             // Otvaranje projekta na GitHub-u u podrazumevanom pretraživaču
             Process.Start("https://www.github.com/owlCoder/cache-memory");
         }
-        
+
         private void ShowMessage(string title, string msg)
         {
             this.ShowMessageAsync(title, msg);
@@ -62,7 +47,7 @@ namespace UserInterface
         {
             if (Database.Servisi.UserLogin.Korisnik != null)
             {
-                  ShowMessage("Informacija", "Već ste prijavljeni na sistem.\n\nMožete kreirati novi zapis ili pogledati postojeće zapise.");
+                ShowMessage("Informacija", "Već ste prijavljeni na sistem.\n\nMožete kreirati novi zapis ili pogledati postojeće zapise.");
             }
             else
             {
@@ -70,7 +55,7 @@ namespace UserInterface
                 //MetroDialogOptions.ColorScheme = MetroDialogColorScheme.Accented;
 
                 LoginDialogData result = await this.ShowLoginAsync("Prijava na sistem", "Unesite podatke za prijavu", new LoginDialogSettings { ColorScheme = MetroDialogOptions.ColorScheme, AffirmativeButtonText = " PRIJAVITE SE ", DialogButtonFontSize = 16 });
-                
+
                 if (result == null)
                 {
                     ShowMessage("Prijava na sistem neuspešna", "Odustali ste od prijave na sistem.");
@@ -83,7 +68,7 @@ namespace UserInterface
                     Database.Servisi.UserLogin prijava = new Database.Servisi.UserLogin();
                     bool prijavaUspesna = prijava.LogIn(username, password);
 
-                    if(prijavaUspesna) // prijava uspesna
+                    if (prijavaUspesna) // prijava uspesna
                     {
                         ShowMessage("Prijava na sistem uspešna", "Možete unositi nove zapise i pregledati postojeće.");
                     }
@@ -117,14 +102,14 @@ namespace UserInterface
                     string username = result.Username;
                     string password = result.Password;
 
-                    if(username == null || password == null)
+                    if (username == null || password == null)
                     {
                         ShowMessage("Registracija na sistem neuspešna", "Uneli ste nevalidne podatke.");
                         throw new ArgumentNullException();
                     }
                     else
                     {
-                        if(username.Trim().Equals(string.Empty) || password.Trim().Equals(string.Empty))
+                        if (username.Trim().Equals(string.Empty) || password.Trim().Equals(string.Empty))
                         {
                             ShowMessage("Registracija na sistem neuspešna", "Uneli ste nevalidne podatke.");
                             throw new ArgumentException();
@@ -141,7 +126,7 @@ namespace UserInterface
                             else
                             {
                                 // provera da li je uneta adresa prazna ili null
-                                if(adresa.Trim().Equals(string.Empty))
+                                if (adresa.Trim().Equals(string.Empty))
                                 {
                                     ShowMessage("Registracija na sistem neuspešna", "Uneli ste praznu adresu.");
                                     throw new ArgumentException();
@@ -154,7 +139,7 @@ namespace UserInterface
                                     Database.Servisi.UserRegister registracija = new Database.Servisi.UserRegister();
                                     bool registracijaUspesna = registracija.Register(username, password, adresa);
 
-                                    Trace.WriteLine(username + " " + password + " "+ adresa);
+                                    Trace.WriteLine(username + " " + password + " " + adresa);
 
                                     if (registracijaUspesna) // registracija uspesna
                                     {

@@ -259,8 +259,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Database\Database.csproj">
-      <Project>{94ae42e0-3a61-4fd1-a396-976126635c55}</Project>
+    <ProjectReference Include="Database\Database.csproj">
+      <Project>{5a778ff0-68c1-476a-b5f6-2e8944d6398c}</Project>
       <Name>Database</Name>
     </ProjectReference>
   </ItemGroup>
