@@ -41,14 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Konekcija\CreateConnection.cs" />
+    <Compile Include="Konekcija\DatabaseConnectionParams.cs" />
     <Compile Include="Modeli\Korisnik.cs" />
     <Compile Include="Modeli\Potrosnja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servisi\ILogin.cs" />
     <Compile Include="Servisi\IRegister.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Konekcija\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
