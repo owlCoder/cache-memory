@@ -26,7 +26,8 @@ namespace Database.Konekcija
 
         public void Dispose()
         {
-            // Console.WriteLine("Zatvaranje konekcije");
+            //this.ShowMessageAsync("Informacija", "Zatvaranje konekcije");
+
             if (instance != null)
             {
                 instance.Close();

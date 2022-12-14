@@ -29,3 +29,13 @@ D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Text.Encodings.Web.xml
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Text.Json.xml
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.ValueTuple.xml
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\ControlzEx.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\MahApps.Metro.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\ControlzEx.pdb
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\ControlzEx.xml
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\MahApps.Metro.pdb
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\MahApps.Metro.xml
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\ERS Projekat\Cache Memory\Database\bin\Debug\de\MahApps.Metro.resources.dll

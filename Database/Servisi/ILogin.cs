@@ -9,6 +9,6 @@ namespace Database.Servisi
     public interface ILogin
     {
         // Prijava korisnika sa odredjenim kreditijalima
-        bool LogIn();
+        bool LogIn(string username, string password);
     }
 }

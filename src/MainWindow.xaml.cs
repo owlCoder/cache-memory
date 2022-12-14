@@ -52,5 +52,47 @@ namespace UserInterface
             // Otvaranje projekta na GitHub-u u podrazumevanom pretraživaču
             Process.Start("https://www.github.com/owlCoder/cache-memory");
         }
+        
+        private void ShowMessage(string title, string msg)
+        {
+            this.ShowMessageAsync(title, msg);
+        }
+
+        private async void ShowLoginDialog(object sender, RoutedEventArgs e)
+        {
+            if (Database.Servisi.UserLogin.Korisnik != null)
+            {
+                  ShowMessage("Informacija", "Već ste prijavljeni na sistem.\n\nMožete kreirati novi zapis ili pogledati postojeće zapise.");
+            }
+            else
+            {
+                // korisnik nije ulogovan, pokusavamo ga ulogovati
+                //MetroDialogOptions.ColorScheme = MetroDialogColorScheme.Accented;
+
+                LoginDialogData result = await this.ShowLoginAsync("Prijava na sistem", "Unesite podatke za prijavu", new LoginDialogSettings { ColorScheme = MetroDialogOptions.ColorScheme, AffirmativeButtonText = " PRIJAVITE SE ", DialogButtonFontSize = 16 });
+                
+                if (result == null)
+                {
+                    ShowMessage("Greška", "Prijava na sistem neuspešna!");
+                }
+                else
+                {
+                    string username = result.Username;
+                    string password = result.Password;
+
+                    Database.Servisi.UserLogin prijava = new Database.Servisi.UserLogin();
+                    bool prijavaUspesna = prijava.LogIn(username, password);
+
+                    if(prijavaUspesna) // prijava uspesna
+                    {
+                        ShowMessage("Informacija", "Prijava na sistem uspešna!\n\nMožete unositi nove zapise i pregledati postojeće.");
+                    }
+                    else
+                    {
+                        ShowMessage("Greška", "Prijava na sistem neuspešna!");
+                    }
+                }
+            }
+        }
     }
 }
