@@ -135,6 +135,21 @@ namespace DatabaseTests
         }
 
         // unet je pogresan mesec
+        [Test]
+        [TestCase(1, -4, 11, "Novi Sad", 12.41)]
+        [TestCase(2, 0, 5, "Stari Sad", 4)]
+        [TestCase(3, 14, 4, "Beograd", 6)]
+        [TestCase(4, -1, 1, "Subotica", 2.5)]
+        [TestCase(5, 0, 2, "Krusevac", 0.1)]
+        [TestCase(1, 0, 1, "Mall", 0.1)]
+
+        public void PotrosnjaPogresanMesec(int uid, int bid, int mesec, string grad, double potroseno)
+        {
+            Database.Modeli.Potrosnja potrosnja = new Database.Modeli.Potrosnja(uid, bid, mesec, grad, potroseno);
+            Database.Modeli.Potrosnja potrosnjaDruga = new Database.Modeli.Potrosnja(uid, bid, mesec, grad, potroseno);
+
+            Assert.AreEqual(potrosnja, potrosnjaDruga);
+        }
 
         #endregion
     }
