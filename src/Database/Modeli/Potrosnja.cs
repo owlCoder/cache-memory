@@ -18,7 +18,14 @@ namespace Database.Modeli
         public int Mesec { get; set; }
         public string Grad { get; set; }
         public double ZabelezenaPotrosnja { get; set; }
-
-
+        public override bool Equals(object obj)
+        {
+            return obj is Potrosnja potrosnja &&
+                   UserId == potrosnja.UserId &&
+                   BrojiloId == potrosnja.BrojiloId &&
+                   Mesec == potrosnja.Mesec &&
+                   Grad == potrosnja.Grad &&
+                   ZabelezenaPotrosnja == potrosnja.ZabelezenaPotrosnja;
+        }
     }
 }
