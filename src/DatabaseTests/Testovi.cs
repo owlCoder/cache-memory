@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using Database;
 using System;
+using System.Data;
 
 namespace DatabaseTests
 {
@@ -150,7 +151,17 @@ namespace DatabaseTests
 
             Assert.AreEqual(potrosnja, potrosnjaDruga);
         }
+        #endregion
 
+        #region TESTOVI ZA KREIRANJE KONEKCIJE KA BAZI PODATAKA
+        [Test]
+        [TestCase ()]
+        public void DobraKonekcija()
+        {
+            IDbConnection statusKonekcije = Database.Konekcija.CreateDatabaseConnection.GetConnection();
+
+            Assert.NotNull(statusKonekcije);
+        }
         #endregion
     }
 }

@@ -8,7 +8,6 @@ Aplikacija prikuplja podatke od korisnika o trenutnoj potrošnji toplotne energi
 
 ## Status Projekta
 <ul>
-  <li>Povezati sa bazom podataka (SQLite)</li>
   <li>Implementirati Writer</li>
   <li>Implementirati Dumping Buffer</li>
   <li>Implementirati Historical</li>
@@ -20,6 +19,12 @@ Projekat je i dalje u početnoj fazi razvoja. Nisu implementirani dodaci.
 
 ## Izgled Aplikacije
 ![Intro Window](screenshots/main_w.png)
+<br/><br/>
+![Login Window](screenshots/login_w.png)
+<br/><br/>
+![Register Window](screenshots/register1_w.png)
+<br/><br/>
+![Register Window](screenshots/register2_w.png)
 <br/><br/>
 ![About Window](screenshots/about_w.png)
 

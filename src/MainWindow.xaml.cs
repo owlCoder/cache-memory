@@ -52,11 +52,12 @@ namespace UserInterface
                 // korisnik nije ulogovan, pokusavamo ga ulogovati
                 //MetroDialogOptions.ColorScheme = MetroDialogColorScheme.Accented;
 
-                LoginDialogData result = await this.ShowLoginAsync("Prijava na sistem", "Unesite podatke za prijavu", new LoginDialogSettings { ColorScheme = MetroDialogOptions.ColorScheme, AffirmativeButtonText = " PRIJAVITE SE ", DialogButtonFontSize = 16 });
+                LoginDialogData result = await this.ShowLoginAsync("Prijava na sistem", "Unesite podatke za prijavu", new LoginDialogSettings { ColorScheme = MetroDialogOptions.ColorScheme, AffirmativeButtonText = " Prijavite se ", DialogButtonFontSize = 16 });
 
                 if (result == null)
                 {
                     ShowMessage("Prijava na sistem neuspešna", "Odustali ste od prijave na sistem.");
+                    throw new ArgumentException();
                 }
                 else
                 {
