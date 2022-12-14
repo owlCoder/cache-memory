@@ -104,7 +104,9 @@
     <Compile Include="Modeli\Potrosnja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servisi\ILogin.cs" />
+    <Compile Include="Servisi\IPushData.cs" />
     <Compile Include="Servisi\IRegister.cs" />
+    <Compile Include="Servisi\PushData.cs" />
     <Compile Include="Servisi\UserLogin.cs" />
     <Compile Include="Servisi\UserRegister.cs" />
   </ItemGroup>

@@ -63,8 +63,17 @@ namespace Database.Servisi
                         string dodavanjeKorisnika = "INSERT INTO KORISNICI VALUES(" + idGenerator +
                                                     ", '" + username + "', '" + password +
                                                     "', '" + adresa + "')";
-                        
-                        int rowsAffected = ExecuteNonQuery(dodavanjeKorisnika);
+
+                        int rowsAffected = -2;
+                        try
+                        {
+                            PushData query = new PushData();
+                            rowsAffected = query.ExecuteNonQuery(dodavanjeKorisnika);
+                        }
+                        catch(Exception)
+                        {
+                            return false;
+                        }
 
                         if (rowsAffected != -2)
                         {
@@ -82,16 +91,16 @@ namespace Database.Servisi
 
                         return false;
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
-                        Trace.WriteLine(e.Message);
+                        // Trace.WriteLine(e.Message);
                         return false;
                     }
                 }
             }
-            catch (DbException e)
+            catch (DbException)
             {
-                Trace.WriteLine(e.Message);
+                // Trace.WriteLine(e.Message);
                 return false;
             }
             finally
@@ -115,29 +124,6 @@ namespace Database.Servisi
                 }
             }
             return false;
-        }
-
-        private static int ExecuteNonQuery(string sql)
-        {
-            using (IDbConnection connection = Konekcija.CreateDatabaseConnection.GetConnection())
-            {
-                try
-                {
-                    connection.Open();
-                    using (IDbCommand command = connection.CreateCommand())
-                    {
-                        command.CommandText = sql;
-                        int rowsAffected = command.ExecuteNonQuery();   // vraća broj uspešno ažuriranih redova u slucaju DML naredbe ILI
-                                                                        // -1 u slucaju uspešnog izvršenja DDL naredbe
-                        return rowsAffected;
-                    }
-                }
-                catch (DbException ex)
-                {
-                    Trace.WriteLine(ex.Message);
-                    return -2;
-                }
-            }
         }
     }
 }
