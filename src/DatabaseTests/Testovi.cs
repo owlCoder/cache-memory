@@ -12,6 +12,7 @@ namespace DatabaseTests
             // prazan konstruktor
         }
 
+        #region TESTOVI ZA KLASU KORISNIK
         // null argument exception
         [Test]
         [TestCase(null, null, null, null)]
@@ -45,5 +46,8 @@ namespace DatabaseTests
             Assert.AreEqual(korisnik.Password, password);
             Assert.AreEqual(korisnik.Adresa, adresa);
         }
+
+
+        #endregion
     }
 }
