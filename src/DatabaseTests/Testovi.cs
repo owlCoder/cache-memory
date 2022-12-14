@@ -199,8 +199,8 @@ namespace DatabaseTests
         [Test]
         [TestCase ("dani", "sifra")]
         [TestCase("user", "sifra")]
-        [TestCase("", "sifra")]
-        [TestCase("dani", "")]
+        [TestCase("123", "sifra")]
+        [TestCase("dani", "123")]
         public void NepostojeciKorisnik(string username, string password)
         {
             Database.Servisi.UserLogin prijava = new Database.Servisi.UserLogin();
@@ -231,7 +231,41 @@ namespace DatabaseTests
         #endregion
 
         #region TESTIRANJE USERREGISTER KLASE
+        // registracija novog korisnika
+        [Test]
+        [TestCase("dani", "sifra2", "adresa")]
+        [TestCase("user", "sifra1", "neka adresa")]
+        [TestCase("admin", "admin1", "ftn")]
+        public void RegistracijaNovogKorisnika(string username, string password, string adresa)
+        {
+            // kreiranje privremenog korisnika
+            Database.Servisi.PushData phd = new Database.Servisi.PushData();
 
+            Database.Servisi.UserRegister registracija = new Database.Servisi.UserRegister();
+            bool registracijaUspesna = registracija.Register(username, password, adresa);
+
+            Assert.AreEqual(true, registracijaUspesna);
+
+            // brisanje kreiranih korisnika
+            phd.ExecuteNonQuery("DELETE FROM KORISNICI WHERE USERNAME = '" + username + "'");
+        }
+
+        // registracija postojeceg korisnika - ne sme da prodje jer je username unique
+        [Test]
+        [TestCase("dani", "sifra", "ftn")]
+        [TestCase("user", "sifra", "adresa")]
+        public void RegistracijaPostojeciKorisnik(string username, string password, string adresa)
+        {
+            Database.Servisi.UserRegister registracija = new Database.Servisi.UserRegister();
+            registracija.Register(username, password, adresa);
+            bool registracijaUspesna = registracija.Register(username, password, adresa);
+
+            Assert.AreEqual(false, registracijaUspesna);
+
+            // brisanje dodatog korisnika
+            Database.Servisi.PushData phd = new Database.Servisi.PushData();
+            phd.ExecuteNonQuery("DELETE FROM KORISNICI WHERE USERNAME = '" + username + "'");
+        }
         #endregion
     }
 }
