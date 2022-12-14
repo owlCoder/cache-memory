@@ -47,7 +47,20 @@ namespace DatabaseTests
             Assert.AreEqual(korisnik.Adresa, adresa);
         }
 
+        // provera equals metode
+        [Test]
+        [TestCase(1, "Maja", "Nulic", "Mise Antica 54a")]
+        [TestCase(2, "Nela", "Jovic", "Neznanih Junaka 2")]
+        [TestCase(3, "Dani", "Jovanic", "Ilin Gaj 3")]
+        [TestCase(4, "Zen", "Lenic", "Trg 2")]
 
+        public void KorisnikEquals(int id, string username, string password, string adresa)
+        {
+            Database.Modeli.Korisnik korisnik = new Database.Modeli.Korisnik(id, username, password, adresa);
+            Database.Modeli.Korisnik korisnikDrugi = new Database.Modeli.Korisnik(id, username, password, adresa);
+
+            Assert.AreEqual(korisnik, korisnikDrugi);
+        }
         #endregion
     }
 }
