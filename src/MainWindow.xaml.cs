@@ -16,6 +16,7 @@ using MahApps.Metro.Controls;
 using ControlzEx.Theming;
 using System.Diagnostics;
 using MahApps.Metro.Controls.Dialogs;
+using Database;
 
 namespace UserInterface
 {
@@ -31,6 +32,10 @@ namespace UserInterface
             // Tema aplikacije bazirana na trenutnoj Windows Temi
             ThemeManager.Current.ThemeSyncMode = ThemeSyncMode.SyncWithAppMode;
             ThemeManager.Current.SyncTheme();
+
+            // konekcija sa bazom
+            Database.Konekcija.CreateConnection konekcija = new Database.Konekcija.CreateConnection(@"evidention.db");
+            
         }
         private void learnMoreBtn_Click(object sender, RoutedEventArgs e)
         {
