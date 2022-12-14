@@ -163,5 +163,32 @@ namespace DatabaseTests
             Assert.NotNull(statusKonekcije);
         }
         #endregion
+
+        #region TESTIRANJE PUSHDATA KLASE
+        // los upit - treba da vrati -1
+        [Test]
+        [TestCase ("SELECT *FROM UNKNOW_TABLE")]
+        [TestCase ("INSERT INTO UNKNOW_TABLE")]
+        [TestCase("INSERT INTO UNKNOW_TABLE VALUES")]
+        [TestCase("INSERT INTO KORISNICI VALUES(5, 4)")]
+        public void BadQuery(string sql)
+        {
+            Database.Servisi.PushData toSend = new Database.Servisi.PushData();
+            int result = toSend.ExecuteNonQuery(sql);
+
+            Assert.AreEqual(-2, result);
+        }
+
+
+
+        #endregion
+
+        #region TESTIRANJE USERLOGIN KLASE
+
+        #endregion
+
+        #region TESTIRANJE USERREGISTER KLASE
+
+        #endregion
     }
 }
