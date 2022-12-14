@@ -90,8 +90,6 @@ namespace Database.Servisi
                     baza.Dispose();
                 }
             }
-
-            return true;
         }
         public static Korisnik Korisnik { get => korisnik; set => korisnik = value; }
     }
