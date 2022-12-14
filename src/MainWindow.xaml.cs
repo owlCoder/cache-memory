@@ -34,7 +34,6 @@ namespace UserInterface
             ThemeManager.Current.SyncTheme();
 
             // konekcija sa bazom
-            Database.Konekcija.CreateConnection konekcija = new Database.Konekcija.CreateConnection(@"evidention.db");
             
         }
         private void learnMoreBtn_Click(object sender, RoutedEventArgs e)

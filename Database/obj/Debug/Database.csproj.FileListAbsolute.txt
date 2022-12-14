@@ -23,8 +23,6 @@ D:\ERS Projekat\Cache Memory\Database\bin\Debug\SQLitePCLRaw.provider.dynamic_cd
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\EntityFramework.dll
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\EntityFramework.SqlServer.dll
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Data.SQLite.dll
-D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Data.SQLite.EF6.dll
-D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Data.SQLite.Linq.dll
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\EntityFramework.xml
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\EntityFramework.SqlServer.xml
 D:\ERS Projekat\Cache Memory\Database\bin\Debug\System.Data.SQLite.xml
