@@ -57,7 +57,7 @@ namespace UserInterface
                 if (result == null)
                 {
                     ShowMessage("Prijava na sistem neuspešna", "Odustali ste od prijave na sistem.");
-                    throw new ArgumentException();
+                    // throw new ArgumentException();
                 }
                 else
                 {
@@ -74,7 +74,7 @@ namespace UserInterface
                     else
                     {
                         ShowMessage("Prijava na sistem neuspešna", "Uneti podaci nisu validni ili korisnik ne postoji.");
-                        throw new ArgumentException();
+                        // throw new ArgumentException();
                     }
                 }
             }
@@ -94,7 +94,7 @@ namespace UserInterface
                 if (result == null)
                 {
                     ShowMessage("Registracija na sistem neuspešna", "Odustali ste od registracije na sistem.");
-                    throw new ArgumentNullException();
+                    // throw new ArgumentNullException();
                 }
                 else
                 {
@@ -104,14 +104,14 @@ namespace UserInterface
                     if (username == null || password == null)
                     {
                         ShowMessage("Registracija na sistem neuspešna", "Uneli ste nevalidne podatke.");
-                        throw new ArgumentNullException();
+                        // throw new ArgumentNullException();
                     }
                     else
                     {
                         if (username.Trim().Equals(string.Empty) || password.Trim().Equals(string.Empty))
                         {
                             ShowMessage("Registracija na sistem neuspešna", "Uneli ste nevalidne podatke.");
-                            throw new ArgumentException();
+                            // throw new ArgumentException();
                         }
                         else
                         {
@@ -128,7 +128,7 @@ namespace UserInterface
                                 if (adresa.Trim().Equals(string.Empty))
                                 {
                                     ShowMessage("Registracija na sistem neuspešna", "Uneli ste praznu adresu.");
-                                    throw new ArgumentException();
+                                    // throw new ArgumentException();
                                 }
                                 else
                                 {
@@ -147,7 +147,7 @@ namespace UserInterface
                                     else
                                     {
                                         ShowMessage("Registracija na sistem neuspešna", "Uneti podaci nisu validni ili korisnik ne postoji.");
-                                        throw new ArgumentException();
+                                        // throw new ArgumentException();
                                     }
                                 }
                             }
