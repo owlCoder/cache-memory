@@ -275,5 +275,9 @@ namespace DatabaseTests
         #region TESTIRANJE USERREGISTERBROJILO KLASE
 
         #endregion
+
+        #region TESTIRANJE BROJILO KLASE
+
+        #endregion
     }
 }
