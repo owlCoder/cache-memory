@@ -156,5 +156,24 @@ namespace UserInterface
                 }
             }
         }
+
+        private void noviZapisTile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void statistikaTile_Click(object sender, RoutedEventArgs e)
+        {
+            if (Database.Servisi.UserLogin.Korisnik == null)
+            {
+                ShowMessage("Greška pri dodavanju novog zapisa", "Dodavanje novog zapisa dostupno je samo za prijavljene korisnike.");
+            }
+            else
+            {
+                // korisnik je ulogovan proveriti da li ima brojilo koje je vezano za njega, ako nema
+                // prikazati dijalog da popuni podatke o svom brojilu
+
+            }
+        }
     }
 }

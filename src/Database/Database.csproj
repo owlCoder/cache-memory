@@ -95,6 +95,7 @@
     <Compile Include="Modeli\Potrosnja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servisi\ILogin.cs" />
+    <Compile Include="Servisi\IPullData.cs" />
     <Compile Include="Servisi\IPushData.cs" />
     <Compile Include="Servisi\IRegister.cs" />
     <Compile Include="Servisi\PushData.cs" />
