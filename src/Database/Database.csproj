@@ -91,6 +91,7 @@
   <ItemGroup>
     <Compile Include="Konekcija\CreateDatabaseConnection.cs" />
     <Compile Include="Konekcija\DatabaseConnectionParams.cs" />
+    <Compile Include="Modeli\Brojilo.cs" />
     <Compile Include="Modeli\Korisnik.cs" />
     <Compile Include="Modeli\Potrosnja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -181,7 +181,7 @@ namespace DatabaseTests
 
         // dobri upiti vraca broj ubacenih/obrisanih redova u tabelu (1 red po test case)
         [Test]
-        [TestCase("INSERT INTO KORISNICI VALUES(20, 'danijel', 'sifra', 'Alekse Santica 4')")]
+        [TestCase("INSERT INTO KORISNICI VALUES(20, 'dani', 'sifra', 'Alekse Santica 4')")]
         [TestCase("INSERT INTO KORISNICI VALUES(21, 'hannalam', 'lammaana', 'Trg 12')")]
         [TestCase("DELETE FROM KORISNICI WHERE USERID = 20")]
         [TestCase("DELETE FROM KORISNICI WHERE USERID = 21")]
