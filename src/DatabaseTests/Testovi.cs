@@ -277,7 +277,46 @@ namespace DatabaseTests
         #endregion
 
         #region TESTIRANJE BROJILO KLASE
+        // testovi koji trebaju da prodju
+        [Test]
+        [TestCase (1, "SE-52145")]
+        [TestCase(2, "SE-52214")]
+        [TestCase(3, "SE-632121")]
+        [TestCase(4, "SE-448952")]
+        [TestCase(5, "SE-22644")]
+        public void BrojiloKorektniTestovi(int id, string naziv)
+        {
+            Database.Modeli.Brojilo brojilo = new Database.Modeli.Brojilo(id, naziv);
 
+            Assert.AreEqual(id, brojilo.Id);
+            Assert.AreEqual(naziv, brojilo.Naziv);
+        }
+
+        // testovi koji vracaju null argument exception
+        [Test]
+        [TestCase(1, null)]
+        [TestCase(2, null)]
+        public void BrojiloNullTestovi(int id, string naziv)
+        {
+            Assert.Throws<ArgumentNullException>(
+              () =>
+              {
+                  Database.Modeli.Brojilo brojilo = new Database.Modeli.Brojilo(id, naziv);
+              }
+           );
+        }
+        [Test]
+        [TestCase(1, "")]
+        [TestCase(2, "")]
+        public void BrojiloWrongArgumentTestovi(int id, string naziv)
+        {
+            Assert.Throws<ArgumentException>(
+              () =>
+              {
+                  Database.Modeli.Brojilo brojilo = new Database.Modeli.Brojilo(id, naziv);
+              }
+           );
+        }
         #endregion
     }
 }
