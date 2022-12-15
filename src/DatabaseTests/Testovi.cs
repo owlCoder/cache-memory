@@ -267,5 +267,13 @@ namespace DatabaseTests
             phd.ExecuteNonQuery("DELETE FROM KORISNICI WHERE USERNAME = '" + username + "'");
         }
         #endregion
+
+        #region TESTIRANJE PULLBROJILODATA KLASE
+
+        #endregion
+
+        #region TESTIRANJE USERREGISTERBROJILO KLASE
+
+        #endregion
     }
 }
