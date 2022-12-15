@@ -65,8 +65,8 @@ namespace Database.Servisi
                 }
             }
         }
-        public IDbConnection Baza { get => Baza; set => Baza = value; }
-        public IDbCommand Command { get => Command; set => Command = value; }
-        public IDataReader Reader { get => Reader; set => Reader = value; }
+        public IDbConnection Baza { get; set; }
+        public IDbCommand Command { get; set; }
+        public IDataReader Reader { get; set; }
     }
 }

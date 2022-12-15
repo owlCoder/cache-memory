@@ -45,7 +45,7 @@ namespace UserInterface
         {
             if (Database.Servisi.UserLogin.Korisnik != null)
             {
-                ShowMessage("Informacija", "Već ste prijavljeni na sistem.\n\nMožete kreirati novi zapis ili pogledati postojeće zapise.");
+                ShowMessage("Već ste prijavljeni na sistem", "Možete kreirati novi zapis ili pogledati postojeće zapise.");
             }
             else
             {
@@ -157,7 +157,7 @@ namespace UserInterface
             }
         }
 
-        private void noviZapisTile_Click(object sender, RoutedEventArgs e)
+        private async void noviZapisTile_Click(object sender, RoutedEventArgs e)
         {
             if (Database.Servisi.UserLogin.Korisnik == null)
             {
@@ -165,8 +165,42 @@ namespace UserInterface
             }
             else
             {
-                //todo
-            }    
+                // korisnik je ulogovan proveriti da li ima brojilo koje je vezano za njega, ako nema
+                // prikazati dijalog da popuni podatke o svom brojilu
+                Database.Servisi.PullBrojiloData pd = new Database.Servisi.PullBrojiloData();
+                bool postojiLiBrojilo = pd.GetTargetedDataFromDatabase(Database.Servisi.UserLogin.Korisnik.Uid);
+
+                if (postojiLiBrojilo)
+                {
+                    // forma za unos potrosnje gde se unosi kolicina potrosene toplotne energije i mesec
+                    // u kom je potrosnja i ostvarena
+                    UnosIzmerenihPodataka(sender, e); // metoda koja unosi brojilo u bazu podataka
+                }
+                else
+                {
+                    // dijalog za unos podataka o brojilu i unos brojila u tabelu BROJILO, i cuvanje
+                    // u veznoj tabeli KORISNIKBROJILO
+                    var nazivModelBrojilo = await this.ShowInputAsync("Dodavanje brojila", "Unesite naziv (model) brojila", new LoginDialogSettings { ColorScheme = MetroDialogOptions.ColorScheme, AffirmativeButtonText = " Sledeći korak ", DialogButtonFontSize = 16 });
+
+                    if (nazivModelBrojilo == null)
+                    {
+                        ShowMessage("Dodavanje brojila neuspešno", "Odustali ste od dodavanja novog brojila.");
+                    }
+                    else
+                    {
+                        // provera da li je uneta adresa prazna ili null
+                        if (nazivModelBrojilo.Trim().Equals(string.Empty))
+                        {
+                            ShowMessage("Registracija na sistem neuspešna", "Uneli ste prazno ime (model) brojila.");
+                            // throw new ArgumentException();
+                        }
+                        else
+                        {
+                            // dodaj brojilo u bazu i u veznu tabelu
+                        }
+                    }
+                }
+            }
         }
 
         private void statistikaTile_Click(object sender, RoutedEventArgs e)
@@ -178,21 +212,24 @@ namespace UserInterface
             else
             {
                 // korisnik je ulogovan proveriti da li ima brojilo koje je vezano za njega, ako nema
-                // prikazati dijalog da popuni podatke o svom brojilu
+                // prikazati dijalog da treba uneti neki rezultat merenja pre prikaza statistike
                 Database.Servisi.PullBrojiloData pd = new Database.Servisi.PullBrojiloData();
                 bool postojiLiBrojilo = pd.GetTargetedDataFromDatabase(Database.Servisi.UserLogin.Korisnik.Uid);
 
                 if(postojiLiBrojilo)
                 {
-                    // forma za unos potrosnje gde se unosi kolicina potrosene toplotne energije i mesec
-                    // u kom je potrosnja i ostvarena
+                    // prikazati statistiku
                 }
                 else
                 {
-                    // dijalog za unos podataka o brojilu i unos brojila u tabelu BROJILO, i cuvanje
-                    // u veznoj tabeli KORISNIKBROJILO
+                    ShowMessage("Greška u prikazu statistike", "Niste uneli podatke o merenju ni za jedno brojilo." +
+                                                                " Dodajte novi zapis o merenju da bi statistika bila dostupna.");
                 }
             }
+        }
+        private void UnosIzmerenihPodataka(object sender, RoutedEventArgs e)
+        {
+            // todo
         }
     }
 }

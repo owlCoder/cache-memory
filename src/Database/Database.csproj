@@ -102,6 +102,7 @@
     <Compile Include="Servisi\PushData.cs" />
     <Compile Include="Servisi\UserLogin.cs" />
     <Compile Include="Servisi\UserRegister.cs" />
+    <Compile Include="Servisi\UserAddBrojilo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
