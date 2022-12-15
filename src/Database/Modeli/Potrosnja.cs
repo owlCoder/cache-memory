@@ -11,7 +11,7 @@ namespace Database.Modeli
             BrojiloId = brojiloId;
 
             // mesec ne moze biti negativan ili preko 12
-            if(mesec < 1 && mesec > 12)
+            if (mesec < 1 && mesec > 12)
             {
                 throw new ArgumentException();
             }
@@ -20,7 +20,7 @@ namespace Database.Modeli
             Grad = grad ?? throw new ArgumentNullException(nameof(grad));
 
             // potrosnja ne moze biti negativna
-            if(zabelezenaPotrosnja < 0.0)
+            if (zabelezenaPotrosnja < 0.0)
             {
                 throw new ArgumentException();
             }

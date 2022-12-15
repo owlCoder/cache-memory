@@ -155,7 +155,7 @@ namespace DatabaseTests
         #region TESTOVI ZA KREIRANJE KONEKCIJE KA BAZI PODATAKA
         // vraca postojecu konekciju
         [Test]
-        [TestCase ()]
+        [TestCase()]
         public void DobraKonekcija()
         {
             IDbConnection statusKonekcije = Database.Konekcija.CreateDatabaseConnection.GetConnection();
@@ -167,8 +167,8 @@ namespace DatabaseTests
         #region TESTIRANJE PUSHDATA KLASE
         // los upit - treba da vrati -1
         [Test]
-        [TestCase ("SELECT *FROM UNKNOW_TABLE")]
-        [TestCase ("INSERT INTO UNKNOW_TABLE")]
+        [TestCase("SELECT *FROM UNKNOW_TABLE")]
+        [TestCase("INSERT INTO UNKNOW_TABLE")]
         [TestCase("INSERT INTO UNKNOW_TABLE VALUES")]
         [TestCase("INSERT INTO KORISNICI VALUES(5, 4)")]
         public void BadQuery(string sql)
@@ -181,9 +181,9 @@ namespace DatabaseTests
 
         // dobri upiti vraca broj ubacenih/obrisanih redova u tabelu (1 red po test case)
         [Test]
-        [TestCase ("INSERT INTO KORISNICI VALUES(20, 'danijel', 'sifra', 'Alekse Santica 4')")]
-        [TestCase ("INSERT INTO KORISNICI VALUES(21, 'hannalam', 'lammaana', 'Trg 12')")]
-        [TestCase ("DELETE FROM KORISNICI WHERE USERID = 20")]
+        [TestCase("INSERT INTO KORISNICI VALUES(20, 'danijel', 'sifra', 'Alekse Santica 4')")]
+        [TestCase("INSERT INTO KORISNICI VALUES(21, 'hannalam', 'lammaana', 'Trg 12')")]
+        [TestCase("DELETE FROM KORISNICI WHERE USERID = 20")]
         [TestCase("DELETE FROM KORISNICI WHERE USERID = 21")]
         public void CorrectQuery(string sql)
         {
@@ -197,7 +197,7 @@ namespace DatabaseTests
         #region TESTIRANJE USERLOGIN KLASE
         // login nepostojeceg korisnika
         [Test]
-        [TestCase ("dani", "sifra")]
+        [TestCase("dani", "sifra")]
         [TestCase("user", "sifra")]
         [TestCase("123", "sifra")]
         [TestCase("dani", "123")]

@@ -1,9 +1,9 @@
 ﻿using ControlzEx.Theming;
+using Database;
+using Database.Servisi;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
-using System;
 using System.Diagnostics;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace UserInterface
@@ -43,7 +43,7 @@ namespace UserInterface
 
         private async void ShowLoginDialog(object sender, RoutedEventArgs e)
         {
-            if (Database.Servisi.UserLogin.Korisnik != null)
+            if (UserLogin.Korisnik != null)
             {
                 ShowMessage("Već ste prijavljeni na sistem", "Možete kreirati novi zapis ili pogledati postojeće zapise.");
             }
@@ -64,7 +64,7 @@ namespace UserInterface
                     string username = result.Username;
                     string password = result.Password;
 
-                    Database.Servisi.UserLogin prijava = new Database.Servisi.UserLogin();
+                    UserLogin prijava = new UserLogin();
                     bool prijavaUspesna = prijava.LogIn(username, password);
 
                     if (prijavaUspesna) // prijava uspesna
@@ -82,7 +82,7 @@ namespace UserInterface
 
         private async void registracijaTile_Click(object sender, RoutedEventArgs e)
         {
-            if (Database.Servisi.UserLogin.Korisnik != null)
+            if (UserLogin.Korisnik != null)
             {
                 ShowMessage("Već ste prijavljeni na sistem", "Registracija je dostupna samo za nove korisnike.");
             }
@@ -135,7 +135,7 @@ namespace UserInterface
                                     // registracija uspesna
                                     // sacuvane podatke proslediti konstruktoru za registraciju
                                     // i upisati u bazu podataka novu torku podataka
-                                    Database.Servisi.UserRegister registracija = new Database.Servisi.UserRegister();
+                                    UserRegister registracija = new UserRegister();
                                     bool registracijaUspesna = registracija.Register(username, password, adresa);
 
                                     Trace.WriteLine(username + " " + password + " " + adresa);
@@ -159,7 +159,7 @@ namespace UserInterface
 
         private async void noviZapisTile_Click(object sender, RoutedEventArgs e)
         {
-            if (Database.Servisi.UserLogin.Korisnik == null)
+            if (UserLogin.Korisnik == null)
             {
                 ShowMessage("Greška u dodavanju zapisa", "Dodavanje novog zapisa dostupno je samo za prijavljene korisnike.");
             }
@@ -167,8 +167,8 @@ namespace UserInterface
             {
                 // korisnik je ulogovan proveriti da li ima brojilo koje je vezano za njega, ako nema
                 // prikazati dijalog da popuni podatke o svom brojilu
-                Database.Servisi.PullBrojiloData pd = new Database.Servisi.PullBrojiloData();
-                bool postojiLiBrojilo = pd.GetTargetedDataFromDatabase(Database.Servisi.UserLogin.Korisnik.Uid);
+                Database.Servisi.PullBrojiloData pd = new PullBrojiloData();
+                bool postojiLiBrojilo = pd.GetTargetedDataFromDatabase(UserLogin.Korisnik.Uid);
 
                 if (postojiLiBrojilo)
                 {
@@ -180,7 +180,7 @@ namespace UserInterface
                 {
                     // dijalog za unos podataka o brojilu i unos brojila u tabelu BROJILO, i cuvanje
                     // u veznoj tabeli KORISNIKBROJILO
-                    var nazivModelBrojilo = await this.ShowInputAsync("Dodavanje brojila", "Unesite naziv (model) brojila", new LoginDialogSettings { ColorScheme = MetroDialogOptions.ColorScheme, AffirmativeButtonText = " Sledeći korak ", DialogButtonFontSize = 16 });
+                    var nazivModelBrojilo = await this.ShowInputAsync("Dodavanje brojila", "Unesite naziv (model) brojila", new LoginDialogSettings { ColorScheme = MetroDialogOptions.ColorScheme, AffirmativeButtonText = " Dodavanje brojila ", DialogButtonFontSize = 16 });
 
                     if (nazivModelBrojilo == null)
                     {
@@ -197,6 +197,18 @@ namespace UserInterface
                         else
                         {
                             // dodaj brojilo u bazu i u veznu tabelu
+                            UserRegisterBrojilo add = new UserRegisterBrojilo();
+                            bool dodavanjeTabela = add.DodavanjeUTabeluBrojilo(nazivModelBrojilo);
+                            bool dodavanjeVezna = add.DodavanjeUVeznuTabeluKorisnikBrojilo(UserLogin.Korisnik.Uid);
+
+                            if (dodavanjeTabela && dodavanjeVezna)
+                            {
+                                ShowMessage("Dodavanje brojila uspešno", "Uspešno ste dodali brojilo. Možete dodavati nove zapise za vaše brojilo.");
+                            }
+                            else
+                            {
+                                ShowMessage("Dodavanje brojila neuspešno", "Greška prilikom dodavanja brojila. Pokušajte ponovo da dodate brojilo.");
+                            }
                         }
                     }
                 }
@@ -205,7 +217,7 @@ namespace UserInterface
 
         private void statistikaTile_Click(object sender, RoutedEventArgs e)
         {
-            if (Database.Servisi.UserLogin.Korisnik == null)
+            if (UserLogin.Korisnik == null)
             {
                 ShowMessage("Greška u prikazu statistike", "Prikaz statistike dostupan je samo za prijavljene korisnike.");
             }
@@ -213,12 +225,13 @@ namespace UserInterface
             {
                 // korisnik je ulogovan proveriti da li ima brojilo koje je vezano za njega, ako nema
                 // prikazati dijalog da treba uneti neki rezultat merenja pre prikaza statistike
-                Database.Servisi.PullBrojiloData pd = new Database.Servisi.PullBrojiloData();
-                bool postojiLiBrojilo = pd.GetTargetedDataFromDatabase(Database.Servisi.UserLogin.Korisnik.Uid);
+                PullBrojiloData pd = new PullBrojiloData();
+                bool postojiLiBrojilo = pd.GetTargetedDataFromDatabase(UserLogin.Korisnik.Uid);
 
-                if(postojiLiBrojilo)
+                if (postojiLiBrojilo)
                 {
                     // prikazati statistiku
+                    // TODO
                 }
                 else
                 {
@@ -229,7 +242,7 @@ namespace UserInterface
         }
         private void UnosIzmerenihPodataka(object sender, RoutedEventArgs e)
         {
-            // todo
+            // TODO
         }
     }
 }

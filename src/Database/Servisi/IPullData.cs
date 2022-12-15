@@ -6,7 +6,7 @@ namespace Database.Servisi
     {
         IDbConnection Baza { get; set; }
         IDbCommand Command { get; set; }
-        IDataReader  Reader { get; set; }
+        IDataReader Reader { get; set; }
 
         bool GetTargetedDataFromDatabase(int Id, string sql);
     }
