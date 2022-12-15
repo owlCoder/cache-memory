@@ -159,20 +159,39 @@ namespace UserInterface
 
         private void noviZapisTile_Click(object sender, RoutedEventArgs e)
         {
-
+            if (Database.Servisi.UserLogin.Korisnik == null)
+            {
+                ShowMessage("Greška u dodavanju zapisa", "Dodavanje novog zapisa dostupno je samo za prijavljene korisnike.");
+            }
+            else
+            {
+                //todo
+            }    
         }
 
         private void statistikaTile_Click(object sender, RoutedEventArgs e)
         {
             if (Database.Servisi.UserLogin.Korisnik == null)
             {
-                ShowMessage("Greška pri dodavanju novog zapisa", "Dodavanje novog zapisa dostupno je samo za prijavljene korisnike.");
+                ShowMessage("Greška u prikazu statistike", "Prikaz statistike dostupan je samo za prijavljene korisnike.");
             }
             else
             {
                 // korisnik je ulogovan proveriti da li ima brojilo koje je vezano za njega, ako nema
                 // prikazati dijalog da popuni podatke o svom brojilu
+                Database.Servisi.PullBrojiloData pd = new Database.Servisi.PullBrojiloData();
+                bool postojiLiBrojilo = pd.GetTargetedDataFromDatabase(Database.Servisi.UserLogin.Korisnik.Uid);
 
+                if(postojiLiBrojilo)
+                {
+                    // forma za unos potrosnje gde se unosi kolicina potrosene toplotne energije i mesec
+                    // u kom je potrosnja i ostvarena
+                }
+                else
+                {
+                    // dijalog za unos podataka o brojilu i unos brojila u tabelu BROJILO, i cuvanje
+                    // u veznoj tabeli KORISNIKBROJILO
+                }
             }
         }
     }

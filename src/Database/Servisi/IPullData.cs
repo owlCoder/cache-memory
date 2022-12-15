@@ -8,6 +8,6 @@ namespace Database.Servisi
         IDbCommand Command { get; set; }
         IDataReader  Reader { get; set; }
 
-        void GetDataFromDatabase(string sql);
+        bool GetTargetedDataFromDatabase(int Id, string sql);
     }
 }

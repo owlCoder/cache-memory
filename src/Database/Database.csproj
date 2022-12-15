@@ -98,6 +98,7 @@
     <Compile Include="Servisi\IPullData.cs" />
     <Compile Include="Servisi\IPushData.cs" />
     <Compile Include="Servisi\IRegister.cs" />
+    <Compile Include="Servisi\PullBrojiloData.cs" />
     <Compile Include="Servisi\PushData.cs" />
     <Compile Include="Servisi\UserLogin.cs" />
     <Compile Include="Servisi\UserRegister.cs" />
