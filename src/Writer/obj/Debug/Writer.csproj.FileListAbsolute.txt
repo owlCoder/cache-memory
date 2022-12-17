@@ -1,0 +1,5 @@
+D:\ERS Projekat\Cache Memory\src\Writer\bin\Debug\Writer.dll
+D:\ERS Projekat\Cache Memory\src\Writer\bin\Debug\Writer.pdb
+D:\ERS Projekat\Cache Memory\src\Writer\obj\Debug\Writer.csproj.CoreCompileInputs.cache
+D:\ERS Projekat\Cache Memory\src\Writer\obj\Debug\Writer.dll
+D:\ERS Projekat\Cache Memory\src\Writer\obj\Debug\Writer.pdb

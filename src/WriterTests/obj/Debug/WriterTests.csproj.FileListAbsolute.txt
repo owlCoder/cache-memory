@@ -1,0 +1,6 @@
+D:\ERS Projekat\Cache Memory\src\WriterTests\bin\Debug\WriterTests.dll
+D:\ERS Projekat\Cache Memory\src\WriterTests\bin\Debug\WriterTests.pdb
+D:\ERS Projekat\Cache Memory\src\WriterTests\obj\Debug\WriterTests.csproj.AssemblyReference.cache
+D:\ERS Projekat\Cache Memory\src\WriterTests\obj\Debug\WriterTests.csproj.CoreCompileInputs.cache
+D:\ERS Projekat\Cache Memory\src\WriterTests\obj\Debug\WriterTests.dll
+D:\ERS Projekat\Cache Memory\src\WriterTests\obj\Debug\WriterTests.pdb
