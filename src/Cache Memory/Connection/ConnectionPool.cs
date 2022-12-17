@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Data;
-using Oracle.ManagedDataAccess.Client;
 
 namespace Cache_Memory.Connection
 {
@@ -10,7 +10,7 @@ namespace Cache_Memory.Connection
 
         public static IDbConnection GetConnection()
         {
-            if(instance == null || instance.State == ConnectionState.Closed)
+            if (instance == null || instance.State == ConnectionState.Closed)
             {
                 OracleConnectionStringBuilder ocsb = new OracleConnectionStringBuilder();
 
@@ -35,11 +35,11 @@ namespace Cache_Memory.Connection
         }
         public void Dispose()
         {
-            if(instance != null)
+            if (instance != null)
             {
                 instance.Close();
                 instance.Dispose();
-            }    
+            }
         }
     }
 }
