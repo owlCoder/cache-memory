@@ -1,6 +1,0 @@
-D:\ERS Projekat\Cache Memory\src\ReaderTests\bin\Debug\ReaderTests.dll
-D:\ERS Projekat\Cache Memory\src\ReaderTests\bin\Debug\ReaderTests.pdb
-D:\ERS Projekat\Cache Memory\src\ReaderTests\obj\Debug\ReaderTests.csproj.AssemblyReference.cache
-D:\ERS Projekat\Cache Memory\src\ReaderTests\obj\Debug\ReaderTests.csproj.CoreCompileInputs.cache
-D:\ERS Projekat\Cache Memory\src\ReaderTests\obj\Debug\ReaderTests.dll
-D:\ERS Projekat\Cache Memory\src\ReaderTests\obj\Debug\ReaderTests.pdb

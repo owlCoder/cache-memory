@@ -1,6 +1,0 @@
-D:\ERS Projekat\Cache Memory\src\HistoricalTests\bin\Debug\HistoricalTests.dll
-D:\ERS Projekat\Cache Memory\src\HistoricalTests\bin\Debug\HistoricalTests.pdb
-D:\ERS Projekat\Cache Memory\src\HistoricalTests\obj\Debug\HistoricalTests.csproj.AssemblyReference.cache
-D:\ERS Projekat\Cache Memory\src\HistoricalTests\obj\Debug\HistoricalTests.csproj.CoreCompileInputs.cache
-D:\ERS Projekat\Cache Memory\src\HistoricalTests\obj\Debug\HistoricalTests.dll
-D:\ERS Projekat\Cache Memory\src\HistoricalTests\obj\Debug\HistoricalTests.pdb

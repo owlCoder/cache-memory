@@ -1,6 +1,0 @@
-D:\ERS Projekat\Cache Memory\src\Historical\bin\Debug\Historical.dll
-D:\ERS Projekat\Cache Memory\src\Historical\bin\Debug\Historical.pdb
-D:\ERS Projekat\Cache Memory\src\Historical\obj\Debug\Historical.csproj.AssemblyReference.cache
-D:\ERS Projekat\Cache Memory\src\Historical\obj\Debug\Historical.csproj.CoreCompileInputs.cache
-D:\ERS Projekat\Cache Memory\src\Historical\obj\Debug\Historical.dll
-D:\ERS Projekat\Cache Memory\src\Historical\obj\Debug\Historical.pdb
