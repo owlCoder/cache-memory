@@ -30,5 +30,19 @@ namespace Cache_Memory.Models
 
         public int Id { get => id; set => id = value; }
         public string Naziv { get => naziv; set => naziv = value; }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Brojilo brojilo &&
+                   Id == brojilo.Id &&
+                   Naziv == brojilo.Naziv;
+        }
+        public override int GetHashCode()
+        {
+            int hashCode = -656151847;
+            hashCode = hashCode * -1521134295 + Id.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Naziv);
+            return hashCode;
+        }
     }
 }
