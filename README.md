@@ -8,6 +8,7 @@ Aplikacija prikuplja podatke od korisnika o trenutnoj potrošnji toplotne energi
 
 ## Status Projekta
 <ul>
+  <li>Implementirati novi codebase</li>
   <li>Implementirati Writer</li>
   <li>Implementirati Dumping Buffer</li>
   <li>Implementirati Historical</li>
