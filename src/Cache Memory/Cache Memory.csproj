@@ -77,6 +77,7 @@
     <Compile Include="Connection\ConnectionParameters.cs" />
     <Compile Include="Connection\ConnectionPool.cs" />
     <Compile Include="Models\Brojilo.cs" />
+    <Compile Include="Models\EvidencijaPotrosnje.cs" />
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

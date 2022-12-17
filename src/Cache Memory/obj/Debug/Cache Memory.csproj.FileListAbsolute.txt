@@ -23,5 +23,4 @@ D:\ERS Projekat\Cache Memory\src\Cache Memory\bin\Debug\System.Text.Encodings.We
 D:\ERS Projekat\Cache Memory\src\Cache Memory\bin\Debug\System.Text.Json.xml
 D:\ERS Projekat\Cache Memory\src\Cache Memory\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\ERS Projekat\Cache Memory\src\Cache Memory\bin\Debug\System.ValueTuple.xml
-D:\ERS Projekat\Cache Memory\src\Cache Memory\obj\Debug\Cache Memory.csproj.AssemblyReference.cache
 D:\ERS Projekat\Cache Memory\src\Cache Memory\obj\Debug\Cache Memory.csproj.CopyComplete

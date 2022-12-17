@@ -5,12 +5,12 @@ namespace Cache_Memory.Models
 {
     public class Brojilo
     {
-        private int id;
+        private int brojiloId;
         private string naziv;
 
-        public Brojilo(int id, string naziv)
+        public Brojilo(int brojiloId, string naziv)
         {
-            Id = id;
+            BrojiloId = brojiloId;
 
             if (naziv == null)
             {
@@ -25,19 +25,19 @@ namespace Cache_Memory.Models
             Naziv = naziv;
         }
 
-        public int Id { get => id; set => id = value; }
+        public int BrojiloId { get => brojiloId; set => brojiloId = value; }
         public string Naziv { get => naziv; set => naziv = value; }
 
         public override bool Equals(object obj)
         {
             return obj is Brojilo brojilo &&
-                   Id == brojilo.Id &&
+                   brojiloId == brojilo.brojiloId &&
                    Naziv == brojilo.Naziv;
         }
         public override int GetHashCode()
         {
             int hashCode = -656151847;
-            hashCode = hashCode * -1521134295 + Id.GetHashCode();
+            hashCode = hashCode * -1521134295 + brojiloId.GetHashCode();
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Naziv);
             return hashCode;
         }
