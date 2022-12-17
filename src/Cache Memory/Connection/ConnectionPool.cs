@@ -14,7 +14,7 @@ namespace Cache_Memory.Connection
             {
                 OracleConnectionStringBuilder ocsb = new OracleConnectionStringBuilder();
 
-                // dinamicko podesavanje data parametara
+                // dinamicko podesavanje parametara za bazu podataka
                 ocsb.DataSource = ConnectionParameters.DATA_SOURCE;
                 ocsb.UserID = ConnectionParameters.USER_ID;
                 ocsb.Password = ConnectionParameters.PASSWORD;
