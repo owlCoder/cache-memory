@@ -299,8 +299,8 @@ namespace Cache_Memory.DataAccessObject.Implementations
                     Utils.ParameterUtil.SetParameterValue(komanda, "adresa", entity.Adresa);
 
                     komanda.Prepare();
-                    // upis korisnika u bazu podataka
 
+                    // upis korisnika u bazu podataka
                     int rowsAffected = komanda.ExecuteNonQuery();
 
                     return rowsAffected;

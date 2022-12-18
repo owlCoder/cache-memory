@@ -195,12 +195,57 @@ namespace Cache_Memory.DataAccessObject.Implementations
 
         public int Save(Brojilo entity)
         {
-            throw new NotImplementedException();
+            // formiranje upita
+            string upit = "INSERT INTO BROJILO VALUES (:brojilo_id, :naziv)";
+
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open(); // otvaranje konekcije
+
+                using (IDbCommand komanda = konekcija.CreateCommand())
+                {
+                    komanda.CommandText = upit;
+
+                    // dodavanje parametera i tipova
+                    Utils.ParameterUtil.AddParameter(komanda, "brojilo_id", DbType.Int32);
+                    Utils.ParameterUtil.AddParameter(komanda, "naziv", DbType.String, 32);
+
+                    komanda.Prepare();
+
+                    // postavljanje vrednosti
+                    Utils.ParameterUtil.SetParameterValue(komanda, "brojilo_id", entity.BrojiloId);
+                    Utils.ParameterUtil.SetParameterValue(komanda, "naziv", entity.Naziv);
+
+                    komanda.Prepare();
+
+                    // upis brojila u bazu podataka
+                    int rowsAffected = komanda.ExecuteNonQuery();
+
+                    return rowsAffected;
+                }
+            }
         }
 
         public int SaveAll(IEnumerable<Brojilo> entities)
         {
-            throw new NotImplementedException();
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open();
+                IDbTransaction transakcija = konekcija.BeginTransaction(); // pocetak transakcije
+
+                int brojSacuvanihRedova = 0;
+
+                // cuvamo red po red
+                foreach (Brojilo tmp in entities)
+                {
+                    brojSacuvanihRedova += Save(tmp);
+                }
+
+                // transakcija je prosla okej, promene primenjujemo na bazu podataka
+                transakcija.Commit();
+
+                return brojSacuvanihRedova;
+            }
         }
     }
 }
