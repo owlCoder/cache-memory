@@ -10,7 +10,33 @@ namespace Cache_Memory.DataAccessObject.Implementations
     {
         public int Count()
         {
-            throw new NotImplementedException();
+            // broj korisnika u bazi podataka
+            int brojKorisnika = 0
+
+            // formiranje upita
+            string upit = "SELECT COUNT(*) FROM KORISNIK";
+
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open(); // otvaranje konekcije
+
+                using (IDbCommand komanda = konekcija.CreateCommand())
+                {
+                    komanda.CommandText = upit;
+                    komanda.Prepare();
+
+                    using (IDataReader reader = komanda.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // izdvanje podataka iz procitanog reda u tabeli
+                            brojKorisnika = reader.GetInt32(0);
+                        }
+                    }
+                }
+            }
+
+            return brojKorisnika;
         }
 
         public int Delete(Korisnik entity)
