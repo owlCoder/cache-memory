@@ -2,6 +2,7 @@
 using Cache_Memory.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,32 @@ namespace Cache_Memory.DataAccessObject.Implementations
     {
         public int Count()
         {
-            throw new NotImplementedException();
+            // broj evidencija upisanih u bazi podataka
+            int brojEvidencija = 0;
+
+            // formiranje upita
+            string upit = "SELECT COUNT(*) FROM EVIDENCIJAPOTROSNJE";
+
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open(); // otvaranje konekcije
+
+                using (IDbCommand komanda = konekcija.CreateCommand())
+                {
+                    komanda.CommandText = upit;
+                    komanda.Prepare();
+
+                    using (IDataReader reader = komanda.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            brojEvidencija = Convert.ToInt32(komanda.ExecuteScalar());
+                        }
+                    }
+                }
+            }
+
+            return brojEvidencija;
         }
 
         public int Delete(EvidencijaPotrosnje entity)
