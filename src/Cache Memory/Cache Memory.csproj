@@ -76,6 +76,8 @@
   <ItemGroup>
     <Compile Include="Connection\ConnectionParameters.cs" />
     <Compile Include="Connection\ConnectionPool.cs" />
+    <Compile Include="DataAccessObject\Implementations\Brojila.cs" />
+    <Compile Include="DataAccessObject\Interfaces\IBrojila.cs" />
     <Compile Include="DataAccessObject\Interfaces\IRegistracijaNaSistem.cs" />
     <Compile Include="DataAccessObject\Interfaces\IPrijavaNaSistem.cs" />
     <Compile Include="DataAccessObject\Implementations\Korisnici.cs" />

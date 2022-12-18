@@ -1,10 +1,4 @@
-﻿using Cache_Memory.DataAccessObject.Interfaces;
-using Cache_Memory.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Cache_Memory.Models;
 
 namespace Cache_Memory.DataAccessObject.Implementations
 {
@@ -18,7 +12,7 @@ namespace Cache_Memory.DataAccessObject.Implementations
             // proveri da li korisnik postoji u bazi podataka
             bool postoji = korisnici.ExistByAttributeString("username", username);
 
-            if(postoji)
+            if (postoji)
             {
                 // proveri da li se sifre poklapaju
                 trenutniKorisnik = korisnici.FindByAttributeString("password", password);

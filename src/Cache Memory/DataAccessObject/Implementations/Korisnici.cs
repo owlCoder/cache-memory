@@ -291,7 +291,7 @@ namespace Cache_Memory.DataAccessObject.Implementations
                     Utils.ParameterUtil.AddParameter(komanda, "adresa", DbType.String, 32);
 
                     komanda.Prepare();
-                    
+
                     // postavljanje vrednosti
                     Utils.ParameterUtil.SetParameterValue(komanda, "user_id", entity.UserId);
                     Utils.ParameterUtil.SetParameterValue(komanda, "username", entity.Username);
