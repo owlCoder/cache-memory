@@ -4,6 +4,6 @@ namespace Cache_Memory.DataAccessObject.Interfaces
 {
     public interface IKorisnici : ICRUD<Korisnik, int>
     {
-
+        bool ExistsBy
     }
 }

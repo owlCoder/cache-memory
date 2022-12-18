@@ -79,6 +79,22 @@ namespace Cache_Memory.DataAccessObject.Implementations
             }
         }
 
+        private bool ExistsByAttributeString(string attribute, string attributeValue, IDbConnection konekcija)
+        {
+            string query = "SELECT *FROM KORISNIK WHERE '" + attribute + "' = :attribute_value";
+
+            using (IDbCommand komanda = konekcija.CreateCommand())
+            {
+                komanda.CommandText = query;
+
+                Utils.ParameterUtil.AddParameter(komanda, "attribute_value", DbType.String, 32);
+                komanda.Prepare();
+                Utils.ParameterUtil.SetParameterValue(komanda, "attribute_value", attributeValue);
+
+                return komanda.ExecuteScalar() != null;
+            }
+        }
+
         public IEnumerable<Korisnik> FindAll()
         {
             // lista korisnika
@@ -169,14 +185,92 @@ namespace Cache_Memory.DataAccessObject.Implementations
             return trazeniKorisnik;
         }
 
+        private int FindMaxId()
+        {
+            int maxId = 0;
+
+            // formiranje upita
+            string upit = "SELECT MAX(userId) FROM KORISNIK";
+
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open(); // otvaranje konekcije
+
+                using (IDbCommand komanda = konekcija.CreateCommand())
+                {
+                    komanda.CommandText = upit;
+                    komanda.Prepare();
+
+                    using (IDataReader reader = komanda.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            maxId = Convert.ToInt32(komanda.ExecuteScalar());
+                        }
+                    }
+                }
+            }
+
+            return maxId + 1;
+        }
+
         public int Save(Korisnik entity)
         {
-            throw new NotImplementedException();
+            // formiranje upita
+            string upit = "INSERT INTO KORISNIK VALUES (:user_id, :username, :password, :adresa)";
+
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open(); // otvaranje konekcije
+
+                using (IDbCommand komanda = konekcija.CreateCommand())
+                {
+                    komanda.CommandText = upit;
+
+                    // dodavanje parametera i tipova
+                    Utils.ParameterUtil.AddParameter(komanda, "user_id", DbType.Int32);
+                    Utils.ParameterUtil.AddParameter(komanda, "username", DbType.String, 32);
+                    Utils.ParameterUtil.AddParameter(komanda, "password", DbType.String, 32);
+                    Utils.ParameterUtil.AddParameter(komanda, "adresa", DbType.String, 32);
+
+                    komanda.Prepare();
+                    
+                    // postavljanje vrednosti
+                    Utils.ParameterUtil.SetParameterValue(komanda, "user_id", entity.UserId);
+                    Utils.ParameterUtil.SetParameterValue(komanda, "username", entity.Username);
+                    Utils.ParameterUtil.SetParameterValue(komanda, "password", entity.Password);
+                    Utils.ParameterUtil.SetParameterValue(komanda, "adresa", entity.Adresa);
+
+                    komanda.Prepare();
+                    // upis korisnika u bazu podataka
+
+                    int rowsAffected = komanda.ExecuteNonQuery();
+
+                    return rowsAffected;
+                }
+            }
         }
 
         public int SaveAll(IEnumerable<Korisnik> entities)
         {
-            throw new NotImplementedException();
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open();
+                IDbTransaction transakcija = konekcija.BeginTransaction(); // pocetak transakcije
+
+                int brojSacuvanihRedova = 0;
+
+                // cuvamo red po red
+                foreach (Korisnik tmp in entities)
+                {
+                    brojSacuvanihRedova += Save(tmp);
+                }
+
+                // transakcija je prosla okej, promene primenjujemo na bazu podataka
+                transakcija.Commit();
+
+                return brojSacuvanihRedova;
+            }
         }
     }
 }
