@@ -164,6 +164,35 @@ namespace Cache_Memory.DataAccessObject.Implementations
             return trazenoBrojilo;
         }
 
+        public int FindMaxId()
+        {
+            int maxId = 0;
+
+            // formiranje upita
+            string upit = "SELECT MAX(brojiloId) FROM BROJILO";
+
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open(); // otvaranje konekcije
+
+                using (IDbCommand komanda = konekcija.CreateCommand())
+                {
+                    komanda.CommandText = upit;
+                    komanda.Prepare();
+
+                    using (IDataReader reader = komanda.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            maxId = Convert.ToInt32(komanda.ExecuteScalar());
+                        }
+                    }
+                }
+            }
+
+            return maxId + 1;
+        }
+
         public int Save(Brojilo entity)
         {
             throw new NotImplementedException();
