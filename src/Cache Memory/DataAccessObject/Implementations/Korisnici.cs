@@ -79,6 +79,15 @@ namespace Cache_Memory.DataAccessObject.Implementations
             }
         }
 
+        public bool ExistByAttributeString(string attribute, string attributeValue)
+        {
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open(); // otvaranje konekcije
+
+                return ExistsByAttributeString(attribute, attributeValue, konekcija);
+            }
+        }
         private bool ExistsByAttributeString(string attribute, string attributeValue, IDbConnection konekcija)
         {
             string query = "SELECT *FROM KORISNIK WHERE '" + attribute + "' = :attribute_value";
@@ -185,7 +194,55 @@ namespace Cache_Memory.DataAccessObject.Implementations
             return trazeniKorisnik;
         }
 
-        private int FindMaxId()
+        public Korisnik FindByAttributeString(string attribute, string attributeValue)
+        {
+            // pretpostavka: trazeni korisnik ne postoji
+            Korisnik trazeniKorisnik = null;
+
+            // upit za pretragu korisnika
+            string upit = "SELECT *FROM KORISNIK WHERE :attributeName = :attributeValue";
+
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open();
+
+                using (IDbCommand komanda = konekcija.CreateCommand())
+                {
+                    komanda.CommandText = upit;
+
+                    // placeholder za id podesavamo sa AddParameter
+                    Utils.ParameterUtil.AddParameter(komanda, "attributeName", DbType.String, 32);
+                    Utils.ParameterUtil.AddParameter(komanda, "attributeValue", DbType.String, 32);
+
+                    komanda.Prepare();
+
+                    // podesavamo parametar koji smo dodali
+                    Utils.ParameterUtil.SetParameterValue(komanda, "attributeName", attribute);
+                    Utils.ParameterUtil.SetParameterValue(komanda, "attributeValue", attributeValue);
+
+                    using (IDataReader reader = komanda.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // izdvanje podataka iz procitanog reda u tabeli
+                            int id = reader.GetInt32(0);
+                            string korisnickoIme = reader.GetString(1);
+                            string sifra = reader.GetString(2);
+                            string adresa = reader.GetString(3);
+
+                            // kreiranje objekta od iscitanih podataka
+                            Korisnik korisnik = new Korisnik(id, korisnickoIme, sifra, adresa);
+
+                            trazeniKorisnik = korisnik;
+                        }
+                    }
+                }
+            }
+
+            return trazeniKorisnik;
+        }
+
+        public int FindMaxId()
         {
             int maxId = 0;
 

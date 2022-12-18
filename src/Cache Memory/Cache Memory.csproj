@@ -77,8 +77,10 @@
     <Compile Include="Connection\ConnectionParameters.cs" />
     <Compile Include="Connection\ConnectionPool.cs" />
     <Compile Include="DataAccessObject\Implementations\Korisnici.cs" />
+    <Compile Include="DataAccessObject\Implementations\PrijavaNaSistem.cs" />
     <Compile Include="DataAccessObject\Interfaces\ICRUD.cs" />
     <Compile Include="DataAccessObject\Interfaces\IKorisnici.cs" />
+    <Compile Include="DataAccessObject\Interfaces\IPrijavaNaSistem.cs" />
     <Compile Include="Models\Brojilo.cs" />
     <Compile Include="Models\EvidencijaPotrosnje.cs" />
     <Compile Include="Models\Korisnik.cs" />
