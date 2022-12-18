@@ -11,7 +11,7 @@ namespace Cache_Memory.DataAccessObject.Implementations
         public int Count()
         {
             // broj korisnika u bazi podataka
-            int brojKorisnika = 0
+            int brojKorisnika = 0;
 
             // formiranje upita
             string upit = "SELECT COUNT(*) FROM KORISNIK";
@@ -29,8 +29,7 @@ namespace Cache_Memory.DataAccessObject.Implementations
                     {
                         if (reader.Read())
                         {
-                            // izdvanje podataka iz procitanog reda u tabeli
-                            brojKorisnika = reader.GetInt32(0);
+                            brojKorisnika = Convert.ToInt32(komanda.ExecuteScalar());
                         }
                     }
                 }
@@ -56,7 +55,28 @@ namespace Cache_Memory.DataAccessObject.Implementations
 
         public bool ExistById(int id)
         {
-            throw new NotImplementedException();
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open(); // otvaranje konekcije
+
+                return ExistsById(id, konekcija);
+            }
+        }
+
+        private bool ExistsById(int id, IDbConnection konekcija)
+        {
+            string query = "SELECT *FROM KORISNIK WHERE userId = :user_id";
+
+            using (IDbCommand komanda = konekcija.CreateCommand())
+            {
+                komanda.CommandText = query;
+
+                Utils.ParameterUtil.AddParameter(komanda, "user_id", DbType.Int32);
+                komanda.Prepare();
+                Utils.ParameterUtil.SetParameterValue(komanda, "user_id", id);
+
+                return komanda.ExecuteScalar() != null;
+            }
         }
 
         public IEnumerable<Korisnik> FindAll()
