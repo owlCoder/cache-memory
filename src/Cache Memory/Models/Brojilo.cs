@@ -8,6 +8,8 @@ namespace Cache_Memory.Models
         private int brojiloId;
         private string naziv;
 
+        private nae;
+
         public Brojilo(int brojiloId, string naziv)
         {
             BrojiloId = brojiloId;
