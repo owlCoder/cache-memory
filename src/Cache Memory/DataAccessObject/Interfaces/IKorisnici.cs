@@ -7,7 +7,7 @@ namespace Cache_Memory.DataAccessObject.Interfaces
         // metoda koja pronalazi da li postoji odredjeni red u tabeli za odredjenu kolonu tipa varchar
         bool ExistByAttributeString(string attribute, string attributeValue);
 
-        // metoda koja pronalazzi da li postoji tacno odredjeni korisnik na osnovu atributa
+        // metoda koja pronalazi da li postoji tacno odredjeni korisnik na osnovu atributa
         Korisnik FindByAttributeString(string attribute, string attributeValue);
         
         // metoda koja pronalazi najveci userId i vraca ga uvecanog za 1
