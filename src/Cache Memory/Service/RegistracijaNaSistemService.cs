@@ -1,18 +1,14 @@
 ﻿using Cache_Memory.DataAccessObject.Implementations;
-using Cache_Memory.DataAccessObject.Interfaces;
-using Cache_Memory.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cache_Memory.Service
 {
     public class RegistracijaNaSistemService
     {
-        private static readonly RegistracijaNaSistem registracija = new RegistracijaNaSistem();
+        private static readonly IRegistracijaNaSistem registracija = new RegistracijaNaSistem();
 
-        bool 
+        public bool Registracija(string username, string password, string adresa)
+        {
+            return registracija.RegistrujteSe(username, password, adresa);
+        }
     }
 }
