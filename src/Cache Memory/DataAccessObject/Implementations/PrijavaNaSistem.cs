@@ -32,5 +32,7 @@ namespace Cache_Memory.DataAccessObject.Implementations
         }
 
         public static Korisnik TrenutniKorisnik { get => trenutniKorisnik; set => trenutniKorisnik = value; }
+
+        public bool KorisnikPrijavljen() { return TrenutniKorisnik != null; }
     }
 }
