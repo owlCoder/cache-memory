@@ -1,6 +1,7 @@
 ﻿namespace Cache_Memory.Service
 {
-    class KorisniciService
+    public class KorisniciService
     {
+        // empty
     }
 }

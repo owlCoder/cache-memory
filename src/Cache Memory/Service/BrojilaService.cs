@@ -1,6 +1,7 @@
 ﻿namespace Cache_Memory.Service
 {
-    class BrojilaService
+    public class BrojilaService
     {
+        // empty
     }
 }

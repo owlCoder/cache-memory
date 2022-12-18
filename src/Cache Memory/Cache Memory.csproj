@@ -78,8 +78,12 @@
     <Compile Include="Connection\ConnectionPool.cs" />
     <Compile Include="DataAccessObject\Implementations\Brojila.cs" />
     <Compile Include="DataAccessObject\Implementations\BelezenjeEvidencijaPotrosnje.cs" />
+    <Compile Include="DataAccessObject\Implementations\PovezivanjeKorisnikaIBrojila.cs" />
+    <Compile Include="DataAccessObject\Implementations\RegistracijaBrojila.cs" />
     <Compile Include="DataAccessObject\Interfaces\IBrojila.cs" />
     <Compile Include="DataAccessObject\Interfaces\IBelezenjeEvidencijaPotrosnje.cs" />
+    <Compile Include="DataAccessObject\Interfaces\IPovezivanjeKorisnikaIBrojila.cs" />
+    <Compile Include="DataAccessObject\Interfaces\IRegistracijaBrojila.cs" />
     <Compile Include="DataAccessObject\Interfaces\IRegistracijaNaSistem.cs" />
     <Compile Include="DataAccessObject\Interfaces\IPrijavaNaSistem.cs" />
     <Compile Include="DataAccessObject\Implementations\Korisnici.cs" />
@@ -91,6 +95,7 @@
     <Compile Include="Models\Brojilo.cs" />
     <Compile Include="Models\EvidencijaPotrosnje.cs" />
     <Compile Include="Models\Korisnik.cs" />
+    <Compile Include="Models\KorisnikBrojilo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\BelezenjeEvidencijaPotrosnjeService.cs" />
     <Compile Include="Service\BrojilaService.cs" />
