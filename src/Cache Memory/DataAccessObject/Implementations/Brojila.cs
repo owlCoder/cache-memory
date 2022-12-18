@@ -123,7 +123,45 @@ namespace Cache_Memory.DataAccessObject.Implementations
 
         public Brojilo FindById(int id)
         {
-            throw new NotImplementedException();
+            // pretpostavka: trazeno brojilo ne postoji
+            Brojilo trazenoBrojilo = null;
+
+            // upit za pretragu korisnika
+            string upit = "SELECT naziv FROM BROJILO WHERE brojiloId = :id_unos";
+
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open();
+
+                using (IDbCommand komanda = konekcija.CreateCommand())
+                {
+                    komanda.CommandText = upit;
+
+                    // placeholder za id podesavamo sa AddParameter
+                    Utils.ParameterUtil.AddParameter(komanda, "id_unos", DbType.Int32);
+
+                    komanda.Prepare();
+
+                    // podesavamo parametar koji smo dodali
+                    Utils.ParameterUtil.SetParameterValue(komanda, "id_unos", id);
+
+                    using (IDataReader reader = komanda.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // izdvanje podataka iz procitanog reda u tabeli
+                            string naziv = reader.GetString(0);
+
+                            // kreiranje objekta od iscitanih podataka
+                            Brojilo brojilo = new Brojilo(id, naziv);
+
+                            trazenoBrojilo = brojilo;
+                        }
+                    }
+                }
+            }
+
+            return trazenoBrojilo;
         }
 
         public int Save(Brojilo entity)
