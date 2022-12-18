@@ -9,6 +9,7 @@ namespace Cache_Memory.DataAccessObject.Interfaces
 {
     public interface IPovezivanjeKorisnikaIBrojila : ICRUD<KorisnikBrojilo, int>
     {
-        // empty
+        // metoda koja pronalazi sva brojila koja je registrovao jedan korisnik
+        IEnumerable<KorisnikBrojilo> FindAllBrojilaPerUser(int userId);
     }
 }

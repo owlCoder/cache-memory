@@ -100,6 +100,7 @@
     <Compile Include="Service\BelezenjeEvidencijaPotrosnjeService.cs" />
     <Compile Include="Service\BrojilaService.cs" />
     <Compile Include="Service\KorisniciService.cs" />
+    <Compile Include="Service\PovezivanjeKorisnikaIBrojilaService.cs" />
     <Compile Include="Service\PrijavaNaSistemService.cs" />
     <Compile Include="Service\RegistracijaNaSistemService.cs" />
     <Compile Include="Utils\ParameterUtil.cs" />
