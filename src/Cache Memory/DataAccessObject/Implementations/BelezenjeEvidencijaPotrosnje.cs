@@ -238,7 +238,49 @@ namespace Cache_Memory.DataAccessObject.Implementations
 
         public IEnumerable<EvidencijaPotrosnje> FindByGrad(string grad)
         {
-            throw new NotImplementedException();
+            // celokupna evidencija potrosnje
+            List<EvidencijaPotrosnje> evidencija = new List<EvidencijaPotrosnje>();
+
+            // formiranje upita
+            string upit = "SELECT *FROM EVIDENCIJAPOTROSNJE WHERE grad = :grad";
+
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open(); // otvaranje konekcije
+
+                using (IDbCommand komanda = konekcija.CreateCommand())
+                {
+                    komanda.CommandText = upit;
+
+                    // placeholder za grad podesavamo sa AddParameter
+                    Utils.ParameterUtil.AddParameter(komanda, "grad", DbType.String, 32);
+                    komanda.Prepare();
+
+                    // podesavamo parametar koji smo dodali
+                    Utils.ParameterUtil.SetParameterValue(komanda, "grad", grad);
+
+                    using (IDataReader reader = komanda.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            // izdvanje podataka iz procitanog reda u tabeli
+                            int userId = reader.GetInt32(0);
+                            int brojiloId = reader.GetInt32(1);
+                            int mesec = reader.GetInt32(2);
+                            string gradDb = reader.GetString(3);
+                            double potrosnja = reader.GetDouble(4);
+
+                            // kreiranje objekta od iscitanih podataka
+                            EvidencijaPotrosnje evidencijaPotrosnje = new EvidencijaPotrosnje(userId, brojiloId, mesec, gradDb, potrosnja);
+
+                            // dodavanje iscitane evidencije u listu
+                            evidencija.Add(evidencijaPotrosnje);
+                        }
+                    }
+                }
+            }
+
+            return evidencija;
         }
     }
 }
