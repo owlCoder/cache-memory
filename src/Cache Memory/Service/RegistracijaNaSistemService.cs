@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace Cache_Memory.Service
 {
-    class RegistracijaNaSistemServis
+    public class RegistracijaNaSistemService
     {
+        private static readonly RegistracijaNaSistem registracija = new RegistracijaNaSistem();
+
+        bool 
     }
 }

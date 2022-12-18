@@ -96,7 +96,7 @@
     <Compile Include="Service\BrojilaService.cs" />
     <Compile Include="Service\KorisniciService.cs" />
     <Compile Include="Service\PrijavaNaSistemService.cs" />
-    <Compile Include="Service\RegistracijaNaSistemServis.cs" />
+    <Compile Include="Service\RegistracijaNaSistemService.cs" />
     <Compile Include="Utils\ParameterUtil.cs" />
   </ItemGroup>
   <ItemGroup>

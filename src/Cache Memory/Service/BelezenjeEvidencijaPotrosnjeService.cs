@@ -13,22 +13,22 @@ namespace Cache_Memory.Service
     {
         private static readonly IBelezenjeEvidencijaPotrosnje belezenjeEvidencije = new BelezenjeEvidencijaPotrosnje();
 
-        List<EvidencijaPotrosnje> GetEvidencijaAll()
+        public List<EvidencijaPotrosnje> GetEvidencijaAll()
         {
             return belezenjeEvidencije.FindAll().ToList();
         }
 
-        List<EvidencijaPotrosnje> GetEvidencijaByMesec(int mesec)
+        public List<EvidencijaPotrosnje> GetEvidencijaByMesec(int mesec)
         {
             return belezenjeEvidencije.FindByMesec(mesec).ToList();
         }
 
-        List<EvidencijaPotrosnje> GetEvidencijaByUserId(int userId)
+        public List<EvidencijaPotrosnje> GetEvidencijaByUserId(int userId)
         {
             return belezenjeEvidencije.FindByUserId(userId).ToList();
         }
 
-        List<EvidencijaPotrosnje> GetEvidencijaByGrad(string grad)
+        public List<EvidencijaPotrosnje> GetEvidencijaByGrad(string grad)
         {
             return belezenjeEvidencije.FindByGrad(grad).ToList();
         }
