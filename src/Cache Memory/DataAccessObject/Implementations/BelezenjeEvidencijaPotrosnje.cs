@@ -191,7 +191,49 @@ namespace Cache_Memory.DataAccessObject.Implementations
 
         public IEnumerable<EvidencijaPotrosnje> FindByUserId(int id)
         {
-            throw new NotImplementedException();
+            // celokupna evidencija potrosnje
+            List<EvidencijaPotrosnje> evidencija = new List<EvidencijaPotrosnje>();
+
+            // formiranje upita
+            string upit = "SELECT *FROM EVIDENCIJAPOTROSNJE WHERE userId = :user_id";
+
+            using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
+            {
+                konekcija.Open(); // otvaranje konekcije
+
+                using (IDbCommand komanda = konekcija.CreateCommand())
+                {
+                    komanda.CommandText = upit;
+
+                    // placeholder za userId podesavamo sa AddParameter
+                    Utils.ParameterUtil.AddParameter(komanda, "user_id", DbType.Int32);
+                    komanda.Prepare();
+
+                    // podesavamo parametar koji smo dodali
+                    Utils.ParameterUtil.SetParameterValue(komanda, "user_id", id);
+
+                    using (IDataReader reader = komanda.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            // izdvanje podataka iz procitanog reda u tabeli
+                            int userId = reader.GetInt32(0);
+                            int brojiloId = reader.GetInt32(1);
+                            int mesec = reader.GetInt32(2);
+                            string grad = reader.GetString(3);
+                            double potrosnja = reader.GetDouble(4);
+
+                            // kreiranje objekta od iscitanih podataka
+                            EvidencijaPotrosnje evidencijaPotrosnje = new EvidencijaPotrosnje(userId, brojiloId, mesec, grad, potrosnja);
+
+                            // dodavanje iscitane evidencije u listu
+                            evidencija.Add(evidencijaPotrosnje);
+                        }
+                    }
+                }
+            }
+
+            return evidencija;
         }
 
         public IEnumerable<EvidencijaPotrosnje> FindByGrad(string grad)
