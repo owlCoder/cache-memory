@@ -92,6 +92,7 @@
     <Compile Include="DataAccessObject\Interfaces\ICRUD.cs" />
     <Compile Include="DataAccessObject\Interfaces\IKorisnici.cs" />
     <Compile Include="DataTransferObject\TrenutniKorisnik\PrijavljeniKorisnik.cs" />
+    <Compile Include="Handlers\InteractiveLoginSaveHandler.cs" />
     <Compile Include="Handlers\PrijavaNaSistemHandler.cs" />
     <Compile Include="Handlers\RegistracijaNaSistemHandler.cs" />
     <Compile Include="Models\Brojilo.cs" />

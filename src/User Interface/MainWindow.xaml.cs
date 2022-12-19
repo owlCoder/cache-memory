@@ -3,6 +3,7 @@ using System.Windows.Media;
 using HandyControl.Themes;
 using Cache_Memory.Handlers;
 using HandyControl.Data;
+using System.Diagnostics;
 
 namespace User_Interface
 {
@@ -12,6 +13,8 @@ namespace User_Interface
     public partial class MainWindow : Window
     {
         private static readonly PrijavaNaSistemHandler prijavaNaSistemHandler = new PrijavaNaSistemHandler();
+        private string trenutniKorisnik;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -24,8 +27,11 @@ namespace User_Interface
         {
             if (prijavaNaSistemHandler.PrijavaHandle(username.Text, password.Password))
             {
+                InteractiveLoginSaveHandler.SetAuthState(username.Text);
                 upozorenjeLabela.Text = "Prijava na sistem uspešna";
                 upozorenjeLabela.Foreground = Brushes.Green;
+                
+                //Trace.WriteLine(Cache_Memory.DataTransferObject.TrenutniKorisnik.PrijavljeniKorisnik.TrenutniKorisnik.UserId); 
             }
             else
             {

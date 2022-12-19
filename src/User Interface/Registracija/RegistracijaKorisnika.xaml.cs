@@ -35,6 +35,7 @@ namespace User_Interface.Registracija
         {
             if (rgh.RegistracijaHandle(usernameReg.Text, passwordReg.Password, adresaReg.Text))
             {
+                InteractiveLoginSaveHandler.SetAuthState(usernameReg.Text);
                 upozorenjeLabelaReg.Text = "Registracija na sistem uspešna";
                 upozorenjeLabelaReg.Foreground = Brushes.Green;
             }

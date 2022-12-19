@@ -6,6 +6,7 @@
         xmlns:hc="https://handyorg.github.io/handycontrol"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
         Title="Cache Memory" Height="450" Width="800">
     <Grid Background="#293241">
         <!-- PRIJAVA -->

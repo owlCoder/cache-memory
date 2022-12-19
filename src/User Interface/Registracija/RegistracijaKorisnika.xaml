@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:User_Interface.Registracija" xmlns:hc="https://handyorg.github.io/handycontrol"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
         Title="Registracija Novog Korisnika" Height="450" Width="800">
     <!-- REGISTRACIJA -->
     <Grid Background="#293241">
