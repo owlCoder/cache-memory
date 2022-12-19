@@ -8,7 +8,17 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         Title="Cache Memory - Dashboard" Height="550" Width="800">
-    <Grid Background="#B6D0E2">
+    
+    <Grid>
+        <Grid.Background>
+        <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+            <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.1" Color="#6482BA" />
+                    <GradientStop Offset="0.6" Color="#486692" />
+                    <GradientStop Offset="1" Color="#1F57BF" />
+                </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+    </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
@@ -43,7 +53,7 @@
                     <StackPanel>
                         <hc:SimpleText FontSize="16" Margin="0 15 0 0" FontWeight="SemiBold" MinHeight="50" Text="Unesite model brojila (SE-62241) " VerticalAlignment="Center" HorizontalAlignment="Center" />
                         <TextBox FontSize="18" FontWeight="Bold" MaxHeight="40" Name="modelBrojilo"></TextBox>
-                        <Button Background="#0066b2" BorderBrush="#0066b2" Foreground="White" Margin="0 20 0 0" Name="dodajBrojilo" Click="dodajBrojilo_Click" FontSize="17" FontWeight="Bold" MinHeight="38" Content="Registracija novog brojila"/>
+                        <Button Background="#1F57BF" BorderBrush="#1F57BF" Foreground="White" Margin="0 20 0 0" Name="dodajBrojilo" Click="dodajBrojilo_Click" FontSize="17" FontWeight="Bold" MinHeight="38" Content="Registracija novog brojila"/>
                     </StackPanel>
                 </TabItem>
                 <TabItem Header="Dodajte potrošnju">
@@ -81,10 +91,51 @@
                         <hc:SimpleText Grid.Row="2" Grid.Column="0" FontSize="16" FontWeight="SemiBold" MinHeight="50" Text="Ostvarena potrošnja" Margin="0 0 0 -10" VerticalAlignment="Bottom"  HorizontalAlignment="Center" />
                         <TextBox Grid.Row="2" Grid.Column="1" FontSize="18" FontWeight="Bold" MaxHeight="40" Name="potrosnja"></TextBox>
 
-                        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"  Background="#0066b2" BorderBrush="#0066b2" Foreground="White" Margin="0 10 0 0" Name="dodajPotrosnjuBtn" Click="dodajPotrosnjuBtn_Click" FontSize="17" FontWeight="Bold" MinHeight="38" Content="Dodavanje u evidenciju potrošnje"/>
+                        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"  Background="#1F57BF" BorderBrush="#1F57BF" Foreground="White" Margin="0 10 0 0" Name="dodajPotrosnjuBtn" Click="dodajPotrosnjuBtn_Click" FontSize="17" FontWeight="Bold" MinHeight="38" Content="Dodavanje u evidenciju potrošnje"/>
                     </Grid>
                 </TabItem>
                 <TabItem Header="Statistika potrošnje">
+                    <Grid Margin="0 10 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.3*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                            <hc:SimpleText FontSize="15" Grid.Row="1" Grid.Column="0" Margin="10 12 0 0" FontWeight="SemiBold" Text="Potrošnja po " VerticalAlignment="Top" HorizontalAlignment="Center" />
+                            <RadioButton Margin="20,0,0,0" Name="poGraduRb" Click="poGraduRb_Click" FontSize="14" FontWeight="DemiBold" Content="Gradu"/>
+                            <RadioButton Margin="20,0,0,0" Name="poMesecuRb" Click="poMesecuRb_Click" FontSize="14" FontWeight="DemiBold" Content="Mesecu"/>
+                            <RadioButton Margin="20,0,0,0" FontSize="14" Name="poKorisnikuRb" Click="poKorisnikuRb_Click" FontWeight="DemiBold" Content="Korisniku"/>
+                            <RadioButton Margin="20,0,0,0" FontSize="14" Name="poBrojilu" Click="poBrojilu_Click" FontWeight="DemiBold" Content="Brojilu"/>
+                        </StackPanel>
+
+                        <DataGrid HeadersVisibility="All" RowHeaderWidth="60" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" AutoGenerateColumns="False" ItemsSource="{Binding DataList}">
+                            <DataGrid.RowHeaderTemplate>
+                                <DataTemplate>
+                                    <CheckBox IsChecked="{Binding IsSelected,RelativeSource={RelativeSource AncestorType=DataGridRow}}"/>
+                                </DataTemplate>
+                            </DataGrid.RowHeaderTemplate>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn IsReadOnly="True" Width="80" CanUserResize="False" Binding="{Binding Index}" Header="Index"/>
+                                <DataGridTemplateColumn Width="60" CanUserResize="False">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Image Source="{Binding ImgPath}" Width="32" Height="32" Stretch="Uniform"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn Width="1*" Binding="{Binding Name}" Header="Name"/>
+                                <DataGridCheckBoxColumn Width="100" CanUserResize="False" Binding="{Binding IsSelected}" Header="Selected"/>
+                                <DataGridComboBoxColumn ItemsSource="{Binding Source={}}" Width="100" CanUserResize="False" SelectedValueBinding="{Binding Type}" Header="Type"/>
+                                <DataGridTextColumn Width="1*" Binding="{Binding Remark}" Header="Remark"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
                 </TabItem>
             </TabControl>
 

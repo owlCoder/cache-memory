@@ -35,12 +35,32 @@ namespace User_Interface.Dashboard
 
         private void dodajBrojilo_Click(object sender, RoutedEventArgs e)
         {
-
+            throw new NotImplementedException();
         }
 
         private void dodajPotrosnjuBtn_Click(object sender, RoutedEventArgs e)
         {
+            throw new NotImplementedException();
+        }
 
+        private void poGraduRb_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void poMesecuRb_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void poKorisnikuRb_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void poBrojilu_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

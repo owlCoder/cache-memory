@@ -9,7 +9,7 @@
         ResizeMode="NoResize"
         Title="Registracija Novog Korisnika" Height="450" Width="800">
     <!-- REGISTRACIJA -->
-    <Grid Background="#293241">
+    <Grid Background="#162A4F">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -29,7 +29,7 @@
         <TextBox Grid.Row="2" Grid.Column="1" FontSize="18" FontWeight="Bold" MaxHeight="40" Name="usernameReg"></TextBox>
         <PasswordBox Grid.Row="3" Grid.Column="1"  FontSize="18" FontWeight="Bold" MaxHeight="40" Name="passwordReg"></PasswordBox>
         <TextBox Grid.Row="4" Grid.Column="1" FontSize="18" FontWeight="Bold" MaxHeight="40" Name="adresaReg"></TextBox>
-        <Button Style="{StaticResource ButtonInfo}" Grid.Row="5" Grid.Column="1" Content="REGISTRUJTE SE" Name="registracijaBtn" Click="registracijaBtn_Click" FontSize="20" FontWeight="Bold" MinWidth="250" MinHeight="40" Margin="5"/>
+        <Button Background="#4B8783" BorderBrush="#4B8783" Foreground="White" Grid.Row="5" Grid.Column="1" Content="REGISTRUJTE SE" Name="registracijaBtn" Click="registracijaBtn_Click" FontSize="20" FontWeight="Bold" MinWidth="250" MinHeight="40" Margin="5"/>
 
         <hc:SimpleText Grid.Row="6" Grid.Column="1" FontSize="15" FontWeight="SemiBold" MinHeight="50" Name="upozorenjeLabelaReg" Text="" Foreground="Crimson" VerticalAlignment="Top" HorizontalAlignment="Center" />
         <Button Grid.Row="6" Grid.Column="1" FontSize="16" FontWeight="SemiBold" MinHeight="50" BorderBrush="Transparent" Name="prijavaBtn" Click="prijavaBtn_Click" Content="Imate nalog? Prijavite se" Foreground="White" Background="Transparent" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
