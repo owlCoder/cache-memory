@@ -8,7 +8,6 @@ Aplikacija prikuplja podatke od korisnika o trenutnoj potrošnji toplotne energi
 
 ## Status Projekta
 <ul>
-  <li>Implementirati novi codebase</li>
   <li>Implementirati Writer</li>
   <li>Implementirati Dumping Buffer</li>
   <li>Implementirati Historical</li>
@@ -21,15 +20,15 @@ Projekat je i dalje u početnoj fazi razvoja. Nisu implementirani dodaci.
 ## Izgled Aplikacije
 ![Login Window](screenshots/login_w.png)
 <br/><br/>
+![Register Window](screenshots/register1_w.png)
+<br/><br/>
 ![Intro Window](screenshots/main_w.png)
 <br/><br/>
 ![Main Window](screenshots/main_wd.png)
 <br/><br/>
 ![Main Window](screenshots/main_ws.png)
 <br/><br/>
-![Register Window](screenshots/register1_w.png)
-<br/><br/>
-![About Window](screenshots/about_w.png)
+
 
 
 ## Pokretanje Projekta
@@ -44,7 +43,7 @@ Pokreće se kao Visual Studio projekat.
   - Koje alatke ste koristili za implementaciju ovog projekta?
       - Ovo može izgledati očigledno jer ste u ovoj bazi kodova, ali svim drugim ljudima sada je vreme da pričaju o tome zašto ste izabrali SQLite umesto OracleDB itd.
 
-## Defleksija  
+## Story Time  
 
 Ovo je bio projekat dug 4 nedelje. Ciljevi projekta podrazumevali su korišćenje tehnologija naučenih do ovog trenutka i upoznavanje sa dokumentacijom za nove funkcije.  
 
