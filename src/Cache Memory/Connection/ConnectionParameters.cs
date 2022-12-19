@@ -6,7 +6,7 @@
         // LOCAL DEVELOPEMENT
         public static readonly string DATA_SOURCE = "//localhost:1521/xe";
         public static readonly string USER_ID = "ers_db";
-        public static readonly string      PASSWORD = "ers";
+        public static readonly string PASSWORD = "ers";
 #else
                 // AZURE DATABASE
                 public static readonly string DATA_SOURCE = "https://portal.azure.com/oracle/xe:1521/cache-memory5114";
