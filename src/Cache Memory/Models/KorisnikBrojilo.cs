@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cache_Memory.Models
 {
@@ -13,7 +9,7 @@ namespace Cache_Memory.Models
 
         public KorisnikBrojilo(int userId, int brojiloId)
         {
-            if(userId < 1 || brojiloId < 1)
+            if (userId < 1 || brojiloId < 1)
             {
                 throw new ArgumentException();
             }

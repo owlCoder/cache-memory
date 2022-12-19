@@ -6,7 +6,7 @@ namespace Cache_Memory.Service
 {
     public class KorisniciService
     {
-        private static readonly IKorisnici korisnici = new Korisnici(); 
+        private static readonly IKorisnici korisnici = new Korisnici();
         public Korisnik GetCurrentUser(string type, string username)
         {
             return korisnici.FindByAttributeString(type, username);

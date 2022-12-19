@@ -1,6 +1,4 @@
-﻿using Cache_Memory.Models;
-using Cache_Memory.DataAccessObject.Interfaces;
-using Cache_Memory.DataAccessObject.Implementations;
+﻿using Cache_Memory.DataAccessObject.Implementations;
 
 namespace Cache_Memory.Service
 {

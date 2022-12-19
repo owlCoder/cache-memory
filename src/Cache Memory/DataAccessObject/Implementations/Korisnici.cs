@@ -3,7 +3,6 @@ using Cache_Memory.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Diagnostics;
 
 namespace Cache_Memory.DataAccessObject.Implementations
 {
@@ -101,7 +100,7 @@ namespace Cache_Memory.DataAccessObject.Implementations
                 komanda.Prepare();
                 Utils.ParameterUtil.SetParameterValue(komanda, "attribute_value", attributeValue);
 
-                return komanda.ExecuteScalar() != null ;
+                return komanda.ExecuteScalar() != null;
             }
         }
 

@@ -1,9 +1,7 @@
-﻿using System.Windows;
-using System.Windows.Media;
+﻿using Cache_Memory.Handlers;
 using HandyControl.Themes;
-using Cache_Memory.Handlers;
-using HandyControl.Data;
-using System.Diagnostics;
+using System.Windows;
+using System.Windows.Media;
 using User_Interface.Dashboard;
 
 namespace User_Interface
@@ -14,7 +12,6 @@ namespace User_Interface
     public partial class MainWindow : Window
     {
         private static readonly PrijavaNaSistemHandler prijavaNaSistemHandler = new PrijavaNaSistemHandler();
-        private string trenutniKorisnik;
 
         public MainWindow()
         {

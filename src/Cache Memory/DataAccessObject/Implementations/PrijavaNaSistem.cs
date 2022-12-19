@@ -1,5 +1,4 @@
 ﻿using Cache_Memory.Models;
-using System.Diagnostics;
 
 namespace Cache_Memory.DataAccessObject.Implementations
 {
@@ -9,7 +8,7 @@ namespace Cache_Memory.DataAccessObject.Implementations
         private static Korisnik trenutniKorisnik = null;
 
         public bool PrijaviteSe(string username, string password)
-        {         
+        {
             // proveri da li korisnik postoji u bazi podataka
             bool postoji = korisnici.ExistByAttributeString("username", username);
 
