@@ -22,6 +22,15 @@ namespace User_Interface.Dashboard
         public KorisnickaTabla()
         {
             InitializeComponent();
+
+            naslov.Text = "Howdy, " + Cache_Memory.DataTransferObject.TrenutniKorisnik.PrijavljeniKorisnik.TrenutniKorisnik.Username + "!";
+        }
+
+        private void exitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            Close();
+            mw.ShowDialog();
         }
     }
 }
