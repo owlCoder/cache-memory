@@ -36,7 +36,8 @@ namespace User_Interface
 
         private void registracijaBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Registracija.RegistracijaKorisnika win = new Registracija.RegistracijaKorisnika();
+            win.ShowDialog();
         }
     }
 }

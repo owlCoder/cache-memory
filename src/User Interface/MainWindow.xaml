@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:hc="https://handyorg.github.io/handycontrol"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Cache Memory" Height="450" Width="800">
     <Grid Background="#293241">
+        <!-- PRIJAVA -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -21,14 +23,12 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        
-        <hc:SimpleText Grid.Row="1" Grid.Column="1" FontSize="22" FontWeight="Bold" MinHeight="50" Text="Prijavite se na sistem" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <hc:SimpleText Grid.Row="1" Grid.Column="1" FontSize="22" FontWeight="Bold" MinHeight="50" Text="Prijavite se na sistem" Name="naslov" Visibility="Visible" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" />
         <TextBox Grid.Row="2" Grid.Column="1" FontSize="18" FontWeight="Bold" MaxHeight="40" Name="username"></TextBox>
         <PasswordBox Grid.Row="3" Grid.Column="1"  FontSize="18" FontWeight="Bold" MaxHeight="40" Name="password"></PasswordBox>
         <Button Style="{StaticResource ButtonInfo}" Grid.Row="4" Grid.Column="1" Content="PRIJAVITE SE" Name="prijavaBtn" Click="prijavaBtn_Click" FontSize="20" FontWeight="Bold" MinWidth="250" MinHeight="40" Margin="5"/>
 
-        <hc:SimpleText Grid.Row="5" Grid.Column="1"  FontSize="15" FontWeight="SemiBold" MinHeight="50" Name="upozorenjeLabela" Text="" Foreground="Crimson" VerticalAlignment="Top" HorizontalAlignment="Center" />
-        <Button Grid.Row="5" Grid.Column="1"  FontSize="16" FontWeight="SemiBold" MinHeight="50" BorderBrush="Transparent" Name="registracijaBtn" Click="registracijaBtn_Click" Content="Nemate nalog? Registrujte se" Foreground="White" Background="Transparent" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
-
+        <hc:SimpleText Grid.Row="5" Grid.Column="1" FontSize="15" FontWeight="SemiBold" MinHeight="50" Name="upozorenjeLabela" Text="" Foreground="Crimson" VerticalAlignment="Top" HorizontalAlignment="Center" />
+        <Button Grid.Row="5" Grid.Column="1" FontSize="16" FontWeight="SemiBold" MinHeight="50" BorderBrush="Transparent" Name="promenaBtn" Click="registracijaBtn_Click" Content="Nemate nalog? Registrujte se" Foreground="White" Background="Transparent" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
     </Grid>
 </Window>
