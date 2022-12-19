@@ -4,6 +4,7 @@ using HandyControl.Themes;
 using Cache_Memory.Handlers;
 using HandyControl.Data;
 using System.Diagnostics;
+using User_Interface.Dashboard;
 
 namespace User_Interface
 {
@@ -28,10 +29,15 @@ namespace User_Interface
             if (prijavaNaSistemHandler.PrijavaHandle(username.Text, password.Password))
             {
                 InteractiveLoginSaveHandler.SetAuthState(username.Text);
-                upozorenjeLabela.Text = "Prijava na sistem uspešna";
-                upozorenjeLabela.Foreground = Brushes.Green;
-                
-                //Trace.WriteLine(Cache_Memory.DataTransferObject.TrenutniKorisnik.PrijavljeniKorisnik.TrenutniKorisnik.UserId); 
+
+                // sakrivanje login prozora
+                Hide();
+
+                // novi prozor
+                KorisnickaTabla dashboard = new KorisnickaTabla();
+                dashboard.ShowDialog();
+
+                Close(); // zatvaranje login prozora
             }
             else
             {
