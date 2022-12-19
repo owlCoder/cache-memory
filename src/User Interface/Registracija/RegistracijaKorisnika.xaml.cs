@@ -35,9 +35,9 @@ namespace User_Interface.Registracija
         {
             if (rgh.RegistracijaHandle(usernameReg.Text, passwordReg.Password, adresaReg.Text))
             {
-                InteractiveLoginSaveHandler.SetAuthState(usernameReg.Text);
-                upozorenjeLabelaReg.Text = "Registracija na sistem uspešna";
-                upozorenjeLabelaReg.Foreground = Brushes.Green;
+                //InteractiveLoginSaveHandler.SetAuthState(usernameReg.Text);
+                MessageBox.Show("Registracija na sistem uspešna!\n\nMožete se sada prijaviti sa novim nalogom kako bi nastavili dalji rad sa programom.", "Registracija na sistem", MessageBoxButton.OK, MessageBoxImage.Information);
+                Close();
             }
             else
             {
