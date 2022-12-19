@@ -32,5 +32,15 @@ namespace User_Interface.Dashboard
             Close();
             mw.ShowDialog();
         }
+
+        private void dodajBrojilo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void dodajPotrosnjuBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
