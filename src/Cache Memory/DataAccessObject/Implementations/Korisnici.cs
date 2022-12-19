@@ -3,6 +3,7 @@ using Cache_Memory.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 
 namespace Cache_Memory.DataAccessObject.Implementations
 {
@@ -90,7 +91,7 @@ namespace Cache_Memory.DataAccessObject.Implementations
         }
         private bool ExistsByAttributeString(string attribute, string attributeValue, IDbConnection konekcija)
         {
-            string query = "SELECT *FROM KORISNIK WHERE '" + attribute + "' = :attribute_value";
+            string query = "SELECT *FROM KORISNIK WHERE " + attribute + " = :attribute_value";
 
             using (IDbCommand komanda = konekcija.CreateCommand())
             {
@@ -100,7 +101,7 @@ namespace Cache_Memory.DataAccessObject.Implementations
                 komanda.Prepare();
                 Utils.ParameterUtil.SetParameterValue(komanda, "attribute_value", attributeValue);
 
-                return komanda.ExecuteScalar() != null;
+                return komanda.ExecuteScalar() != null ;
             }
         }
 
@@ -200,7 +201,7 @@ namespace Cache_Memory.DataAccessObject.Implementations
             Korisnik trazeniKorisnik = null;
 
             // upit za pretragu korisnika
-            string upit = "SELECT *FROM KORISNIK WHERE :attributeName = :attributeValue";
+            string upit = "SELECT *FROM KORISNIK WHERE " + attribute + " = :attributeValue";
 
             using (IDbConnection konekcija = Connection.ConnectionPool.GetConnection())
             {
@@ -211,13 +212,11 @@ namespace Cache_Memory.DataAccessObject.Implementations
                     komanda.CommandText = upit;
 
                     // placeholder za id podesavamo sa AddParameter
-                    Utils.ParameterUtil.AddParameter(komanda, "attributeName", DbType.String, 32);
                     Utils.ParameterUtil.AddParameter(komanda, "attributeValue", DbType.String, 32);
 
                     komanda.Prepare();
 
                     // podesavamo parametar koji smo dodali
-                    Utils.ParameterUtil.SetParameterValue(komanda, "attributeName", attribute);
                     Utils.ParameterUtil.SetParameterValue(komanda, "attributeValue", attributeValue);
 
                     using (IDataReader reader = komanda.ExecuteReader())

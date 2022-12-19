@@ -1,4 +1,5 @@
 ﻿using Cache_Memory.Models;
+using System.Diagnostics;
 
 namespace Cache_Memory.DataAccessObject.Implementations
 {
@@ -11,11 +12,12 @@ namespace Cache_Memory.DataAccessObject.Implementations
         {
             // proveri da li korisnik postoji u bazi podataka
             bool postoji = korisnici.ExistByAttributeString("username", username);
-
+            Trace.WriteLine("postoji: " + (postoji ? "da" : "ne"));
             if (postoji)
             {
                 // proveri da li se sifre poklapaju
                 trenutniKorisnik = korisnici.FindByAttributeString("password", password);
+                Trace.WriteLine("postoji 2: " + (trenutniKorisnik != null ? "da" : "ne"));
 
                 return trenutniKorisnik != null;
             }
