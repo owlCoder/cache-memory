@@ -19,17 +19,17 @@ Aplikacija prikuplja podatke od korisnika o trenutnoj potrošnji toplotne energi
 Projekat je i dalje u početnoj fazi razvoja. Nisu implementirani dodaci.
 
 ## Izgled Aplikacije
-![Intro Window](src/screenshots/main_w.png)
+![Intro Window](screenshots/main_w.png)
 <br/><br/>
-![Intro Window](src/screenshots/main_w1.png)
+![Intro Window](screenshots/main_w1.png)
 <br/><br/>
-![Intro Window](src/screenshots/main_w2.png)
+![Intro Window](screenshots/main_w2.png)
 <br/><br/>
-![Login Window](src/screenshots/login_w.png)
+![Login Window](screenshots/login_w.png)
 <br/><br/>
-![Register Window](src/screenshots/register1_w.png)
+![Register Window](screenshots/register1_w.png)
 <br/><br/>
-![About Window](src/screenshots/about_w.png)
+![About Window](screenshots/about_w.png)
 
 
 ## Pokretanje Projekta
