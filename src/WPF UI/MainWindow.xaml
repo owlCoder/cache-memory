@@ -148,7 +148,7 @@
             </StackPanel>
             
             <Grid Background="Transparent" Margin="20 0 20 20" Grid.Row="0" Grid.Column="2" Grid.RowSpan="4" Grid.ColumnSpan="2">
-                <Frame Source="/Moduli/Pocetna.xaml" Name="frame" />
+                <Frame NavigationUIVisibility="Hidden" Panel.ZIndex="1" Source="/Moduli/Pocetna.xaml" Name="frame" />
             </Grid>
         </Grid>
     </Grid>

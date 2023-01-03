@@ -30,19 +30,14 @@ namespace WPF_UI
             Close();
         }
 
-        private void regBtn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void upisNovePotrosnjeBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            frame.Navigate(new Uri("/Moduli/UpisNovePotrosnje.xaml", UriKind.Relative));
         }
 
         private void statistikaBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            frame.Navigate(new Uri("/Moduli/Statistika.xaml", UriKind.Relative));
         }
     }
 }

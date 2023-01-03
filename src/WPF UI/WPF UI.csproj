@@ -71,6 +71,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Moduli\Statistika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Moduli\UpisNovePotrosnje.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -79,6 +83,9 @@
   <ItemGroup>
     <Compile Include="Moduli\Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Moduli\Statistika.xaml.cs">
+      <DependentUpon>Statistika.xaml</DependentUpon>
     </Compile>
     <Compile Include="Moduli\UpisNovePotrosnje.xaml.cs">
       <DependentUpon>UpisNovePotrosnje.xaml</DependentUpon>
