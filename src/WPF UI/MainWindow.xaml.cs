@@ -24,5 +24,25 @@ namespace WPF_UI
         {
             InitializeComponent();
         }
+
+        private void exitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void regBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void upisNovePotrosnjeBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void statistikaBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

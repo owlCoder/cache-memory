@@ -5,8 +5,151 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="#181735"
+        Title="Cache Memory 3.2.5" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#0f0f2d" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock FontSize="15" FontWeight="DemiBold" FontFamily="Fonts/#OS" Text="Cache Memory 3.2.5" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0"></TextBlock>
+
+
+            <Button Name="exitBtn" Click="exitBtn_Click" FontFamily="Fonts/#OS"
+                    Content="X" Margin="60 3 0 3" Grid.Column="5" Foreground="White">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="BorderBrush" Value="#d80000"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#d80000"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </Grid>
         
+        <!-- GLAVNI SADRZAJ -->
+        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="0 0 0 0">
+                <Button Name="upisNovePotrosnjeBtn" Click="upisNovePotrosnjeBtn_Click" FontSize="15" FontWeight="DemiBold" FontFamily="Fonts/#OS"
+                    Content="  UPIS NOVE POTROŠNJE  " Margin="40 75 0 0" Foreground="White">
+                <Button.Resources>
+                    <Style TargetType="Border" BasedOn="{StaticResource RoundMe}"/>
+                </Button.Resources>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#de4967"/>
+                        <Setter Property="BorderBrush" Value="#de4867"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#de4987"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button Name="statistikaBtn" Click="statistikaBtn_Click" FontSize="15" FontWeight="DemiBold" FontFamily="Fonts/#OS"
+                    Content="  STATISIKA POTROŠNJE  " Margin="10 75 0 0" Foreground="White">
+                <Button.Resources>
+                    <Style TargetType="Border" BasedOn="{StaticResource RoundMe}"/>
+                </Button.Resources>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#393a52"/>
+                        <Setter Property="BorderBrush" Value="#393c52"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#393f52"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="35 30 0 0">
+                <TextBlock FontSize="17" FontWeight="Bold" FontStyle="Italic" FontFamily="Fonts/#OS" Text="Cache Memory 3.2.5" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0"></TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="15" FontStyle="Italic" FontFamily="Fonts/#OS" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0">
+                    <LineBreak/>
+                    Cache Memory je projekat iz predmeta Elementi Razvoja Softvera
+                    koji se sluša u V semestru na Fakultetu tehničkih nauka u Novom Sadu. <LineBreak/><LineBreak/>
+                    
+                    Aplikacija prikuplja podatke od korisnika o trenutnoj potrošnji toplotne energije
+                    ili o potrošnji u nekom od prethodnih perioda.<LineBreak/><LineBreak/>
+                    
+                    Moguća je pretraga podataka po određenim kriterijumima, unos podataka, filtriranje podataka.
+                </TextBlock>
+            </StackPanel>
+            
+            <Grid Background="Transparent" Margin="20 0 20 20" Grid.Row="0" Grid.Column="2" Grid.RowSpan="4" Grid.ColumnSpan="2">
+                <Frame Source="/Moduli/Pocetna.xaml" Name="frame" />
+            </Grid>
+        </Grid>
     </Grid>
 </Window>

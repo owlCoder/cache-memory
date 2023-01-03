@@ -1,0 +1,21 @@
+D:\elementi\src\WPF UI\bin\Debug\WPF UI.exe.config
+D:\elementi\src\WPF UI\bin\Debug\WPF UI.exe
+D:\elementi\src\WPF UI\bin\Debug\WPF UI.pdb
+D:\elementi\src\WPF UI\obj\Debug\WPF UI.csproj.AssemblyReference.cache
+D:\elementi\src\WPF UI\obj\Debug\WPF UI.csproj.SuggestedBindingRedirects.cache
+D:\elementi\src\WPF UI\obj\Debug\MainWindow.g.cs
+D:\elementi\src\WPF UI\obj\Debug\App.g.cs
+D:\elementi\src\WPF UI\obj\Debug\WPF UI_MarkupCompile.cache
+D:\elementi\src\WPF UI\obj\Debug\WPF UI_MarkupCompile.lref
+D:\elementi\src\WPF UI\obj\Debug\MainWindow.baml
+D:\elementi\src\WPF UI\obj\Debug\WPF UI.g.resources
+D:\elementi\src\WPF UI\obj\Debug\WPF_UI.Properties.Resources.resources
+D:\elementi\src\WPF UI\obj\Debug\WPF UI.csproj.GenerateResource.cache
+D:\elementi\src\WPF UI\obj\Debug\WPF UI.csproj.CoreCompileInputs.cache
+D:\elementi\src\WPF UI\obj\Debug\WPF UI.exe
+D:\elementi\src\WPF UI\obj\Debug\WPF UI.pdb
+D:\elementi\src\WPF UI\obj\Debug\App.baml
+D:\elementi\src\WPF UI\obj\Debug\Moduli\UpisNovePotrosnje.g.cs
+D:\elementi\src\WPF UI\obj\Debug\Moduli\UpisNovePotrosnje.baml
+D:\elementi\src\WPF UI\obj\Debug\Moduli\Pocetna.g.cs
+D:\elementi\src\WPF UI\obj\Debug\Moduli\Pocetna.baml
