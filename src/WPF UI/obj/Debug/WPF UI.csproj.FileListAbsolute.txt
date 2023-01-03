@@ -19,3 +19,5 @@ D:\elementi\src\WPF UI\obj\Debug\Moduli\UpisNovePotrosnje.g.cs
 D:\elementi\src\WPF UI\obj\Debug\Moduli\UpisNovePotrosnje.baml
 D:\elementi\src\WPF UI\obj\Debug\Moduli\Pocetna.g.cs
 D:\elementi\src\WPF UI\obj\Debug\Moduli\Pocetna.baml
+D:\elementi\src\WPF UI\obj\Debug\Moduli\Statistika.g.cs
+D:\elementi\src\WPF UI\obj\Debug\Moduli\Statistika.baml

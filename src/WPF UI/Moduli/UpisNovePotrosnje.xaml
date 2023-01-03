@@ -8,7 +8,88 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="UpisNovePotrosnje">
 
-    <Grid>
-        <Label>dsadads</Label>
+    <Grid Margin="10 50 0 0">
+        <StackPanel Orientation="Vertical">
+            <TextBlock FontSize="15" FontWeight="DemiBold" FontStyle="Italic" FontFamily="Fonts/#OS" Text="Informacije o korisniku" Foreground="White" />
+            
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                <TextBlock FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS" Text="User ID:          " Foreground="White" />
+                <TextBox BorderThickness="0" Margin="5 0 0 0" Name="userId" MinHeight="10" MinWidth="200" FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                <TextBlock FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS" Text="User Name:    " Foreground="White" />
+                <TextBox BorderThickness="0" Margin="5 0 0 0" Name="userName" MinHeight="10" MinWidth="200" FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                <TextBlock FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS" Text="User Address: " Foreground="White" />
+                <TextBox BorderThickness="0" Margin="5 0 0 0" Name="userAddress" MinHeight="10" MinWidth="200" FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                <TextBlock FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS" Text="User City:        " Foreground="White" />
+                <TextBox BorderThickness="0" Margin="5 0 0 0" Name="userCity" MinHeight="10" MinWidth="200" FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS"></TextBox>
+            </StackPanel>
+            
+            <TextBlock FontSize="15" Margin="0 30 0 0" FontWeight="DemiBold" FontStyle="Italic" FontFamily="Fonts/#OS" Text="Informacije o potrošnji" Foreground="White" />
+
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                <TextBlock FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS" Text="Brojilo ID:        " Foreground="White" />
+                <TextBox BorderThickness="0" Margin="5 0 0 0" Name="brojiloId" MinHeight="10" MinWidth="200" FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                <TextBlock FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS" Text="Potrošeno:       " Foreground="White" />
+                <TextBox BorderThickness="0" Margin="5 0 0 0" Name="potrosenoKw" MinHeight="10" MinWidth="200" FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                <TextBlock FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS" Text="U Mesecu:        " Foreground="White" />
+                <ComboBox SelectedIndex="0" BorderThickness="0" Margin="5 0 0 0" Name="mesecPotrosnje" MinHeight="22" MinWidth="200" Height="18" FontSize="14" FontWeight="DemiBold" FontFamily="Fonts/#OS">
+                    <ComboBoxItem>Januar</ComboBoxItem>
+                    <ComboBoxItem>Februar</ComboBoxItem>
+                    <ComboBoxItem>Mart</ComboBoxItem>
+                    <ComboBoxItem>April</ComboBoxItem>
+                    <ComboBoxItem>Maj</ComboBoxItem>
+                    <ComboBoxItem>Jun</ComboBoxItem>
+                    <ComboBoxItem>Jul</ComboBoxItem>
+                    <ComboBoxItem>Avgust</ComboBoxItem>
+                    <ComboBoxItem>Septembar</ComboBoxItem>
+                    <ComboBoxItem>Oktobar</ComboBoxItem>
+                    <ComboBoxItem>Novembar</ComboBoxItem>
+                    <ComboBoxItem>Decembar</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <Button Name="upisPotrosnjebtn" Click="upisPotrosnjebtn_Click" FontSize="15" MinHeight="25" FontWeight="DemiBold" FontFamily="Fonts/#OS"
+                    Content="  UPIS U EVIDENCIJU" Margin="50 30 80 0" Foreground="White">
+                <Button.Resources>
+                    <Style TargetType="Border" BasedOn="{StaticResource RoundMe}"/>
+                </Button.Resources>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#046865"/>
+                        <Setter Property="BorderBrush" Value="#046865"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#21A0A0"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+        </StackPanel>
     </Grid>
 </Page>

@@ -24,5 +24,10 @@ namespace WPF_UI.Moduli
         {
             InitializeComponent();
         }
+
+        private void upisPotrosnjebtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
