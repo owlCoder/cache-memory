@@ -1,6 +1,0 @@
-D:\elementi\src\Common\bin\Debug\Common.dll
-D:\elementi\src\Common\bin\Debug\Common.pdb
-D:\elementi\src\Common\obj\Debug\Common.csproj.AssemblyReference.cache
-D:\elementi\src\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
-D:\elementi\src\Common\obj\Debug\Common.dll
-D:\elementi\src\Common\obj\Debug\Common.pdb

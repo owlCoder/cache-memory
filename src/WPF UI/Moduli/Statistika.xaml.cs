@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WPF_UI.Moduli
 {
@@ -23,6 +12,45 @@ namespace WPF_UI.Moduli
         public Statistika()
         {
             InitializeComponent();
+        }
+
+        private void prikazPodataka_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void kriterijumPretrage_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (kriterijumPretrage.SelectedIndex == 0)
+            {
+                if (unosId != null) { unosId.Clear(); unosId.IsEnabled = true; }
+                if (mesecPotrosnje != null) mesecPotrosnje.IsEnabled = false; // sakrivanje cb za mesec
+                if (labela != null) labela.Text = "User ID:          ";
+            }
+            else if (kriterijumPretrage.SelectedIndex == 1)
+            {
+                if (unosId != null) { unosId.Clear(); unosId.IsEnabled = true; }
+                if (mesecPotrosnje != null)
+                    mesecPotrosnje.IsEnabled = false; // sakrivanje cb za mesec
+                if (labela != null)
+                    labela.Text = "User Name:   ";
+            }
+            else if (kriterijumPretrage.SelectedIndex == 2)
+            {
+                if (unosId != null) { unosId.Clear(); unosId.IsEnabled = true; }
+                if (mesecPotrosnje != null)
+                    mesecPotrosnje.IsEnabled = false; // sakrivanje cb za mesec
+                if (labela != null)
+                    labela.Text = "Grad:             ";
+            }
+            else if (kriterijumPretrage.SelectedIndex == 3)
+            {
+                if (unosId != null) { unosId.Clear(); unosId.IsEnabled = false; }
+                if (mesecPotrosnje != null)
+                    mesecPotrosnje.IsEnabled = true; // sakrivanje cb za mesec
+                if (labela != null)
+                    labela.Text = "Mesec:            ";
+            }
         }
     }
 }

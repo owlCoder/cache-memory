@@ -1,6 +1,0 @@
-D:\elementi\src\Reader\bin\Debug\Reader.dll
-D:\elementi\src\Reader\bin\Debug\Reader.pdb
-D:\elementi\src\Reader\obj\Debug\Reader.csproj.AssemblyReference.cache
-D:\elementi\src\Reader\obj\Debug\Reader.csproj.CoreCompileInputs.cache
-D:\elementi\src\Reader\obj\Debug\Reader.dll
-D:\elementi\src\Reader\obj\Debug\Reader.pdb
