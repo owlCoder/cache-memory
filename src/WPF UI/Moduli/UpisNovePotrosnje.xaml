@@ -62,7 +62,7 @@
                 </ComboBox>
             </StackPanel>
 
-            <Button Name="upisPotrosnjebtn" Click="upisPotrosnjebtn_Click" FontSize="15" MinHeight="25" FontWeight="DemiBold" FontFamily="Fonts/#OS"
+            <Button Name="upisPotrosnjebtn" Click="upisPotrosnjebtn_Click" FontSize="15" MinHeight="30" FontWeight="DemiBold" FontFamily="Fonts/#OS"
                     Content="  UPIS U EVIDENCIJU" Margin="50 30 80 0" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="Border" BasedOn="{StaticResource RoundMe}"/>

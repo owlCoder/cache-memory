@@ -27,7 +27,7 @@ namespace WPF_UI.Moduli
 
         private void upisPotrosnjebtn_Click(object sender, RoutedEventArgs e)
         {
-
+            throw new NotImplementedException();
         }
     }
 }

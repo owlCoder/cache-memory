@@ -105,7 +105,7 @@
             </Button>
 
             <Button Name="statistikaBtn" Click="statistikaBtn_Click" FontSize="15" FontWeight="DemiBold" FontFamily="Fonts/#OS"
-                    Content="  STATISIKA POTROŠNJE  " Margin="10 75 0 0" Foreground="White">
+                    Content="  PREGLED POTROŠNJE   " Margin="10 75 0 0" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="Border" BasedOn="{StaticResource RoundMe}"/>
                 </Button.Resources>
