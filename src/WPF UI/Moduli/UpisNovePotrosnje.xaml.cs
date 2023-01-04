@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Common.Implementations;
+using Common.Interfaces;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -9,6 +11,7 @@ namespace WPF_UI.Moduli
     /// </summary>
     public partial class UpisNovePotrosnje : Page
     {
+        private IWriter slanjeNaBafer = new Writer();
         public UpisNovePotrosnje()
         {
             InitializeComponent();
@@ -17,6 +20,7 @@ namespace WPF_UI.Moduli
         private void upisPotrosnjebtn_Click(object sender, RoutedEventArgs e)
         {
             throw new NotImplementedException();
+            // slanjeNaBafer.ProsledjivanjePodatakaUBafer(.....);
         }
     }
 }

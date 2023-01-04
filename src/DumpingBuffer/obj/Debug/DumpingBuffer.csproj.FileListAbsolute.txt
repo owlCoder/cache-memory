@@ -1,0 +1,6 @@
+D:\elementi\src\DumpingBuffer\bin\Debug\DumpingBuffer.dll
+D:\elementi\src\DumpingBuffer\bin\Debug\DumpingBuffer.pdb
+D:\elementi\src\DumpingBuffer\obj\Debug\DumpingBuffer.csproj.AssemblyReference.cache
+D:\elementi\src\DumpingBuffer\obj\Debug\DumpingBuffer.csproj.CoreCompileInputs.cache
+D:\elementi\src\DumpingBuffer\obj\Debug\DumpingBuffer.dll
+D:\elementi\src\DumpingBuffer\obj\Debug\DumpingBuffer.pdb

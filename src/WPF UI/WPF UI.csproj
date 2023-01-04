@@ -117,5 +117,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Reader\Reader.csproj">
+      <Project>{0ae2a34e-a4a4-4634-9acd-d48b7fd37e17}</Project>
+      <Name>Reader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Writer\Writer.csproj">
+      <Project>{880df62a-4616-482d-9ec8-51c355501a08}</Project>
+      <Name>Writer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
