@@ -22,7 +22,7 @@ namespace WPF_UI.Moduli
         {
             throw new NotImplementedException();
             // slanjeNaBafer.ProsledjivanjePodatakaUBafer(.....);
-            //Trace.WriteLine("pritisknuti");
+            //Trace.WriteLine("pritisknuti");//
         }
     }
 }
