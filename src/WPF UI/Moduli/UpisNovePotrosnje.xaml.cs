@@ -1,6 +1,7 @@
 ﻿using Common.Implementations;
 using Common.Interfaces;
 using System;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -21,6 +22,7 @@ namespace WPF_UI.Moduli
         {
             throw new NotImplementedException();
             // slanjeNaBafer.ProsledjivanjePodatakaUBafer(.....);
+            //Trace.WriteLine("pritisknuti");
         }
     }
 }

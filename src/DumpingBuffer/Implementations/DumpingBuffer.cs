@@ -10,7 +10,7 @@ namespace DumpingBuffer.Implementations
     {
         public void AddToQueue(ModelData podaci) // dm
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException();  /// Trace.WriteLine(poruka);
         }
 
         public void RemoveFromQueue() //dj
