@@ -44,11 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Implementations\Connection.cs" />
-<<<<<<< HEAD
-    <Compile Include="Implementations\ConnectionParams.cs" />
-=======
-    <Compile Include="Implementations\ModelData.cs" />
->>>>>>> 4568c90602755a426eb670d1ced8d7f7034bc7c9
     <Compile Include="Interfaces\IConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

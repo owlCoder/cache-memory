@@ -1,13 +1,9 @@
 ﻿using Common.Interfaces;
 using System;
 using System.Data;
-<<<<<<< HEAD
-using System.Data.OracleClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-=======
->>>>>>> 4568c90602755a426eb670d1ced8d7f7034bc7c9
 
 namespace Common.Implementations
 {
