@@ -21,3 +21,25 @@ D:\elementi\src\WPF UI\obj\Debug\WPF UI.csproj.GenerateResource.cache
 D:\elementi\src\WPF UI\obj\Debug\WPF UI.csproj.CoreCompileInputs.cache
 D:\elementi\src\WPF UI\obj\Debug\WPF UI.exe
 D:\elementi\src\WPF UI\obj\Debug\WPF UI.pdb
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\bin\Debug\WPF UI.exe.config
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\bin\Debug\WPF UI.exe
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\bin\Debug\WPF UI.pdb
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\WPF UI.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\Moduli\Pocetna.g.cs
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\Moduli\Statistika.g.cs
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\Moduli\UpisNovePotrosnje.g.cs
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\App.g.cs
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\WPF UI_MarkupCompile.cache
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\WPF UI_MarkupCompile.lref
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\App.baml
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\Moduli\Pocetna.baml
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\Moduli\Statistika.baml
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\Moduli\UpisNovePotrosnje.baml
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\WPF UI.g.resources
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\WPF_UI.Properties.Resources.resources
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\WPF UI.csproj.GenerateResource.cache
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\WPF UI.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\WPF UI.exe
+C:\Users\User\Desktop\-ERS-Elementi razvoja softvera\MEMOOORI\src\WPF UI\obj\Debug\WPF UI.pdb
