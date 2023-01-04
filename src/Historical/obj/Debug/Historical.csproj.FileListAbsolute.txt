@@ -1,6 +1,0 @@
-D:\elementi\src\Historical\bin\Debug\Historical.dll
-D:\elementi\src\Historical\bin\Debug\Historical.pdb
-D:\elementi\src\Historical\obj\Debug\Historical.csproj.AssemblyReference.cache
-D:\elementi\src\Historical\obj\Debug\Historical.csproj.CoreCompileInputs.cache
-D:\elementi\src\Historical\obj\Debug\Historical.dll
-D:\elementi\src\Historical\obj\Debug\Historical.pdb
