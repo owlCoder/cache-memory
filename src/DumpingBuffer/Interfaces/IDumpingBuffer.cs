@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Common.Implementations;
+using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace DumpingBuffer.Interfaces
 {
     public interface IDumpingBuffer
     {
-        void AddToQueue(string userID, string username, string userAddress, string userCity,
-                        string brojiloId, decimal potroseno, string mesec);
+        void AddToQueue(ModelData podaci); //dm
+
+        void RemoveFromQueue(); //dm
+
+        Task SendToHistorical(ModelData podaci); //dj
+
+        Task PeriodicCheck(TimeSpan i, CancellationToken c); //dj
     }
 }
