@@ -16,7 +16,19 @@ namespace Common.Implementations
         decimal potroseno { get; set; }
         string mesec { get; set; }
 
-        // PK
-        // KK
+        public ModelData()
+        {
+        }
+
+        public ModelData(string userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
+        {
+            this.userID = userID;
+            this.username = username;
+            this.userAddress = userAddress;
+            this.userCity = userCity;
+            this.brojiloId = brojiloId;
+            this.potroseno = potroseno;
+            this.mesec = mesec;
+        }
     }
 }
