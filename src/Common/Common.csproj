@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Implementations\Connection.cs" />
+    <Compile Include="Implementations\ModelData.cs" />
     <Compile Include="Interfaces\IConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
