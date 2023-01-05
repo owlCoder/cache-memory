@@ -8,13 +8,13 @@ namespace Common.Implementations
 {
     public class ModelData
     {               
-        string userID { get; set; }
-        string username { get; set; }
-        string userAddress { get; set; }
-        string userCity { get; set; }
-        string brojiloId { get; set; }
-        decimal potroseno { get; set; }
-        string mesec { get; set; }
+        public string userID { get; set; }
+        public string username { get; set; }
+        public string userAddress { get; set; }
+        public string userCity { get; set; }
+        public string brojiloId { get; set; }
+        public decimal potroseno { get; set; }
+        public string mesec { get; set; }
 
         public ModelData()
         {
