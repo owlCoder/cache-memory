@@ -26,9 +26,15 @@ namespace DumpingBuffer.Implementations
             queue.Add(podaci);
         }
 
-        public void RemoveFromQueue() //dm
+        public void RemoveFromQueue(string userID) //dm
         {
-            
+            for (int i = 0; i < queue.Count; i++)
+            {
+                if (queue[i].userID == userID)
+                {
+                    queue.RemoveAt(i);
+                }
+            }
         }
 
         public Task PeriodicCheck(TimeSpan i, CancellationToken c)

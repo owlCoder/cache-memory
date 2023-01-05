@@ -9,7 +9,7 @@ namespace DumpingBuffer.Interfaces
     {
         void AddToQueue(ModelData podaci); //dm
 
-        void RemoveFromQueue(); //dm
+        void RemoveFromQueue(string userID); //dm
 
         Task SendToHistorical(ModelData podaci); //dj
 
