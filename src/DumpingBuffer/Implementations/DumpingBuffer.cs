@@ -17,7 +17,7 @@ namespace DumpingBuffer.Implementations
         {
             foreach(ModelData data in queue)
             {
-                if(data.userID == podaci.userID)
+                if(data.UserID == podaci.UserID)
                 {
                     return;
                 }
@@ -30,7 +30,7 @@ namespace DumpingBuffer.Implementations
         {
             for (int i = 0; i < queue.Count; i++)
             {
-                if (queue[i].userID == userID)
+                if (queue[i].UserID == userID)
                 {
                     queue.RemoveAt(i);
                 }
