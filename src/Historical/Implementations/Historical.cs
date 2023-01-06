@@ -58,51 +58,54 @@ namespace Historical.Implementations
                         command.CommandText = queryID;
                         ParameterUtil.AddParameter(command, "userId", DbType.String, 50);
                         command.Prepare();
+                        ParameterUtil.SetParameterValue(command, "userId", criteria);
                     }
                     else if (criteria == "userName")
                     {
                         command.CommandText = queryName;
                         ParameterUtil.AddParameter(command, "userName", DbType.String, 50);
                         command.Prepare();
+                        ParameterUtil.SetParameterValue(command, "userName", criteria);
                     }
                     else if (criteria == "userAddress")
                     {
                         command.CommandText = queryAddr;
                         ParameterUtil.AddParameter(command, "userAddress", DbType.String, 50);
                         command.Prepare();
+                        ParameterUtil.SetParameterValue(command, "userAddress", data.Username);
                     }
                     else if (criteria == "userCity")
                     {
                         command.CommandText = queryCity;
                         ParameterUtil.AddParameter(command, "userCity", DbType.String, 50);
                         command.Prepare();
+                        ParameterUtil.SetParameterValue(command, "userCity", data.Username);
                     }
                     else if (criteria == "brojiloId")
                     {
                         command.CommandText = queryBrojiloId;
                         ParameterUtil.AddParameter(command, "brojiloId", DbType.String, 50);
                         command.Prepare();
+                        ParameterUtil.SetParameterValue(command, "brojiloId", data.Username);
                     }
                     else if (criteria == "potroseno")
                     {
                         command.CommandText = queryPotroseno;
                         ParameterUtil.AddParameter(command, "potroseno", DbType.Int32);
                         command.Prepare();
+                        ParameterUtil.SetParameterValue(command, "potroseno", data.Username);
                     }
                     else if (criteria == "potrosnjaMesec")
                     {
                         command.CommandText = queryMesecno;
                         ParameterUtil.AddParameter(command, "potrosnjaMesec", DbType.String, 50);
                         command.Prepare();
+                        ParameterUtil.SetParameterValue(command, "potrosnjaMesec", data.Username);
                     }
                     else
                         return dataList;
 
-                    
-
-
-
-
+                  
 
                     using (IDataReader reader = command.ExecuteReader())
                     {
@@ -116,52 +119,6 @@ namespace Historical.Implementations
                 }
             }
         }
-
-        /*
-         public IEnumerable<Theatre> FindAllById(IEnumerable<int> ids)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("select id_th, name_th, address_th, website_th, place_id_pl from theatre where id_th in (");
-            foreach (int id in ids)
-            {
-                sb.Append(":id" + id + ",");
-            }
-            sb.Remove(sb.Length - 1, 1); // delete last ','
-            sb.Append(")");
-
-            List<Theatre> theatreList = new List<Theatre>();
-
-            using (IDbConnection connection = ConnectionUtil_Pooling.GetConnection())
-            {
-                connection.Open();
-                using (IDbCommand command = connection.CreateCommand())
-                {
-                    command.CommandText = sb.ToString();
-                    foreach (int id in ids)
-                    {
-                        ParameterUtil.AddParameter(command, "id" + id, DbType.Int32);
-                    }
-                    command.Prepare();
-
-                    foreach (int id in ids)
-                    {
-                        ParameterUtil.SetParameterValue(command, "id" + id, id);
-                    }
-                    using (IDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            Theatre theatre = new Theatre(reader.GetInt32(0), reader.GetString(1),
-                                reader.GetString(2), reader.GetString(3), reader.GetInt32(4));
-                            theatreList.Add(theatre);
-                        }
-                    }
-                }
-            }
-
-            return theatreList;
-        }
-        */
 
 
         public int WriteModelDataToDataBase(ModelData data)
