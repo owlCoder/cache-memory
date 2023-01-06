@@ -1,5 +1,6 @@
 ﻿using Common.Implementations;
 using Historical.Interfaces;
+using Historical.Utils;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -40,7 +41,7 @@ namespace Historical.Implementations
             throw new NotImplementedException();
         }
 
-        public bool WriteModelDataToDataBase(ModelData data)
+        public int WriteModelDataToDataBase(ModelData data)
         {
             using (IDbConnection connection = Connection.GetConnection())
             {
@@ -51,45 +52,24 @@ namespace Historical.Implementations
 
         private int Save(ModelData data, IDbConnection connection)
         {
+            string insertSql = "insert into POTROSNJA_ENERGIJE (userId, userName, userAddress, userCity, brojiloId, potroseno, potrosnjaMesec) " +
+                "values (:userId, :userName , :userAddress, :userCity, :brojiloId, :potroseno, :potrosnjaMesec)";
 
-
-        }
-    }
-}
-/*
-public int Save(Theatre entity)
-        {
-            using (IDbConnection connection = ConnectionUtil_Pooling.GetConnection())
-            {
-                connection.Open();
-                return Save(entity, connection);
-            }
-        }
-
-        // used by save and saveAll
-        private int Save(Theatre theatre, IDbConnection connection)
-        {
-            // id_th intentionally in the last place, so that the order between commands remains the same
-            string insertSql = "insert into theatre (name_th, address_th, website_th, place_id_pl, id_th) " +
-                "values (:name_th, :address_th , :website_th, :place_id_pl, :id_th)";
-            string updateSql = "update theatre set name_th=:name_th, address_th=:address_th, " +
-                "website_th=:website_th, place_id_pl=:place_id_pl where id_th=:id_th";
             using (IDbCommand command = connection.CreateCommand())
             {
-                command.CommandText = ExistsById(theatre.IdTh, connection) ? updateSql : insertSql;
-                ParameterUtil.AddParameter(command, "name_th", DbType.String, 50);
-                ParameterUtil.AddParameter(command, "address_th", DbType.String, 50);
-                ParameterUtil.AddParameter(command, "website_th", DbType.String, 50);
-                ParameterUtil.AddParameter(command, "place_id_pl", DbType.String, 50);
-                ParameterUtil.AddParameter(command, "id_th", DbType.Int32);
+                command.CommandText = insertSql;
+
+                ParameterUtil.AddParameter(command, "userId", DbType.String, 50);
+                ParameterUtil.AddParameter(command, "userName", DbType.String, 50);
+                ParameterUtil.AddParameter(command, "userAddress", DbType.String, 50);
+                ParameterUtil.AddParameter(command, "userCity", DbType.String, 50);
+                ParameterUtil.AddParameter(command, "brojiloId", DbType.String, 50);
+                ParameterUtil.AddParameter(command, "potroseno", DbType.Int32);
+                ParameterUtil.AddParameter(command, "potrosnjaMesec", DbType.String, 50);
                 command.Prepare();
-                ParameterUtil.SetParameterValue(command, "id_th", theatre.IdTh);            
-                ParameterUtil.SetParameterValue(command, "name_th", theatre.NameTh);        
-                ParameterUtil.SetParameterValue(command, "address_th", theatre.AddressTh);
-                ParameterUtil.SetParameterValue(command, "website_th", theatre.WebsiteTh);
-                ParameterUtil.SetParameterValue(command, "place_id_pl", theatre.PlaceIdPl);
+
                 return command.ExecuteNonQuery();
             }
         }
-
-*/
+    }
+}
