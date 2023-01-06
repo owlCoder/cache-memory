@@ -1,6 +1,7 @@
 ﻿using Common.Interfaces;
 using System;
 using System.Data;
+using System.Data.OracleClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
