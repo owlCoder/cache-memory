@@ -5,7 +5,7 @@ namespace Historical.Interfaces
 {
     public interface IHistorical
     {
-        bool WriteModelDataToDataBase(ModelData data);
+        int WriteModelDataToDataBase(ModelData data);
 
         IEnumerable<ModelData> GetAllDataFromDataBase();
 
