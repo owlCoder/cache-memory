@@ -38,8 +38,9 @@ namespace Historical.Implementations
 
         public IEnumerable<ModelData> GetSelectedDataByCriteria(string criteriaName, string criteria)
         {
-            throw new NotImplementedException();
+            
         }
+
 
         public int WriteModelDataToDataBase(ModelData data)
         {
