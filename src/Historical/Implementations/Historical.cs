@@ -36,17 +36,9 @@ namespace Historical.Implementations
             return dataList;
         }
 
-        public IEnumerable<ModelData> GetSelectedDataByCriteria(string criteriaName, string criteria)
+        public IEnumerable<ModelData> GetSelectedDataByCriteria(string value, string criteria)
         {
             List<ModelData> dataList = new List<ModelData>();
-
-            string queryID = "select * from POTROSNJA_ENERGIJE where userId = :userId";
-            string queryName = "select * from POTROSNJA_ENERGIJE where userName = :userName";
-            string queryAddr = "select * from POTROSNJA_ENERGIJE where userAddress = :userAddress";
-            string queryCity = "select * from POTROSNJA_ENERGIJE where userCity = :userCity";
-            string queryBrojiloId = "select * from POTROSNJA_ENERGIJE where brojiloId = :brojiloId";
-            string queryPotroseno = "select * from POTROSNJA_ENERGIJE where potroseno = :potroseno";
-            string queryMesecno = "select * from POTROSNJA_ENERGIJE where potrosnjaMesec = :potrosnjaMesec";
 
             using (IDbConnection connection = Connection.GetConnection())
             {
@@ -55,69 +47,83 @@ namespace Historical.Implementations
                 {
                     if (criteria == "userId")
                     {
+                        string queryID = "select * from POTROSNJA_ENERGIJE where userId = :userId";
+
                         command.CommandText = queryID;
                         ParameterUtil.AddParameter(command, "userId", DbType.String, 50);
                         command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "userId", criteria);
+                        ParameterUtil.SetParameterValue(command, "userId", value);
                     }
                     else if (criteria == "userName")
                     {
+                        string queryName = "select * from POTROSNJA_ENERGIJE where userName = :userName";
+
                         command.CommandText = queryName;
                         ParameterUtil.AddParameter(command, "userName", DbType.String, 50);
                         command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "userName", criteria);
+                        ParameterUtil.SetParameterValue(command, "userName", value);
                     }
                     else if (criteria == "userAddress")
                     {
+                        string queryAddr = "select * from POTROSNJA_ENERGIJE where userAddress = :userAddress";
+
                         command.CommandText = queryAddr;
                         ParameterUtil.AddParameter(command, "userAddress", DbType.String, 50);
                         command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "userAddress", data.Username);
+                        ParameterUtil.SetParameterValue(command, "userAddress", value);
                     }
                     else if (criteria == "userCity")
                     {
+                        string queryCity = "select * from POTROSNJA_ENERGIJE where userCity = :userCity";
+
                         command.CommandText = queryCity;
                         ParameterUtil.AddParameter(command, "userCity", DbType.String, 50);
                         command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "userCity", data.Username);
+                        ParameterUtil.SetParameterValue(command, "userCity", value);
                     }
                     else if (criteria == "brojiloId")
                     {
+                        string queryBrojiloId = "select * from POTROSNJA_ENERGIJE where brojiloId = :brojiloId";
+
                         command.CommandText = queryBrojiloId;
                         ParameterUtil.AddParameter(command, "brojiloId", DbType.String, 50);
                         command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "brojiloId", data.Username);
+                        ParameterUtil.SetParameterValue(command, "brojiloId", value);
                     }
                     else if (criteria == "potroseno")
                     {
+                        string queryPotroseno = "select * from POTROSNJA_ENERGIJE where potroseno = :potroseno";
+
                         command.CommandText = queryPotroseno;
                         ParameterUtil.AddParameter(command, "potroseno", DbType.Int32);
                         command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "potroseno", data.Username);
+                        ParameterUtil.SetParameterValue(command, "potroseno", value);
                     }
                     else if (criteria == "potrosnjaMesec")
                     {
+                        string queryMesecno = "select * from POTROSNJA_ENERGIJE where potrosnjaMesec = :potrosnjaMesec";
+
                         command.CommandText = queryMesecno;
                         ParameterUtil.AddParameter(command, "potrosnjaMesec", DbType.String, 50);
                         command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "potrosnjaMesec", data.Username);
+                        ParameterUtil.SetParameterValue(command, "potrosnjaMesec", value);
                     }
                     else
-                        return dataList;
-
-                  
+                        return dataList;              
 
                     using (IDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            ModelData theatre = new ModelData(reader.GetInt32(0), reader.GetString(1),
-                                reader.GetString(2), reader.GetString(3), reader.GetInt32(4));
-                            data.Add(theatre);
+                            ModelData data = new ModelData(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                                                                reader.GetString(4), reader.GetDecimal(5), reader.GetString(6));
+                            dataList.Add(data);
                         }
                     }
                 }
             }
+
+            return dataList;
         }
 
 
