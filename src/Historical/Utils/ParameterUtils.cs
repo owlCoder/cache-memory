@@ -27,6 +27,12 @@ namespace Historical.Utils
             command.Parameters.Add(parameter);
         }
 
+        public static void SetParameterValue(IDbCommand command, string name, Object value)
+        {
+            DbParameter parameter = (DbParameter)command.Parameters[name];
+            parameter.Value = value;
+        }
+
         public static object GetParameterValue(IDbCommand command, string name)
         {
             DbParameter parameter = (DbParameter)command.Parameters[name];
