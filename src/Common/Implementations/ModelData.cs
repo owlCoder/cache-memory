@@ -8,7 +8,7 @@ namespace Common.Implementations
 {
     public class ModelData
     {               
-        public string UserID { get; set; }
+        public int UserID { get; set; }
         public string Username { get; set; }
         public string UserAddress { get; set; }
         public string UserCity { get; set; }
@@ -20,7 +20,7 @@ namespace Common.Implementations
         {
         }
 
-        public ModelData(string userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
+        public ModelData(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
         {
             UserID = userID;
             Username = username;

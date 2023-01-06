@@ -26,7 +26,7 @@ namespace Historical.Implementations
                     {
                         while (reader.Read())
                         {
-                            ModelData data = new ModelData(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                            ModelData data = new ModelData(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetString(3),
                                                                 reader.GetString(4), reader.GetDecimal(5), reader.GetString(6));
                             dataList.Add(data);
                         }
@@ -59,7 +59,7 @@ namespace Historical.Implementations
                         string queryPotroseno = "select * from POTROSNJA_ENERGIJE where potroseno = :potroseno";
 
                         command.CommandText = queryPotroseno;
-                        ParameterUtil.AddParameter(command, "potroseno", DbType.Int32);
+                        ParameterUtil.AddParameter(command, "potroseno", DbType.Decimal);
                         command.Prepare();
                         ParameterUtil.SetParameterValue(command, "potroseno", Int32.Parse(value));
                     }         
@@ -68,7 +68,7 @@ namespace Historical.Implementations
                     {
                         while (reader.Read())
                         {
-                            ModelData data = new ModelData(reader.GetString(0), reader.GetString(1), reader.GetString(2),
+                            ModelData data = new ModelData(reader.GetInt32(0), reader.GetString(1), reader.GetString(2),
                                                            reader.GetString(3), reader.GetString(4), reader.GetDecimal(5),
                                                            reader.GetString(6));
                             dataList.Add(data);
@@ -99,12 +99,12 @@ namespace Historical.Implementations
             {
                 command.CommandText = insertSql;
 
-                ParameterUtil.AddParameter(command, "userId", DbType.String, 50);
+                ParameterUtil.AddParameter(command, "userId", DbType.Int32);
                 ParameterUtil.AddParameter(command, "userName", DbType.String, 50);
                 ParameterUtil.AddParameter(command, "userAddress", DbType.String, 50);
                 ParameterUtil.AddParameter(command, "userCity", DbType.String, 50);
                 ParameterUtil.AddParameter(command, "brojiloId", DbType.String, 50);
-                ParameterUtil.AddParameter(command, "potroseno", DbType.Int32);
+                ParameterUtil.AddParameter(command, "potroseno", DbType.Decimal);
                 ParameterUtil.AddParameter(command, "potrosnjaMesec", DbType.String, 50);
                 command.Prepare();
                 ParameterUtil.SetParameterValue(command, "userId", data.UserID);
