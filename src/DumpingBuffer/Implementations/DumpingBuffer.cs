@@ -26,7 +26,7 @@ namespace DumpingBuffer.Implementations
             queue.Add(podaci);
         }
 
-        public void RemoveFromQueue(string userID) //dm
+        public void RemoveFromQueue(int userID) //dm
         {
             for (int i = 0; i < queue.Count; i++)
             {
