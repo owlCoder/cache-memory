@@ -45,78 +45,32 @@ namespace Historical.Implementations
                 connection.Open();
                 using (IDbCommand command = connection.CreateCommand())
                 {
-                    if (criteria == "userId")
+                    if (!criteria.Equals("potroseno"))
                     {
-                        string queryID = "select * from POTROSNJA_ENERGIJE where userId = :userId";
+                        string queryID = "select * from POTROSNJA_ENERGIJE where " + criteria + " = :param";
 
                         command.CommandText = queryID;
-                        ParameterUtil.AddParameter(command, "userId", DbType.String, 50);
+                        ParameterUtil.AddParameter(command, "param", DbType.String, 50);
                         command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "userId", value);
+                        ParameterUtil.SetParameterValue(command, "param", value);
                     }
-                    else if (criteria == "userName")
-                    {
-                        string queryName = "select * from POTROSNJA_ENERGIJE where userName = :userName";
-
-                        command.CommandText = queryName;
-                        ParameterUtil.AddParameter(command, "userName", DbType.String, 50);
-                        command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "userName", value);
-                    }
-                    else if (criteria == "userAddress")
-                    {
-                        string queryAddr = "select * from POTROSNJA_ENERGIJE where userAddress = :userAddress";
-
-                        command.CommandText = queryAddr;
-                        ParameterUtil.AddParameter(command, "userAddress", DbType.String, 50);
-                        command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "userAddress", value);
-                    }
-                    else if (criteria == "userCity")
-                    {
-                        string queryCity = "select * from POTROSNJA_ENERGIJE where userCity = :userCity";
-
-                        command.CommandText = queryCity;
-                        ParameterUtil.AddParameter(command, "userCity", DbType.String, 50);
-                        command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "userCity", value);
-                    }
-                    else if (criteria == "brojiloId")
-                    {
-                        string queryBrojiloId = "select * from POTROSNJA_ENERGIJE where brojiloId = :brojiloId";
-
-                        command.CommandText = queryBrojiloId;
-                        ParameterUtil.AddParameter(command, "brojiloId", DbType.String, 50);
-                        command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "brojiloId", value);
-                    }
-                    else if (criteria == "potroseno")
+                    else
                     {
                         string queryPotroseno = "select * from POTROSNJA_ENERGIJE where potroseno = :potroseno";
 
                         command.CommandText = queryPotroseno;
                         ParameterUtil.AddParameter(command, "potroseno", DbType.Int32);
                         command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "potroseno", value);
-                    }
-                    else if (criteria == "potrosnjaMesec")
-                    {
-                        string queryMesecno = "select * from POTROSNJA_ENERGIJE where potrosnjaMesec = :potrosnjaMesec";
-
-                        command.CommandText = queryMesecno;
-                        ParameterUtil.AddParameter(command, "potrosnjaMesec", DbType.String, 50);
-                        command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "potrosnjaMesec", value);
-                    }
-                    else
-                        return dataList;              
+                        ParameterUtil.SetParameterValue(command, "potroseno", Int32.Parse(value));
+                    }         
 
                     using (IDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            ModelData data = new ModelData(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3),
-                                                                reader.GetString(4), reader.GetDecimal(5), reader.GetString(6));
+                            ModelData data = new ModelData(reader.GetString(0), reader.GetString(1), reader.GetString(2),
+                                                           reader.GetString(3), reader.GetString(4), reader.GetDecimal(5),
+                                                           reader.GetString(6));
                             dataList.Add(data);
                         }
                     }

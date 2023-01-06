@@ -22,13 +22,13 @@ namespace Common.Implementations
 
         public ModelData(string userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
         {
-            this.UserID = userID;
-            this.Username = username;
-            this.UserAddress = userAddress;
-            this.UserCity = userCity;
-            this.BrojiloId = brojiloId;
-            this.Potroseno = potroseno;
-            this.Mesec = mesec;
+            UserID = userID;
+            Username = username;
+            UserAddress = userAddress;
+            UserCity = userCity;
+            BrojiloId = brojiloId;
+            Potroseno = potroseno;
+            Mesec = mesec;
         }
     }
 }

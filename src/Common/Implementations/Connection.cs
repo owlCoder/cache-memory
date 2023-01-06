@@ -8,26 +8,25 @@ using System.Threading.Tasks;
 
 namespace Common.Implementations
 {
-    public class Connection : IConnection
+    public class Connection
     {
         private static IDbConnection instance = null;
 
         [Obsolete]
-        public IDbConnection GetConnection()
+        public static IDbConnection GetConnection()
         {
             if (instance == null || instance.State == System.Data.ConnectionState.Closed)
             {
                 OracleConnectionStringBuilder ocsb = new OracleConnectionStringBuilder();
 
-                ocsb.UserID = ConnectionParams.USER_ID;
-                ocsb.Password = ConnectionParams.PASSWORD;
-                ocsb.DataSource = ConnectionParams.LOCAL_DATA_SOURCE;
+                ocsb.UserID = "ers_db";
+                ocsb.Password = "ers";
+                ocsb.DataSource = "//localhost:1521/xe";
                 ocsb.Pooling = true;
                 ocsb.MinPoolSize = 1;
                 ocsb.MaxPoolSize = 10;             
 
                 instance = new OracleConnection(ocsb.ConnectionString);                
-
             }          
            
             return instance;
