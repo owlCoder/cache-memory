@@ -23,37 +23,11 @@ namespace Reader_Component
             RemotingServices.Marshal(server, uri, server.GetType());
 
             Console.WriteLine("READER KOMPONENTA ZAPOCINJE SA RADOM");
-            Console.WriteLine("Za interaktivni rezim rada pritisnunti taster 'i' na tastaturi.");
-            string answer = Console.ReadLine();
+            Console.WriteLine("Interaktivni rezim rada nije podrzan!");
 
             while (true)
             {
-                if (answer.Equals("i"))
-                {
-                    answer = "";
-                    InteractiveMenu();
-                }
-
-                Console.Write(".");
                 Thread.Sleep(2000); // svake druge sekunde ide provera
-                Console.Write(".");
-            }
-        }
-
-        private static void InteractiveMenu()
-        {
-            while (true)
-            {
-                Console.WriteLine("\n======================== Writer Component - Interative Menu ========================");
-                Console.WriteLine("\t0. Izlaz iz interaktivnog rezima rada");
-                Console.Write(">> ");
-
-                string answer = Console.ReadLine();
-
-                switch (answer)
-                {
-                    default: return;
-                }
             }
         }
     }
