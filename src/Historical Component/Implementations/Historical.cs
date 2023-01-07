@@ -38,43 +38,56 @@ namespace Historical_Component.Implementations
             return dataList;
         }
 
-        public IEnumerable<ModelData> GetSelectedDataByCriteria(string value, string criteria)
+        public IEnumerable<ModelData> GetSelectedDataByCriteria(string criteria, string value)
         {
             List<ModelData> dataList = new List<ModelData>();
 
             using (IDbConnection connection = Connection.GetConnection())
             {
                 connection.Open();
+
                 using (IDbCommand command = connection.CreateCommand())
                 {
-                    if (!criteria.Equals("potroseno"))
+                    if (!criteria.Equals("userId"))
                     {
-                        string queryID = "select * from POTROSNJA_ENERGIJE where " + criteria + " = :param";
+                        string queryID = "select *from POTROSNJA_ENERGIJE where " + criteria + " = :param";
 
                         command.CommandText = queryID;
                         ParameterUtil.AddParameter(command, "param", DbType.String, 50);
                         command.Prepare();
                         ParameterUtil.SetParameterValue(command, "param", value);
+
+                        using (IDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                ModelData data = new ModelData(reader.GetInt32(0), reader.GetString(1),
+                                                               reader.GetString(2), reader.GetString(3),
+                                                               reader.GetString(4), reader.GetDecimal(5),
+                                                               reader.GetString(6));
+                                dataList.Add(data);
+                            }
+                        }
                     }
                     else
                     {
-                        string queryPotroseno = "select * from POTROSNJA_ENERGIJE where potroseno = :potroseno";
+                        string query = "select *from POTROSNJA_ENERGIJE where userId = :useridun";
 
-                        command.CommandText = queryPotroseno;
-                        ParameterUtil.AddParameter(command, "potroseno", DbType.Int32);
+                        command.CommandText = query;
+                        ParameterUtil.AddParameter(command, "useridun", DbType.Int32);
                         command.Prepare();
-                        ParameterUtil.SetParameterValue(command, "potroseno", Int32.Parse(value));
-                    }
+                        ParameterUtil.SetParameterValue(command, "useridun", Int32.Parse(value));
 
-                    using (IDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
+                        using (IDataReader reader = command.ExecuteReader())
                         {
-                            ModelData data = new ModelData(reader.GetInt32(0), reader.GetString(1),
-                                                           reader.GetString(2), reader.GetString(3),
-                                                           reader.GetString(4), reader.GetDecimal(5),
-                                                           reader.GetString(6));
-                            dataList.Add(data);
+                            while (reader.Read())
+                            {
+                                ModelData data = new ModelData(reader.GetInt32(0), reader.GetString(1),
+                                                               reader.GetString(2), reader.GetString(3),
+                                                               reader.GetString(4), reader.GetDecimal(5),
+                                                               reader.GetString(6));
+                                dataList.Add(data);
+                            }
                         }
                     }
                 }

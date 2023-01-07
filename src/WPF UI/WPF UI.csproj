@@ -130,6 +130,10 @@
       <Project>{6f20a0f8-1e58-40dd-901c-21e09cdfed4d}</Project>
       <Name>IPC Services</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Reader Component\Reader Component.csproj">
+      <Project>{79661EE9-5BE6-40BF-80BA-82EE77BFAB42}</Project>
+      <Name>Reader Component</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Writer Component\Writer Component.csproj">
       <Project>{6FB31B41-1C0C-4EC5-87B1-EC1D6A26D1A2}</Project>
       <Name>Writer Component</Name>

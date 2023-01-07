@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,6 +56,10 @@
     <ProjectReference Include="..\Common Class Library\Common Class Library.csproj">
       <Project>{DC1F3AB7-423D-4015-B5E4-E4ACF2B7C2BD}</Project>
       <Name>Common Class Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Historical Component\Historical Component.csproj">
+      <Project>{DE3C14D1-88CE-4B9A-A8F3-77E2C9EC4B9B}</Project>
+      <Name>Historical Component</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

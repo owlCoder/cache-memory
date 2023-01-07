@@ -8,7 +8,7 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="#181735"
-        Title="Cache Memory 3.2.5" Height="450" Width="800">
+        Title="Cache Memory 3.3.1" Height="450" Width="1000">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="25"></RowDefinition>
@@ -30,11 +30,11 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <TextBlock FontSize="15" FontWeight="DemiBold" FontFamily="Fonts/#OS" Text="Cache Memory 3.2.5" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0"></TextBlock>
+            <TextBlock FontSize="15" FontWeight="DemiBold" FontFamily="Fonts/#OS" Text="Cache Memory 3.3.1" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0"></TextBlock>
 
 
             <Button Name="exitBtn" Click="exitBtn_Click" FontFamily="Fonts/#OS"
-                    Content="X" Margin="60 3 0 3" Grid.Column="5" Foreground="White">
+                    Content="X" Margin="90 3 0 3" Grid.Column="5" Foreground="White">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="Transparent"/>
@@ -134,7 +134,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="35 30 0 0">
-                <TextBlock FontSize="17" FontWeight="Bold" FontStyle="Italic" FontFamily="Fonts/#OS" Text="Cache Memory 3.2.5" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0"></TextBlock>
+                <TextBlock FontSize="17" FontWeight="Bold" FontStyle="Italic" FontFamily="Fonts/#OS" Text="Cache Memory 3.3.1" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0"></TextBlock>
                 <TextBlock TextWrapping="Wrap" FontSize="15" FontStyle="Italic" FontFamily="Fonts/#OS" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0">
                     <LineBreak/>
                     Cache Memory je projekat iz predmeta Elementi Razvoja Softvera

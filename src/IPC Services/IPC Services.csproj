@@ -61,6 +61,10 @@
       <Project>{de3c14d1-88ce-4b9a-a8f3-77e2c9ec4b9b}</Project>
       <Name>Historical Component</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Reader Component\Reader Component.csproj">
+      <Project>{79661EE9-5BE6-40BF-80BA-82EE77BFAB42}</Project>
+      <Name>Reader Component</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Writer Component\Writer Component.csproj">
       <Project>{6fb31b41-1c0c-4ec5-87b1-ec1d6a26d1a2}</Project>
       <Name>Writer Component</Name>

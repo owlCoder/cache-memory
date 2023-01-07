@@ -9,6 +9,6 @@ namespace Historical_Component.Interfaces
 
         IEnumerable<ModelData> GetAllDataFromDataBase();
 
-        IEnumerable<ModelData> GetSelectedDataByCriteria(string value, string criteria);
+        IEnumerable<ModelData> GetSelectedDataByCriteria(string criteria, string value);
     }
 }

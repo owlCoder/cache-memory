@@ -9,6 +9,6 @@ namespace Reader_Component.Interfaces
 {
     public interface IReader
     {
-        List<ModelData> GetPodaciFromHistorical(string criteriaName, string criteria);
+        List<ModelData> GetPodaciFromHistorical(string criteriaName, string criteria, bool allData = false);
     }
 }
