@@ -21,7 +21,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -38,6 +38,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -118,13 +119,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Reader\Reader.csproj">
-      <Project>{0ae2a34e-a4a4-4634-9acd-d48b7fd37e17}</Project>
-      <Name>Reader</Name>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common Class Library\Common Class Library.csproj">
+      <Project>{dc1f3ab7-423d-4015-b5e4-e4acf2b7c2bd}</Project>
+      <Name>Common Class Library</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Writer\Writer.csproj">
-      <Project>{880df62a-4616-482d-9ec8-51c355501a08}</Project>
-      <Name>Writer</Name>
+    <ProjectReference Include="..\IPC Services\IPC Services.csproj">
+      <Project>{6f20a0f8-1e58-40dd-901c-21e09cdfed4d}</Project>
+      <Name>IPC Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Writer Component\Writer Component.csproj">
+      <Project>{6FB31B41-1C0C-4EC5-87B1-EC1D6A26D1A2}</Project>
+      <Name>Writer Component</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

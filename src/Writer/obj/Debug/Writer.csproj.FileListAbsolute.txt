@@ -1,6 +1,0 @@
-D:\elementi\src\Writer\bin\Debug\Writer.dll
-D:\elementi\src\Writer\bin\Debug\Writer.pdb
-D:\elementi\src\Writer\obj\Debug\Writer.csproj.AssemblyReference.cache
-D:\elementi\src\Writer\obj\Debug\Writer.csproj.CoreCompileInputs.cache
-D:\elementi\src\Writer\obj\Debug\Writer.dll
-D:\elementi\src\Writer\obj\Debug\Writer.pdb
