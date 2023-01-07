@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Common_Class_Library.Implementations
 {
@@ -50,6 +51,19 @@ namespace Common_Class_Library.Implementations
                    BrojiloId == data.BrojiloId &&
                    Potroseno == data.Potroseno &&
                    Mesec == data.Mesec;
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = 994044566;
+            hashCode = hashCode * -1521134295 + UserID.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Username);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(UserAddress);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(UserCity);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(BrojiloId);
+            hashCode = hashCode * -1521134295 + Potroseno.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Mesec);
+            return hashCode;
         }
     }
 }
