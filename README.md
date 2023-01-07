@@ -62,6 +62,11 @@
 
 Spisak osoba koje su doprineli da projekat "Cache Memory" postane javno dostupan.
 
+- @owlCoder    -> Danijel Jovanović
+- @Vukajlo01   -> Vuk Ognjanovic
+- @DoraMitic   -> Dora Mitić
+- @BojanKuljic -> Bojan Kuljić
+
 > **Note**
 > Spisak ljudi koji su učestovali odnosi se na trenutak izmene README datoteke i može se razlikovati u budućnosti!
 
