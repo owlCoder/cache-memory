@@ -47,10 +47,14 @@
 
 # Korisnički Interfejs
 
-Spisak osoba koje su doprineli da projekat "Cache Memory" postane javno dostupan.
+![Intro Window](screenshots/main_w.png)
+<br/><br/>
+![Login Window](screenshots/add_w.png)
+<br/><br/>
+![Register Window](screenshots/stat_w.png)
 
-> **Note**
-> Spisak ljudi koji su učestovali odnosi se na trenutak izmene README datoteke i može se razlikovati u budućnosti!
+> **Warning**
+> Izgled aplikacije je podložan promeni i predstavlja trenutnu ilustraciju UI!
 
 <p><br /></p>
 
