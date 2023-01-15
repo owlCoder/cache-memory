@@ -16,6 +16,7 @@ namespace Common_Class_Library.Implementations
 
         public ModelData()
         {
+            // prazan konstruktor
         }
 
         public ModelData(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)

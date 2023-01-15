@@ -11,25 +11,44 @@ namespace Common_Class_Library.Implementations
 
         public static IDbConnection GetConnection()
         {
-            if (instance == null || instance.State == ConnectionState.Closed)
+            if(CheckInstance())
             {
-                OracleConnectionStringBuilder ocsb = new OracleConnectionStringBuilder();
-
-                ocsb.DataSource = ConnectionParams.LOCAL_DATA_SOURCE;
-                ocsb.UserID = ConnectionParams.USER_ID;
-                ocsb.Password = ConnectionParams.PASSWORD;
-
-                // connection pool parametri
-                ocsb.Pooling = true;
-                ocsb.MinPoolSize = 1;
-                ocsb.MaxPoolSize = 10;
-                ocsb.IncrPoolSize = 3;
-                ocsb.ConnectionLifeTime = 5;
-                ocsb.ConnectionTimeout = 30;
-
+                OracleConnectionStringBuilder ocsb = IDbInitConnection();
                 instance = new OracleConnection(ocsb.ConnectionString);
             }
+            
             return instance;
+
+            OracleConnectionStringBuilder IDbInitConnection()
+            {
+                OracleConnectionStringBuilder ocsb = new OracleConnectionStringBuilder
+                {
+                    DataSource = ConnectionParams.LOCAL_DATA_SOURCE,
+                    UserID = ConnectionParams.USER_ID,
+                    Password = ConnectionParams.PASSWORD,
+
+                    // connection pool parametri
+                    Pooling = true,
+                    MinPoolSize = 1,
+                    MaxPoolSize = 10,
+                    IncrPoolSize = 3,
+                    ConnectionLifeTime = 5,
+                    ConnectionTimeout = 30
+                };
+                return ocsb;
+            }
+        }
+
+        [ExcludeFromCodeCoverage] 
+        private static bool CheckInstance() 
+        {
+            if (instance == null)
+                return true;
+
+            if (instance.State == ConnectionState.Closed)
+                return true;
+
+            return false;
         }
 
         [ExcludeFromCodeCoverage]
