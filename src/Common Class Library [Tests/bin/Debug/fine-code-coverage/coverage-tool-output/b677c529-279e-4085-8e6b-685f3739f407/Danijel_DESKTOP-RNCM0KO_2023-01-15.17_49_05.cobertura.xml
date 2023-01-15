@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<coverage line-rate="0.42622365130403717" branch-rate="0.27707199032062918" complexity="2169" version="1.9" timestamp="1673801189" lines-covered="1193" lines-valid="2799" branches-covered="458" branches-valid="1653">
+<coverage line-rate="0.42622365130403717" branch-rate="0.27707199032062918" complexity="2169" version="1.9" timestamp="1673801347" lines-covered="1193" lines-valid="2799" branches-covered="458" branches-valid="1653">
   <sources />
   <packages>
     <package line-rate="0.40955882352941175" branch-rate="0" complexity="2112" name="NUnit3.TestAdapter">

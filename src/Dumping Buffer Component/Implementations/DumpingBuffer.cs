@@ -22,7 +22,6 @@ namespace DumpingBuffer_Component.Implementations
             InitServie = true;
         }
 
-        [ExcludeFromCodeCoverage]
         public void AddToQueue(ModelData podaci)
         {
             if (InitServie)
@@ -52,6 +51,13 @@ namespace DumpingBuffer_Component.Implementations
             Console.WriteLine("[Dumping Buffer] Podatak poslat i uklonjen iz queue");
         }
 
+        public int QueueSize()
+        {
+            // calculate how much queue has
+            return queue.Count;
+        }
+
+        [ExcludeFromCodeCoverage]
         public async Task PeriodicCheck()
         {
             CancellationToken ct = new CancellationToken();
