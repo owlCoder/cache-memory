@@ -6,19 +6,22 @@
 </p>
   <p align="center">
     <a href="https://github.com/owlCoder/cache-memory/actions">
-      <img alt="Tests Passing" src="https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg" />
+      <img alt="Tests Passing" src="https://travis-ci.org/dwyl/esta.svg" />
     </a>
     <a href="https://github.com/owlCoder/cache-memory/graphs/contributors">
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/owlCoder/cache-memory" />
     </a>
     <a href="https://codecov.io/gh/owlCoder/cache-memory">
-      <img src="https://codecov.io/gh/anuraghazra/github-readme-stats/branch/master/graph/badge.svg" />
+      <img src="https://img.shields.io/codecov/c/github/dwyl/hapi-auth-jwt2.svg?maxAge=2592000g" />
     </a>
     <a href="https://github.com/owlCoder/cache-memory/issues">
       <img alt="Issues" src="https://img.shields.io/github/issues/owlCoder/cache-memory?color=0088ff" />
     </a>
     <a href="https://github.com/owlCoder/cache-memory/pulls">
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/owlCoder/cache-memory?color=0088ff" />
+    </a>
+     <a href="https://github.com/owlCoder/cache-memory/pulls">
+      <img alt="GitHub pull requests" src="https://codeclimate.com/github/dwyl/esta/badges/gpa.svg" />
     </a>
     <br />
     <br />
