@@ -10,8 +10,14 @@ namespace Writer_Component.Implementations
     {
         public void DataPassThrough(ModelData data)
         {
+            // Log Message
+            Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER");
+
             DumpingBuffer DumpingBufferINode = RemotingServices.Connect(typeof(DumpingBuffer), "tcp://localhost:8085/DumpingBuffer") as DumpingBuffer;
             DumpingBufferINode.AddToQueue(data);
+
+            // Log Message
+            Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER SUCCESS\n");
         }
     }
 }

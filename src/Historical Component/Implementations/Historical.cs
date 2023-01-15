@@ -4,6 +4,7 @@ using Historical_Component.Utils;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Historical_Component.Implementations
 {
@@ -11,6 +12,9 @@ namespace Historical_Component.Implementations
     {
         public IEnumerable<ModelData> GetAllDataFromDataBase()
         {
+            // Log Message
+            Console.WriteLine("[REQUEST] GET ALL DATA");
+
             string query = "select * from POTROSNJA_ENERGIJE";
             List<ModelData> dataList = new List<ModelData>();
 
@@ -35,11 +39,18 @@ namespace Historical_Component.Implementations
                     }
                 }
             }
+
+            // Log Message
+            Console.WriteLine("[REQUEST] GET ALL DATA SUCCESS\n");
+
             return dataList;
         }
 
         public IEnumerable<ModelData> GetSelectedDataByCriteria(string criteria, string value)
         {
+            // Log Message
+            Console.WriteLine("[REQUEST] GET DATA BY CRITERIA");
+
             List<ModelData> dataList = new List<ModelData>();
 
             using (IDbConnection connection = Connection.GetConnection())
@@ -93,9 +104,13 @@ namespace Historical_Component.Implementations
                 }
             }
 
+            // Log Message
+            Console.WriteLine("[REQUEST] GET DATA BY CRITERIA SUCCESS\n");
+
             return dataList;
         }
 
+        [ExcludeFromCodeCoverage]
         public int WriteModelDataToDataBase(ModelData data)
         {
             using (IDbConnection connection = Connection.GetConnection())
@@ -107,6 +122,9 @@ namespace Historical_Component.Implementations
 
         private int Save(ModelData data, IDbConnection connection)
         {
+            // Log Message
+            Console.WriteLine("[REQUEST] SAVE DATA SUCCESS\n");
+
             string insertSql = "insert into POTROSNJA_ENERGIJE (userId, userName, userAddress, userCity, brojiloId, potroseno, potrosnjaMesec) " +
                 "values (:userId, :userName , :userAddress, :userCity, :brojiloId, :potroseno, :potrosnjaMesec)";
 
