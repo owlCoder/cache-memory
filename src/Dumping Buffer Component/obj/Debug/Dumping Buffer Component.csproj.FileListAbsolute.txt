@@ -1,0 +1,22 @@
+D:\repo\src\Dumping Buffer Component\bin\Debug\Dumping Buffer Component.exe.config
+D:\repo\src\Dumping Buffer Component\bin\Debug\Dumping Buffer Component.exe
+D:\repo\src\Dumping Buffer Component\bin\Debug\Dumping Buffer Component.pdb
+D:\repo\src\Dumping Buffer Component\bin\Debug\Common Class Library.dll
+D:\repo\src\Dumping Buffer Component\bin\Debug\Historical Component.exe
+D:\repo\src\Dumping Buffer Component\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Memory.dll
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Numerics.Vectors.dll
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Buffers.dll
+D:\repo\src\Dumping Buffer Component\bin\Debug\Common Class Library.pdb
+D:\repo\src\Dumping Buffer Component\bin\Debug\Common Class Library.dll.config
+D:\repo\src\Dumping Buffer Component\bin\Debug\Historical Component.pdb
+D:\repo\src\Dumping Buffer Component\bin\Debug\Historical Component.exe.config
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Memory.xml
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Numerics.Vectors.xml
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Buffers.xml
+D:\repo\src\Dumping Buffer Component\obj\Debug\Dumping Buffer Component.csproj.AssemblyReference.cache
+D:\repo\src\Dumping Buffer Component\obj\Debug\Dumping Buffer Component.csproj.SuggestedBindingRedirects.cache
+D:\repo\src\Dumping Buffer Component\obj\Debug\Dumping Buffer Component.csproj.CoreCompileInputs.cache
+D:\repo\src\Dumping Buffer Component\obj\Debug\Dumping Buffer Component.csproj.CopyComplete
+D:\repo\src\Dumping Buffer Component\obj\Debug\Dumping Buffer Component.exe
+D:\repo\src\Dumping Buffer Component\obj\Debug\Dumping Buffer Component.pdb

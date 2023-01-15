@@ -1,0 +1,8 @@
+D:\repo\src\bin\Debug\Common Class Library.dll.config
+D:\repo\src\bin\Debug\Common Class Library.dll
+D:\repo\src\bin\Debug\Common Class Library.pdb
+D:\repo\src\Common Class Library\obj\Debug\Common Class Library.csproj.AssemblyReference.cache
+D:\repo\src\Common Class Library\obj\Debug\Common Class Library.csproj.CoreCompileInputs.cache
+D:\repo\src\Common Class Library\obj\Debug\Common Class Library.csproj.CopyComplete
+D:\repo\src\Common Class Library\obj\Debug\Common Class Library.dll
+D:\repo\src\Common Class Library\obj\Debug\Common Class Library.pdb

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPC Services", "IPC Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reader Component", "Reader Component\Reader Component.csproj", "{79661EE9-5BE6-40BF-80BA-82EE77BFAB42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[Tests] Common Class Library", "Common Class Library [Tests\[Tests] Common Class Library.csproj", "{BFCC926F-E71D-4669-BC33-862BAFE5E83F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{79661EE9-5BE6-40BF-80BA-82EE77BFAB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79661EE9-5BE6-40BF-80BA-82EE77BFAB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79661EE9-5BE6-40BF-80BA-82EE77BFAB42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFCC926F-E71D-4669-BC33-862BAFE5E83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFCC926F-E71D-4669-BC33-862BAFE5E83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFCC926F-E71D-4669-BC33-862BAFE5E83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFCC926F-E71D-4669-BC33-862BAFE5E83F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

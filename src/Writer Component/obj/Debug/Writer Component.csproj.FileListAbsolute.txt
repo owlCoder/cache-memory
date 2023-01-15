@@ -1,0 +1,9 @@
+D:\repo\src\bin\Debug\Writer Component.exe.config
+D:\repo\src\bin\Debug\Writer Component.exe
+D:\repo\src\bin\Debug\Writer Component.pdb
+D:\repo\src\Writer Component\obj\Debug\Writer Component.csproj.AssemblyReference.cache
+D:\repo\src\Writer Component\obj\Debug\Writer Component.csproj.SuggestedBindingRedirects.cache
+D:\repo\src\Writer Component\obj\Debug\Writer Component.csproj.CoreCompileInputs.cache
+D:\repo\src\Writer Component\obj\Debug\Writer Component.csproj.CopyComplete
+D:\repo\src\Writer Component\obj\Debug\Writer Component.exe
+D:\repo\src\Writer Component\obj\Debug\Writer Component.pdb
