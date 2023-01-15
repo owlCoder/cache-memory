@@ -1,0 +1,2756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.390881913303438" branch-rate="0.245911568746214" lines-covered="1046" lines-valid="2676" branches-covered="406" branches-valid="1651" complexity="2106" version="0" timestamp="1673802240">
+  <sources />
+  <packages>
+    <package name="Common Class Library" line-rate="0.318840579710145" branch-rate="0.0714285714285714" complexity="59">
+      <classes>
+        <class name="Common_Class_Library.Implementations.Connection" filename="D:\repo\src\Common Class Library\Implementations\Connection.cs" line-rate="1" branch-rate="0.75" complexity="5">
+          <methods>
+            <method name="GetConnection" signature="()" line-rate="1" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="19" hits="1" branch="false" />
+                <line number="20" hits="1" branch="true" condition-coverage="75% (3/4)" />
+                <line number="21" hits="1" branch="false" />
+                <line number="22" hits="1" branch="false" />
+                <line number="24" hits="1" branch="false" />
+                <line number="25" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+                <line number="29" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+                <line number="31" hits="1" branch="false" />
+                <line number="32" hits="1" branch="false" />
+                <line number="33" hits="1" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+                <line number="37" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="1" branch="false" />
+                <line number="11" hits="1" branch="false" />
+                <line number="13" hits="1" branch="false" />
+                <line number="14" hits="1" branch="false" />
+                <line number="16" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="1" branch="false" />
+            <line number="11" hits="1" branch="false" />
+            <line number="13" hits="1" branch="false" />
+            <line number="14" hits="1" branch="false" />
+            <line number="16" hits="1" branch="false" />
+            <line number="19" hits="1" branch="false" />
+            <line number="20" hits="1" branch="true" condition-coverage="75% (3/4)" />
+            <line number="21" hits="1" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="24" hits="1" branch="false" />
+            <line number="25" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="29" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="31" hits="1" branch="false" />
+            <line number="32" hits="1" branch="false" />
+            <line number="33" hits="1" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="37" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="Common_Class_Library.Implementations.ModelData" filename="D:\repo\src\Common Class Library\Implementations\ModelData.cs" line-rate="0" branch-rate="0" complexity="54">
+          <methods>
+            <method name="get_UserID" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_UserID" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Username" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_Username" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_UserAddress" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_UserAddress" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_UserCity" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_UserCity" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_BrojiloId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_BrojiloId" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Potroseno" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_Potroseno" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Mesec" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_Mesec" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="0" complexity="24">
+              <lines>
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="24" hits="0" branch="true" condition-coverage="0% (0/10)" />
+                <line number="25" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="30" hits="0" branch="true" condition-coverage="0% (0/14)" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="37" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+                <line number="42" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Equals" signature="(...)" line-rate="0" branch-rate="0" complexity="14">
+              <lines>
+                <line number="45" hits="0" branch="false" />
+                <line number="46" hits="0" branch="true" condition-coverage="0% (0/14)" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+                <line number="49" hits="0" branch="false" />
+                <line number="50" hits="0" branch="false" />
+                <line number="51" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+                <line number="54" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="GetHashCode" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="57" hits="0" branch="false" />
+                <line number="58" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
+                <line number="61" hits="0" branch="false" />
+                <line number="62" hits="0" branch="false" />
+                <line number="63" hits="0" branch="false" />
+                <line number="64" hits="0" branch="false" />
+                <line number="65" hits="0" branch="false" />
+                <line number="66" hits="0" branch="false" />
+                <line number="67" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="0" branch="false" />
+            <line number="10" hits="0" branch="false" />
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="24" hits="0" branch="true" condition-coverage="0% (0/10)" />
+            <line number="25" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="30" hits="0" branch="true" condition-coverage="0% (0/14)" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="37" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="46" hits="0" branch="true" condition-coverage="0% (0/14)" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="49" hits="0" branch="false" />
+            <line number="50" hits="0" branch="false" />
+            <line number="51" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="54" hits="0" branch="false" />
+            <line number="57" hits="0" branch="false" />
+            <line number="58" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="61" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="64" hits="0" branch="false" />
+            <line number="65" hits="0" branch="false" />
+            <line number="66" hits="0" branch="false" />
+            <line number="67" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Common Class Library [Tests" line-rate="1" branch-rate="1" complexity="1">
+      <classes>
+        <class name="Common_Class_Library_Tests.CCLT" filename="D:\repo\src\Common Class Library [Tests\CCLT.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="GetConnectionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="1" branch="false" />
+                <line number="20" hits="1" branch="false" />
+                <line number="21" hits="1" branch="false" />
+                <line number="22" hits="1" branch="false" />
+                <line number="25" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="1" branch="false" />
+            <line number="20" hits="1" branch="false" />
+            <line number="21" hits="1" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="25" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="NUnit3.TestAdapter" line-rate="0.391153846153846" branch-rate="0.250466128029832" complexity="2046">
+      <classes>
+        <class name="NUnit.VisualStudio.TestAdapter.AdapterSettings" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\AdapterSettings.cs" line-rate="1" branch-rate="1" complexity="241">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_MaxCpuCount" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_MaxCpuCount" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_ResultsDirectory" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_ResultsDirectory" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TargetPlatform" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TargetPlatform" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TargetFrameworkVersion" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TargetFrameworkVersion" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestAdapterPaths" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestAdapterPaths" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_CollectSourceInformation" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_CollectSourceInformation" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DisableAppDomain" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DisableAppDomain" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DisableParallelization" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DisableParallelization" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DesignMode" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DesignMode" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestProperties" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestProperties" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_InternalTraceLevel" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_InternalTraceLevel" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_InternalTraceLevelEnum" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_InternalTraceLevelEnum" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_WorkDirectory" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_WorkDirectory" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Where" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Where" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestOutputXml" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestOutputXml" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_UseTestOutputXml" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_OutputXmlFolderMode" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_OutputXmlFolderMode" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestOutputFolder" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestOutputFolder" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_NewOutputXmlFileForEachRun" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_NewOutputXmlFileForEachRun" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DefaultTimeout" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DefaultTimeout" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_NumberOfTestWorkers" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_NumberOfTestWorkers" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_ShadowCopyFiles" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_ShadowCopyFiles" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Verbosity" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Verbosity" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_UseVsKeepEngineRunning" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_UseVsKeepEngineRunning" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_BasePath" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_BasePath" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_PrivateBinPath" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_PrivateBinPath" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_RandomSeed" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_RandomSeed" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_RandomSeedSpecified" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_RandomSeedSpecified" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_CollectDataForEachTestSeparately" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_CollectDataForEachTestSeparately" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_InProcDataCollectorsAvailable" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_InProcDataCollectorsAvailable" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_SynchronousEvents" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_SynchronousEvents" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DomainUsage" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DomainUsage" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_ShowInternalProperties" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_ShowInternalProperties" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_UseParentFQNForParametrizedTests" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_UseParentFQNForParametrizedTests" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_UseNUnitIdforTestCaseId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_UseNUnitIdforTestCaseId" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_ConsoleOut" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_ConsoleOut" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_StopOnError" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_StopOnError" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DiscoveryMethod" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DiscoveryMethod" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_SkipNonTestAssemblies" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_SkipNonTestAssemblies" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_AssemblySelectLimit" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_AssemblySelectLimit" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_UseNUnitFilter" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_UseNUnitFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IncludeStackTraceForSuites" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_IncludeStackTraceForSuites" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_VsTestCategoryType" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_VsTestCategoryType" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DefaultTestNamePattern" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DefaultTestNamePattern" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_PreFilter" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_PreFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_MapWarningTo" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_MapWarningTo" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_UseTestNameInConsoleOutput" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_UseTestNameInConsoleOutput" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DisplayName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DisplayName" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FullnameSeparator" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_FullnameSeparator" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_ExplicitMode" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_ExplicitMode" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_SkipExecutionWhenNoTests" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_SkipExecutionWhenNoTests" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DumpXmlTestDiscovery" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DumpXmlTestDiscovery" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DumpXmlTestResults" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DumpXmlTestResults" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DumpVsInput" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DumpVsInput" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FreakMode" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_FreakMode" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Debug" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Debug" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DebugExecution" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DebugExecution" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_DebugDiscovery" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_DebugDiscovery" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Load" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="Load" signature="(...)" line-rate="1" branch-rate="1" complexity="22">
+              <lines />
+            </method>
+            <method name="ParseOutputXml" signature="(...)" line-rate="1" branch-rate="1" complexity="12">
+              <lines />
+            </method>
+            <method name="SetTestOutputFolder" signature="(...)" line-rate="1" branch-rate="1" complexity="7">
+              <lines />
+            </method>
+            <method name="ExtractNUnitDiagnosticSettings" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="ParseInternalTraceLevel" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="UpdateTestProperties" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="ExtractRunConfiguration" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="MapTestCategory" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="MapDisplayName" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="SaveRandomSeed" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="RestoreRandomSeed" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_EnsureAttachmentFileScheme" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_EnsureAttachmentFileScheme" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="UpdateNumberOfTestWorkers" signature="()" line-rate="1" branch-rate="1" complexity="14">
+              <lines />
+            </method>
+            <method name="GetInnerTextWithLog" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="GetInnerText" signature="(...)" line-rate="1" branch-rate="1" complexity="14">
+              <lines />
+            </method>
+            <method name="GetInnerTextAsInt" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetInnerTextAsNullableInt" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetInnerTextAsBool" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="Log&lt;T&gt;" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="MapWarningOutcome" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="MapEnum&lt;T&gt;" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.CategoryList" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\CategoryList.cs" line-rate="1" branch-rate="1" complexity="45">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddRange" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_LastNodeListCount" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_LastNodeListCount" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="ProcessTestCaseProperties" signature="(...)" line-rate="1" branch-rate="1" complexity="20">
+              <lines />
+            </method>
+            <method name="IsInternalProperty" signature="(...)" line-rate="1" branch-rate="1" complexity="10">
+              <lines />
+            </method>
+            <method name="AddTraitsToCache" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetCachedInfo" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="UpdateCategoriesToVs" signature="()" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Dump.DumpXml" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Dump\DumpXml.cs" line-rate="1" branch-rate="1" complexity="27">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="Dump2File" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="EnsurePathExist" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="DumpForDiscovery" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="DumpForExecution" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="RandomName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddTestEvent" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddString" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="DumpVSInputFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="DumpVSInput" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="DumpVSInput2NUnit" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="DumpFromVSInput" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="StartDiscoveryInExecution" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="StartExecution" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CreateDump" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Dump.File" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Dump\DumpXml.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="WriteAllText" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="DirectoryExist" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CreateDirectory" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Dump.XmlNodeExtension" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Dump\XmlNodeExtension.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="AsString" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Execution" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Execution.cs" line-rate="1" branch-rate="1" complexity="32">
+          <methods>
+            <method name="get_TestOutputXmlFolder" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestLog" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Settings" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Dump" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_VsTestFilter" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_NUnitEngineAdapter" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Run" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="CreateTestFilterBuilder" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CreateConverter" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="CheckFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="18">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.ExecutionFactory" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Execution.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Create" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.IdeExecution" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Execution.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CheckFilterInCurrentMode" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Internal.StringExtensions" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Internal\Extensions.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="IsNullOrWhiteSpace" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Internal.TimingLogger" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Internal\TimingLogger.cs" line-rate="1" branch-rate="1" complexity="11">
+          <methods>
+            <method name="get_Stopwatch" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="ReStart" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="LogTime" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Internal.TypeExtensions" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Internal\Extensions.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="GetTypeInfo" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Metadata.AppDomainMetadataProvider" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Metadata\AppDomainMetadataProvider.cs" line-rate="1" branch-rate="1" complexity="11">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetHelper" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="Dispose" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetDeclaringType" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="GetStateMachineType" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="GetDeclaringType" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="GetStateMachineType" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Metadata.AppDomainMetadataProvider.AppDomainHelper" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Metadata\AppDomainMetadataProvider.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="GetDeclaringType" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="GetStateMachineType" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Metadata.DirectReflectionMetadataProvider" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Metadata\DirectReflectionMetadataProvider.cs" line-rate="1" branch-rate="1" complexity="35">
+          <methods>
+            <method name="GetDeclaringType" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="GetStateMachineType" signature="(...)" line-rate="1" branch-rate="1" complexity="20">
+              <lines />
+            </method>
+            <method name="TryGetSingleMethod" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="System.IDisposable.Dispose" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Metadata.TypeInfo" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Metadata\TypeInfo.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_AssemblyPath" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FullName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NavigationData" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NavigationData.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FilePath" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_LineNumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsValid" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NavigationDataProvider" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NavigationDataProvider.cs" line-rate="1" branch-rate="1" complexity="32">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CreateMetadataProvider" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="Dispose" signature="()" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="GetNavigationData" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="DoWithBreaker" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="TryGetSessionData" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="TryGetSessionData" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NTrait" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TraitsFeature.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Value" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NTraitNameComparer" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\VsTestFilter.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Equals" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="GetHashCode" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnit3TestDiscoverer" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnit3TestDiscoverer.cs" line-rate="1" branch-rate="1" complexity="46">
+          <methods>
+            <method name="DiscoverTests" signature="(...)" line-rate="1" branch-rate="1" complexity="38">
+              <lines />
+            </method>
+            <method name="ProcessTestCases" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="CheckIfDebug" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnit3TestExecutor.cs" line-rate="1" branch-rate="1" complexity="132">
+          <methods>
+            <method name="get_RunType" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_RunType" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_RunContext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_RunContext" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FrameworkHandle" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_FrameworkHandle" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_VsTestFilter" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_VsTestFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Log" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_EngineAdapter" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestOutputXmlFolder" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestOutputXmlFolder" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="RunTests" signature="(...)" line-rate="1" branch-rate="1" complexity="24">
+              <lines />
+            </method>
+            <method name="SetRunTypeByStrings" signature="()" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="RunTests" signature="(...)" line-rate="1" branch-rate="1" complexity="16">
+              <lines />
+            </method>
+            <method name="IsInProcDataCollectorsSpecifiedWithMultipleAssemblies" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.Cancel" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Dispose" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="InitializeForExecution" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="RunAssembly" signature="(...)" line-rate="1" branch-rate="1" complexity="36">
+              <lines />
+            </method>
+            <method name="LogActionAndSelection" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="RestoreRandomSeed" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="CreateTestFilterBuilder" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CreateTestOutputFolder" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="StopRun" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="get_Dump" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Dump" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CheckIfDebug" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.BaseProperties" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\DiscoveryConverter.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Properties" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Fullname" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_RunState" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestCaseCount" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.DiscoveryConverter" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\DiscoveryConverter.cs" line-rate="1" branch-rate="1" complexity="160">
+          <methods>
+            <method name="get_TestConverterForXml" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestConverter" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestRun" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestRun" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsDiscoveryMethodCurrent" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_CurrentTestAssembly" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TopLevelTestSuite" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_AllTestCases" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsExplicitRun" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_NoOfExplicitTestCases" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_HasExplicitTests" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_LoadedTestCases" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_NoOfLoadedTestCases" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_AssemblyPath" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_AssemblyPath" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Settings" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestLog" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_NoOfLoadedTestCasesAboveLimit" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="GetExplicitTestCases" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Convert" signature="(...)" line-rate="1" branch-rate="1" complexity="16">
+              <lines />
+            </method>
+            <method name="ConvertXml" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="ExtractTestSuite" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="ExtractAllFixtures" signature="(...)" line-rate="1" branch-rate="1" complexity="16">
+              <lines />
+            </method>
+            <method name="ExtractTestFixtures" signature="(...)" line-rate="1" branch-rate="1" complexity="26">
+              <lines />
+            </method>
+            <method name="ExtractParameterizedMethodsAndTheories" signature="(...)" line-rate="1" branch-rate="1" complexity="20">
+              <lines />
+            </method>
+            <method name="ExtractTestCases" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="ExtractTestCase" signature="(...)" line-rate="1" branch-rate="1" complexity="14">
+              <lines />
+            </method>
+            <method name="ExtractTestFixture" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="ExtractGenericTestFixture" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="ExtractSetUpTestFixture" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="ExtractParameterizedTestFixture" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="ExtractTestAssembly" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="ExtractSuiteBasePropertiesClass" signature="(...)" line-rate="1" branch-rate="1" complexity="10">
+              <lines />
+            </method>
+            <method name="ExtractTestRun" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="ExtractRunState" signature="(...)" line-rate="1" branch-rate="1" complexity="10">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.DiscoveryException" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\DiscoveryException.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.Extensions" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\Extensions.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name="AllWithEmptyFalse&lt;T&gt;" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="IsEmpty" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="IsCategoryFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="IsNegativeCategoryFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitAttachment" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitTestEvent.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FilePath" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Description" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryCanHaveTestCases" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="9">
+          <methods>
+            <method name="get_TestCases" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_NoOfActualTestCases" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsExplicit" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="get_ClassName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddTestCase" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryCanHaveTestFixture" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="25">
+          <methods>
+            <method name="get_TestFixtures" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddTestFixture" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestSuites" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_SetUpFixtures" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_ParameterizedFixtures" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_GenericFixtures" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsExplicit" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="get_NoOfActualTestCases" signature="()" line-rate="1" branch-rate="1" complexity="10">
+              <lines />
+            </method>
+            <method name="AddTestSuite" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddTestGenericFixture" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddSetUpFixture" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddParameterizedFixture" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryGenericFixture" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryGenericMethod" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryParameterizedMethod" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsParameterizedMethod" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryParameterizedTestFixture" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryProperties" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_TheProperties" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Properties" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Add" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_AllInternal" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoverySetUpFixture" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_ClassName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoverySuiteBase" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="20">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FullName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestCaseCount" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_RunState" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Parent" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_NUnitDiscoveryProperties" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsExplicitReverse" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="get_IsParameterizedMethod" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Properties" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddToAllTestCases" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryTestAssembly" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="8">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_AllTestCases" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_RunnableTestCases" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_NoOfExplicitTestCases" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="AddTestSuiteToAssembly" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddToAllTestCases" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryTestCase" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_ClassName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_MethodName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_MethodName" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Seed" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Seed" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsExplicit" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryTestFixture" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="17">
+          <methods>
+            <method name="get_ParameterizedMethods" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Theories" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_NoOfActualTestCases" signature="()" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="get_IsExplicit" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="get_GenericMethods" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddParameterizedMethod" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddTheory" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddGenericMethod" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryTestRun" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestAssembly" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestAssembly" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsExplicit" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="AddTestAssembly" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryTestSuite" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_ParentAssembly" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_ParentAssembly" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitDiscoveryTheory" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitDiscoveryTestClasses.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitEngineAdapter" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitEngineAdapter.cs" line-rate="1" branch-rate="1" complexity="36">
+          <methods>
+            <method name="get_TestEngine" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestEngine" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Runner" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Runner" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_EngineEnabled" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Initialize" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="InitializeSettingsAndLogging" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CreateRunner" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Explore" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Explore" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Run" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="LogTiming" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetService&lt;T&gt;" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="StopRun" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="CloseRunner" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="Dispose" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="GenerateTestOutput" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetXmlFilePath" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitEventTestCase" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitEventTestCase.cs" line-rate="1" branch-rate="1" complexity="19">
+          <methods>
+            <method name="get_IsTestCase" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_IsParameterizedMethod" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Type" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_ClassName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_MethodName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_RunState" signature="()" line-rate="1" branch-rate="1" complexity="10">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_Parent" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitEventWrongTypeException" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitTestEvent.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitFailure" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitTestEvent.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Stacktrace" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitProperty" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitTestEvent.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Value" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsInternal" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitResults" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitResults.cs" line-rate="1" branch-rate="1" complexity="14">
+          <methods>
+            <method name="get_TopNode" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsRunnable" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AsString" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FullTopNode" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="WhatSkipReason" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="get_HasNoNUnitTests" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="TestCases" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitTestEvent" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitTestEvent.cs" line-rate="1" branch-rate="1" complexity="52">
+          <methods>
+            <method name="TestType" signature="()" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="Result" signature="()" line-rate="1" branch-rate="1" complexity="10">
+              <lines />
+            </method>
+            <method name="get_IsFailed" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Site" signature="()" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="get_Label" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsIgnored" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Duration" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_MethodName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_ClassName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Output" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="StartTime" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="EndTime" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_NUnitAttachments" signature="()" line-rate="1" branch-rate="1" complexity="16">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitTestEventHeader" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitTestEventHeader.cs" line-rate="1" branch-rate="1" complexity="19">
+          <methods>
+            <method name="get_Node" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AsString" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FullName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Type" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="14">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitTestEventStartTest" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitTestEventStartTest.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitTestEventSuiteFinished" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitTestEventSuiteFinished.cs" line-rate="1" branch-rate="1" complexity="23">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="16">
+              <lines />
+            </method>
+            <method name="get_ReasonMessage" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_HasReason" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FailureMessage" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_StackTrace" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_HasFailure" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitTestEventTestCase" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitTestEventTestCase.cs" line-rate="1" branch-rate="1" complexity="26">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Failure" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="14">
+              <lines />
+            </method>
+            <method name="get_ReasonMessage" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_HasReason" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_HasFailure" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FailureStackTrace" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_StackTrace" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitTestEventTestOutput" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitTestEventTestOutput.cs" line-rate="1" branch-rate="1" complexity="15">
+          <methods>
+            <method name="get_Stream" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="get_IsProgressStream" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsErrorStream" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsNullOrEmptyStream" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Content" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.NUnitTestNode" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\NUnitTestNode.cs" line-rate="1" branch-rate="1" complexity="14">
+          <methods>
+            <method name="get_Node" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Node" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_FullName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_IsNull" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Properties" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Seed" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEngine.UnicodeEscapeHelper" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEngine\UnicodeEscapeHelper.cs" line-rate="1" branch-rate="1" complexity="14">
+          <methods>
+            <method name="UnEscapeUnicodeCharacters" signature="(...)" line-rate="1" branch-rate="1" complexity="10">
+              <lines />
+            </method>
+            <method name="TryUnEscapeOneCharacter" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitEventListener" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitEventListener.cs" line-rate="1" branch-rate="1" complexity="72">
+          <methods>
+            <method name="InitializeLifetimeService" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="OnTestEvent" signature="(...)" line-rate="1" branch-rate="1" complexity="7">
+              <lines />
+            </method>
+            <method name="Dispose" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Dispose" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="Finalize" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="TestStarted" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="TestFinished" signature="(...)" line-rate="1" branch-rate="1" complexity="32">
+              <lines />
+            </method>
+            <method name="SuiteFinished" signature="(...)" line-rate="1" branch-rate="1" complexity="14">
+              <lines />
+            </method>
+            <method name="TestOutput" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitTestAdapter" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitTestAdapter.cs" line-rate="1" branch-rate="1" complexity="93">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Settings" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Settings" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_AdapterVersion" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_AdapterVersion" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_NUnitEngineAdapter" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="set_NUnitEngineAdapter" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestLog" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestLog" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_WorkDir" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_WorkDir" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_WhoIsCallingUsEntry" signature="()" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="get_IsRunningUnderIde" signature="()" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="get_ForbiddenFolders" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_ForbiddenFolders" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Initialize" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="InitializeForbiddenFolders" signature="()" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="SetCurrentWorkingDirectory" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="CheckDirectory" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="CreateTestPackage" signature="(...)" line-rate="1" branch-rate="1" complexity="38">
+              <lines />
+            </method>
+            <method name="SetWorkDir" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="SetTestParameters" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="CleanUpRegisteredChannels" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="Unload" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.NUnitTestFilterBuilder" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\NUnitTestFilterBuilder.cs" line-rate="1" branch-rate="1" complexity="33">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="ConvertTfsFilterToNUnitFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="ConvertVsTestFilterToNUnitFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="ConvertVsTestFilterToNUnitFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="ConvertTfsFilterToNUnitFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="FilterByWhere" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="FilterByList" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.Seed" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Seed.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TestConverter" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TestConverter.cs" line-rate="1" branch-rate="1" complexity="149">
+          <methods>
+            <method name="get_CollectSourceInformation" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="Dispose" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_TraitsCache" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="ConvertTestCase" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetCachedTestCase" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetVsTestResults" signature="(...)" line-rate="1" branch-rate="1" complexity="22">
+              <lines />
+            </method>
+            <method name="MakeTestCaseFromDiscoveryNode" signature="(...)" line-rate="1" branch-rate="1" complexity="20">
+              <lines />
+            </method>
+            <method name="CreateDisplayName" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="MakeTestResultFromLegacyXmlNode" signature="(...)" line-rate="1" branch-rate="1" complexity="18">
+              <lines />
+            </method>
+            <method name="GetBasicResult" signature="(...)" line-rate="1" branch-rate="1" complexity="22">
+              <lines />
+            </method>
+            <method name="FillResultFromOutputNodes" signature="(...)" line-rate="1" branch-rate="1" complexity="14">
+              <lines />
+            </method>
+            <method name="ParseAttachments" signature="(...)" line-rate="1" branch-rate="1" complexity="20">
+              <lines />
+            </method>
+            <method name="GetTestOutcome" signature="(...)" line-rate="1" branch-rate="1" complexity="14">
+              <lines />
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TestConverterForXml" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TestConverterForXml.cs" line-rate="1" branch-rate="1" complexity="143">
+          <methods>
+            <method name="get_CollectSourceInformation" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="Dispose" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_TraitsCache" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="ConvertTestCase" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="GetCachedTestCase" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetVsTestResults" signature="(...)" line-rate="1" branch-rate="1" complexity="22">
+              <lines />
+            </method>
+            <method name="MakeTestCaseFromXmlNode" signature="(...)" line-rate="1" branch-rate="1" complexity="20">
+              <lines />
+            </method>
+            <method name="CreateDisplayName" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="MakeTestResultFromLegacyXmlNode" signature="(...)" line-rate="1" branch-rate="1" complexity="18">
+              <lines />
+            </method>
+            <method name="GetBasicResult" signature="(...)" line-rate="1" branch-rate="1" complexity="18">
+              <lines />
+            </method>
+            <method name="FillResultFromOutputNodes" signature="(...)" line-rate="1" branch-rate="1" complexity="14">
+              <lines />
+            </method>
+            <method name="ParseAttachments" signature="(...)" line-rate="1" branch-rate="1" complexity="10">
+              <lines />
+            </method>
+            <method name="GetTestOutcome" signature="(...)" line-rate="1" branch-rate="1" complexity="14">
+              <lines />
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestResults" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestResults" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestCaseResult" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestCaseResult" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_ConsoleOutput" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_ConsoleOutput" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TestConverterForXml.TestResultSet" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TestConverterForXml.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_TestResults" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestResults" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TestCaseResult" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_TestCaseResult" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_ConsoleOutput" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_ConsoleOutput" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TestFilterCombiner" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Execution.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="GetFilter" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="StripFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TestFilterConverter.TestFilterParser" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TestFilterConverter\TestFilterParser.cs" line-rate="1" branch-rate="1" complexity="66">
+          <methods>
+            <method name="Parse" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="ParseFilterExpression" signature="()" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="ParseFilterTerm" signature="()" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="ParseFilterCondition" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="UnEscape" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="EmitFullNameFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="EmitCategoryFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="EmitNameFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="EmitFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="EmitPropertyFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="EscapeRhsValue" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="ParseExpressionInParentheses" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="Expect" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="Expect" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="InvalidTokenError" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_LookAhead" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="LookingAt" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="NextToken" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="EscapeRegexChars" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="XmlEscape" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TestFilterConverter.TestFilterParserException" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TestFilterConverter\TestFilterParserException.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TestFilterConverter.Token" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TestFilterConverter\Tokenizer.cs" line-rate="1" branch-rate="1" complexity="21">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Kind" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Text" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Pos" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Pos" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Equals" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetHashCode" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="ToString" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="op_Equality" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="op_Inequality" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TestFilterConverter.Tokenizer" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TestFilterConverter\Tokenizer.cs" line-rate="1" branch-rate="1" complexity="71">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_LookAhead" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="NextToken" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetNextToken" signature="()" line-rate="1" branch-rate="1" complexity="25">
+              <lines />
+            </method>
+            <method name="IsWordChar" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="GetWordOrFqn" signature="()" line-rate="1" branch-rate="1" complexity="10">
+              <lines />
+            </method>
+            <method name="CollectWordChars" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="CollectBalancedParentheticalExpression" signature="(...)" line-rate="1" branch-rate="1" complexity="10">
+              <lines />
+            </method>
+            <method name="CollectQuotedString" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="GetChar" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="get_NextChar" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="SkipBlanks" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TestLogger" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TestLogger.cs" line-rate="1" branch-rate="1" complexity="27">
+          <methods>
+            <method name="get_MessageLogger" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Verbosity" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Verbosity" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="InitSettings" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Error" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Error" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Warning" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Warning" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Info" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="Debug" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="SendMessage" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="SendMessage" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="DebugRunfrom" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="InfoNoTests" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="InfoNoTests" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TraitsFeature" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TraitsFeature.cs" line-rate="1" branch-rate="1" complexity="57">
+          <methods>
+            <method name="AddTrait" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="AddTraitsFromTestNode" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="AddingToCache&lt;T&gt;" signature="(...)" line-rate="1" branch-rate="1" complexity="22">
+              <lines />
+            </method>
+            <method name="AddTraitsFromXmlTestNode" signature="(...)" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name="GetTraits" signature="(...)" line-rate="1" branch-rate="1" complexity="12">
+              <lines />
+            </method>
+            <method name="GetCategories" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Traits" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Explicit" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Explicit" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TraitsFeature.&lt;&gt;c__4&lt;T&gt;" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TraitsFeature.cs" line-rate="1" branch-rate="1" complexity="NaN">
+          <methods />
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TraitsFeature.CachedTestCaseInfo" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TraitsFeature.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Traits" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_Explicit" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="set_Explicit" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.TryParse" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\TryParse.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="EnumTryParse&lt;T&gt;" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.VsTestExecution" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\Execution.cs" line-rate="1" branch-rate="1" complexity="41">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="Run" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="CheckVsTestFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="24">
+              <lines />
+            </method>
+            <method name="CheckFilterInCurrentMode" signature="(...)" line-rate="1" branch-rate="1" complexity="12">
+              <lines />
+            </method>
+            <method name="CheckAssemblySelectLimit" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.VsTestFilter" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\VsTestFilter.cs" line-rate="1" branch-rate="1" complexity="36">
+          <methods>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="8">
+              <lines />
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="get_TfsTestCaseFilterExpression" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+            <method name="get_IsEmpty" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="CheckFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="PropertyValueProvider" signature="(...)" line-rate="1" branch-rate="1" complexity="10">
+              <lines />
+            </method>
+            <method name="TraitContains" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="LocalPropertyProvider" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="PropertyProvider" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="TraitProvider" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.VsTestFilterFactory" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\VsTestFilter.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="CreateVsTestFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.VsTestFilterIde" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\VsTestFilter.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CheckFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.VsTestFilterLegacy" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\VsTestFilter.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CheckFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.VsTestFilterNonIde" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\VsTestFilter.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CheckFilter" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+        <class name="NUnit.VisualStudio.TestAdapter.XmlHelper" filename="D:\repos\NUnit\nunit3-vs-adapter\src\NUnitTestAdapter\XmlHelper.cs" line-rate="1" branch-rate="1" complexity="20">
+          <methods>
+            <method name="CreateTopLevelElement" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="CreateXmlNode" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="ToXml" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddAttribute" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddElement" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="AddElementWithCDataSection" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
+            </method>
+            <method name="GetAttribute" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines />
+            </method>
+            <method name="GetAttribute" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetAttribute" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
+            </method>
+            <method name="GetAttribute" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
+            </method>
+          </methods>
+          <lines />
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

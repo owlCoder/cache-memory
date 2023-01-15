@@ -1,5 +1,8 @@
-﻿namespace Common_Class_Library.Implementations
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Common_Class_Library.Implementations
 {
+    [ExcludeFromCodeCoverage]
     public class ConnectionParams
     {
         public static readonly string LOCAL_DATA_SOURCE = "//localhost:1521/xe";
