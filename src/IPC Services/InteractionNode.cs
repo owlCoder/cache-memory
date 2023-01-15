@@ -1,11 +1,13 @@
 ﻿using DumpingBuffer_Component.Implementations;
 using Historical_Component.Implementations;
 using Reader_Component.Implementations;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Remoting;
 using Writer_Component.Implementations;
 
 namespace IPC_Services
 {
+    [ExcludeFromCodeCoverage]
     public class InteractionNode
     {
         public Historical HistroicalINode { get; set; }
