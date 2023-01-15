@@ -95,7 +95,7 @@ namespace Historical_Component
         private static void ReadAll()
         {
             try
-            { 
+            {
                 Historical HistroicalINode = RemotingServices.Connect(typeof(Historical), "tcp://localhost:8090/Historical") as Historical;
 
                 List<ModelData> lista = HistroicalINode.GetAllDataFromDataBase().ToList();
@@ -107,8 +107,8 @@ namespace Historical_Component
                     {
                         Console.WriteLine("{0, -7}{1, -20}{2,-20}{3,-20}{4,-20}{5,-20}{6,-20}", m.UserID, m.Username, m.UserAddress, m.UserCity, m.BrojiloId, m.Potroseno, m.Mesec);
                     }
-            }
-            Console.WriteLine();
+                }
+                Console.WriteLine();
             }
             catch
             {
@@ -130,7 +130,7 @@ namespace Historical_Component
 
                 Console.Write("Unesite USERADDRESS: ");
                 string userAddress = Console.ReadLine();
-                
+
                 Console.Write("Unesite USERCITY: ");
                 string userCity = Console.ReadLine();
 

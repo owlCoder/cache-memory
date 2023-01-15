@@ -12,7 +12,6 @@ namespace DumpingBuffer_Component.Implementations
 {
     public class DumpingBuffer : MarshalByRefObject, IDumpingBuffer
     {
-
         List<ModelData> queue = null;
         bool InitServie = false;
 
@@ -26,9 +25,9 @@ namespace DumpingBuffer_Component.Implementations
         {
             if (InitServie)
             {
-                #pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                 PeriodicCheck();
-                #pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
 
                 InitServie = false;
             }

@@ -1,5 +1,4 @@
-﻿using Common_Class_Library.Implementations;
-using IPC_Services;
+﻿using IPC_Services;
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -128,7 +127,7 @@ namespace WPF_UI.Moduli
 
         private void kriterijumPretrage_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(meniMesec != null)
+            if (meniMesec != null)
                 meniMesec.IsEnabled = false;
 
             if (kriterijumPretrage.SelectedIndex == 0)
@@ -148,7 +147,7 @@ namespace WPF_UI.Moduli
                     unosId.Clear();
                     unosId.IsEnabled = true;
                 }
-                
+
                 if (labela != null)
                     labela.Text = "User Name:   ";
             }

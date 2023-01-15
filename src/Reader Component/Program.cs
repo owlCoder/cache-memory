@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Channels;
+﻿using Reader_Component.Implementations;
+using System;
 using System.Runtime.Remoting;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
-using Reader_Component.Implementations;
+using System.Threading;
 
 namespace Reader_Component
 {

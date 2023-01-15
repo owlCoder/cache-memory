@@ -20,3 +20,15 @@ D:\repo\src\Dumping Buffer Component\obj\Debug\Dumping Buffer Component.csproj.C
 D:\repo\src\Dumping Buffer Component\obj\Debug\Dumping Buffer Component.csproj.CopyComplete
 D:\repo\src\Dumping Buffer Component\obj\Debug\Dumping Buffer Component.exe
 D:\repo\src\Dumping Buffer Component\obj\Debug\Dumping Buffer Component.pdb
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Text.Json.dll
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.ValueTuple.dll
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Text.Encodings.Web.dll
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\repo\src\Dumping Buffer Component\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Text.Json.xml
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.ValueTuple.xml
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Text.Encodings.Web.xml
+D:\repo\src\Dumping Buffer Component\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\repo\src\Dumping Buffer Component\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml

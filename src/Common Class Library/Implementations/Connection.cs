@@ -11,36 +11,30 @@ namespace Common_Class_Library.Implementations
 
         public static IDbConnection GetConnection()
         {
-            if(CheckInstance())
-            {
-                OracleConnectionStringBuilder ocsb = IDbInitConnection();
-                instance = new OracleConnection(ocsb.ConnectionString);
-            }
-            
-            return instance;
-
-            OracleConnectionStringBuilder IDbInitConnection()
-            {
-                OracleConnectionStringBuilder ocsb = new OracleConnectionStringBuilder
-                {
-                    DataSource = ConnectionParams.LOCAL_DATA_SOURCE,
-                    UserID = ConnectionParams.USER_ID,
-                    Password = ConnectionParams.PASSWORD,
-
-                    // connection pool parametri
-                    Pooling = true,
-                    MinPoolSize = 1,
-                    MaxPoolSize = 10,
-                    IncrPoolSize = 3,
-                    ConnectionLifeTime = 5,
-                    ConnectionTimeout = 30
-                };
-                return ocsb;
-            }
+            return CheckInstanceConnection();
         }
 
-        [ExcludeFromCodeCoverage] 
-        private static bool CheckInstance() 
+        private static OracleConnectionStringBuilder IDbInitConnection()
+        {
+            OracleConnectionStringBuilder ocsb = new OracleConnectionStringBuilder
+            {
+                DataSource = ConnectionParams.LOCAL_DATA_SOURCE,
+                UserID = ConnectionParams.USER_ID,
+                Password = ConnectionParams.PASSWORD,
+
+                // connection pool parametri
+                Pooling = true,
+                MinPoolSize = 1,
+                MaxPoolSize = 10,
+                IncrPoolSize = 3,
+                ConnectionLifeTime = 5,
+                ConnectionTimeout = 30
+            };
+            return ocsb;
+        }
+
+        [ExcludeFromCodeCoverage]
+        private static bool CheckInstance()
         {
             if (instance == null)
                 return true;
@@ -49,6 +43,18 @@ namespace Common_Class_Library.Implementations
                 return true;
 
             return false;
+        }
+
+        [ExcludeFromCodeCoverage]
+        private static IDbConnection CheckInstanceConnection()
+        {
+            if (CheckInstance())
+            {
+                OracleConnectionStringBuilder ocsb = IDbInitConnection();
+                instance = new OracleConnection(ocsb.ConnectionString);
+            }
+
+            return instance;
         }
 
         [ExcludeFromCodeCoverage]

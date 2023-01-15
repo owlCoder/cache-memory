@@ -5,8 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Reader_Component.Implementations
 {
@@ -14,7 +12,7 @@ namespace Reader_Component.Implementations
     {
         public List<ModelData> GetPodaciFromHistorical(string criteriaName, string criteria, bool allData = false)
         {
-            if(!allData) 
+            if (!allData)
             {
                 // Log Message
                 Console.WriteLine("[REQUEST] GET DATA BY CRITERIA");
@@ -40,7 +38,7 @@ namespace Reader_Component.Implementations
 
                 return HistroicalINode.GetAllDataFromDataBase().ToList();
             }
-            
+
         }
     }
 }

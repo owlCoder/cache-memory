@@ -28,3 +28,15 @@ D:\repo\src\IPC Services\obj\Debug\IPC Services.csproj.CoreCompileInputs.cache
 D:\repo\src\IPC Services\obj\Debug\IPC Services.csproj.CopyComplete
 D:\repo\src\IPC Services\obj\Debug\IPC Services.dll
 D:\repo\src\IPC Services\obj\Debug\IPC Services.pdb
+D:\repo\src\IPC Services\bin\Debug\System.Text.Json.dll
+D:\repo\src\IPC Services\bin\Debug\System.ValueTuple.dll
+D:\repo\src\IPC Services\bin\Debug\System.Text.Encodings.Web.dll
+D:\repo\src\IPC Services\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\repo\src\IPC Services\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\repo\src\IPC Services\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\repo\src\IPC Services\bin\Debug\System.Text.Json.xml
+D:\repo\src\IPC Services\bin\Debug\System.ValueTuple.xml
+D:\repo\src\IPC Services\bin\Debug\System.Text.Encodings.Web.xml
+D:\repo\src\IPC Services\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\repo\src\IPC Services\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\repo\src\IPC Services\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
