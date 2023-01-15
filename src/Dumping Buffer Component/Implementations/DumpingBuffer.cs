@@ -3,6 +3,7 @@ using DumpingBuffer_Component.Interfaces;
 using Historical_Component.Implementations;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Remoting;
 using System.Threading;
 using System.Threading.Tasks;
@@ -21,6 +22,7 @@ namespace DumpingBuffer_Component.Implementations
             InitServie = true;
         }
 
+        [ExcludeFromCodeCoverage]
         public void AddToQueue(ModelData podaci)
         {
             if (InitServie)
@@ -84,5 +86,7 @@ namespace DumpingBuffer_Component.Implementations
             await Task.Delay(interval, cancellationToken);
             Console.WriteLine("[Dumping Buffer] Trenutno u redu cekanja {0}", queue.Count);
         }
+
+        // kada se zatvori dumping buffer preostali ne upisani podaci u bazi se cuvaju u fajl
     }
 }

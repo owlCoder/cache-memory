@@ -16,12 +16,28 @@ namespace Reader_Component.Implementations
         {
             if(!allData) 
             {
+                // Log Message
+                Console.WriteLine("[REQUEST] GET DATA BY CRITERIA");
+
+                // Get Data
                 Historical HistroicalINode = RemotingServices.Connect(typeof(Historical), "tcp://localhost:8090/Historical") as Historical;
+
+                // Log Message
+                Console.WriteLine("[REQUEST] GET DATA SUCCESS\n");
+
                 return HistroicalINode.GetSelectedDataByCriteria(criteriaName, criteria).ToList();
             }
             else
             {
+                // Log Message
+                Console.WriteLine("[REQUEST] GET ALL DATA");
+
+                // Get Data
                 Historical HistroicalINode = RemotingServices.Connect(typeof(Historical), "tcp://localhost:8090/Historical") as Historical;
+
+                // Log Message
+                Console.WriteLine("[REQUEST] GET ALL DATA SUCCESS\n");
+
                 return HistroicalINode.GetAllDataFromDataBase().ToList();
             }
             
