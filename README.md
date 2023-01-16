@@ -61,7 +61,12 @@
 
 <p><br /></p>
 
-# Doprinos Projektu
+# Code Coverage
+
+![Intro Window](screenshots/codecov.png)
+
+<p><br /></p>
+
 
 Spisak osoba koje su doprineli da projekat "Cache Memory" postane javno dostupan.
 
