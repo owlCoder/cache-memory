@@ -12,7 +12,7 @@
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/owlCoder/cache-memory" />
     </a>
     <a href="https://codecov.io/gh/owlCoder/cache-memory">
-      <img src="https://img.shields.io/codecov/c/github/dwyl/hapi-auth-jwt2.svg?maxAge=2592000g" />
+      <img src="https://camo.githubusercontent.com/6ef37dcea5bd735bd79e9f3909739e07573aa9e5011e6217b0059f940959b752/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436f7665726167652d39362532352d627269676874677265656e2e737667" />
     </a>
     <a href="https://github.com/owlCoder/cache-memory/issues">
       <img alt="Issues" src="https://img.shields.io/github/issues/owlCoder/cache-memory?color=0088ff" />
