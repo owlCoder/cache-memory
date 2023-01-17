@@ -125,5 +125,15 @@ namespace Common_Class_Library_Test
 
             Assert.AreEqual(true, modelData.Equals(modelData1));
         }
+
+        [Test]
+        [TestCase()]
+        public void EqualsTestFalse()
+        {
+            ModelData modelData = new ModelData();
+            ModelData modelData1 = new ModelData();
+
+            Assert.AreEqual(false, modelData.Equals(modelData1));
+        }
     }
 }
