@@ -49,6 +49,15 @@ namespace Common_Class_Library_Test
             Assert.NotNull(modelData);
         }
 
-        
+
+        public void TestModelDataParamsNull(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
+        {
+            Assert.Throws<ArgumentNullException>(() =>
+            {
+                ModelData modelData = new ModelData(userID, username, userAddress, userCity, brojiloId, potroseno, mesec);
+
+            });
+        }
+
     }
 }
