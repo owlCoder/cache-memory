@@ -51,6 +51,8 @@ namespace Reader_Component_Test
             Assert.AreEqual(list.Count, 0);
         }
 
+        [Test]
+        [TestCase()]
         public void ReadMultiData()
         {
             bool result = false;
