@@ -36,7 +36,10 @@ namespace Reader_Component_Test
 
         public void ReadAllAvailableDataNonNU(string criteria, string value)
         {
-            
+            Assert.DoesNotThrow(() =>
+            {
+                List<ModelData> list = (new Reader()).GetPodaciFromHistorical(criteria, value, "", false).ToList();
+            });
         }
     }
 }
