@@ -133,6 +133,8 @@ namespace Common_Class_Library_Test
             ModelData modelData = new ModelData();
             ModelData modelData1 = new ModelData();
 
+            modelData.UserCity = "test"; // vise nisu isti
+
             Assert.AreEqual(false, modelData.Equals(modelData1));
         }
     }
