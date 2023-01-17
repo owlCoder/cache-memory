@@ -55,5 +55,8 @@ namespace HistoricalTests
         [TestCase(3, "uname", "addrr", "city", "SE-515", 24, "Mart")]
         [TestCase(4, "name", "addrr", "city", "SE-515", 12, "Januar")]
         [TestCase(5, "uname", "addrr", "city", "SE-64", 152, "Januar")]
+        [TestCase(6, "uname", "address", "city", "SE-515", 12, "Januar")]
+        [TestCase(7, "uname", "addrr", "city", "SE-515", 411, "Januar")]
+        [TestCase(8, "uname", "addrr", "city square", "SE-515", 12, "Januar")]
     }
 }
