@@ -70,7 +70,7 @@ namespace DumpingBuffer_Component.Implementations
 
         public async Task PeriodicCheck()
         {
-           
+            CancellationToken ct = new CancellationToken();
         }
 
         public async Task SendToHistorical(TimeSpan interval, CancellationToken cancellationToken)
