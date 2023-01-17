@@ -53,7 +53,8 @@ namespace Reader_Component_Test
 
         public void ReadMultiData()
         {
-            
+            bool result = false;
+            Reader reader = new Reader();
         }
     }
 }
