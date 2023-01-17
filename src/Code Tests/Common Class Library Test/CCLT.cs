@@ -55,6 +55,11 @@ namespace Common_Class_Library_Test
         [TestCase(2, "uname", null, "city", "SE-515", 12, "Februar")]
         [TestCase(3, "uname", "addrr", null, "SE-515", 24, "Mart")]
         [TestCase(4, "name", "addrr", "city", null, 12, "Januar")]
+        [TestCase(5, "uname", "addrr", "city", null, 152, "Januar")]
+        [TestCase(6, null, "address", "city", "SE-515", 12, "Januar")]
+        [TestCase(7, "uname", "addrr", "city", null, 411, "Januar")]
+        [TestCase(8, "uname", "addrr", "city square", "SE-515", 12, null)]
+        [TestCase(9, null, null, null, null, 47, null)]
 
         public void TestModelDataParamsNull(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
         {
