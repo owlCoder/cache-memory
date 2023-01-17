@@ -115,6 +115,6 @@ namespace DumpingBuffer_Component.Implementations
             Console.WriteLine("[Dumping Buffer] Trenutno u redu cekanja {0}", queue.Count);
         }
 
-        // kada se zatvori dumping buffer preostali ne upisani podaci u bazi se cuvaju u fajl
+       
     }
 }
