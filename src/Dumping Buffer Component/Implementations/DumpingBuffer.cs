@@ -95,7 +95,8 @@ namespace DumpingBuffer_Component.Implementations
             {
                 if (queue.Count >= 7)
                 {
-                   
+                    Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
+
 
                     return true;
                 }
