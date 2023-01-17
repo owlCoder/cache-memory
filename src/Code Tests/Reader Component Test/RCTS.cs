@@ -6,7 +6,14 @@ using Reader_Component.Implementations;
 
 namespace Reader_Component_Test
 {
+    [ExcludeFromCodeCoverage]
+    [TestFixture]
     public class RCTS
     {
+        [Test]
+        [TestCase("userId", "12")]
+        [TestCase("userName", "dani")]
+        [TestCase("userAddress", "Alekse Santica 4")]
+        [TestCase("userCity", "Novi Sad")]
     }
 }
