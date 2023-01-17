@@ -21,8 +21,11 @@ namespace Writer_Component.Implementations
             DumpingBuffer DumpingBufferINode = RemotingServices.Connect(typeof(DumpingBuffer), "tcp://localhost:8085/DumpingBuffer") as DumpingBuffer;
             DumpingBufferINode.AddToQueue(data);
 
+
             // Log Message
             Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER SUCCESS\n");
+
+
         }
 
         public void DataPassThrough(DumpingBuffer db, ModelData data)
