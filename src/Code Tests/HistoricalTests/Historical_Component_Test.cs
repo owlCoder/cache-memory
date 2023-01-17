@@ -11,7 +11,7 @@ namespace HistoricalTests
 {
     [ExcludeFromCodeCoverage]
     [TestFixture]
-    public class Class1
+    public class Historical_Component_Test
     {
         [Test]
         [TestCase()]
