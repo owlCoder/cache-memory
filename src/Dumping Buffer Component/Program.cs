@@ -32,7 +32,10 @@ namespace Dumping_Buffer_Component
             // load data if exist
             LoadData(server);
 
-           
+            while (true)
+            {
+
+            }
         }
     }
 }
