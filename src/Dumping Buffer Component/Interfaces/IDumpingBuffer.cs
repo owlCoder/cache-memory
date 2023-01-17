@@ -15,4 +15,5 @@ namespace DumpingBuffer_Component.Interfaces
 
         Task PeriodicCheck();
     }
+
 }

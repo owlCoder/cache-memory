@@ -103,13 +103,17 @@ namespace DumpingBuffer_Component.Implementations
         {
 =======
 
+<<<<<<< HEAD
 
 >>>>>>> 1418bea625ba4d343d3200a389193827064d18ee
             if (queue.Count >= 7)
+=======
+            public bool SendDataToDatabase(Historical HistroicalINode)
+>>>>>>> 43d2a2fb59d4eff74c8cb44b67203505a7844ec7
             {
-                Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
-                for (int i = 0; i < 7; i++)
+                if (queue.Count >= 7)
                 {
+<<<<<<< HEAD
                     HistroicalINode.WriteModelDataToDataBase(queue[0]);
                     RemoveFromQueue(); // remove wrote data
                 }
@@ -120,10 +124,30 @@ namespace DumpingBuffer_Component.Implementations
             }
 
             return false;
+=======
+                    Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
+                    for (int i = 0; i < 7; i++)
+                    {
+                        HistroicalINode.WriteModelDataToDataBase(queue[0]);
+                        RemoveFromQueue(); // remove wrote data
+                    }
+
+                    Console.WriteLine("[Dumping Buffer] Prenos podataka zavrsen");
+                    return true;
+                }
+
+
+                return false;
+            }          
+           
+>>>>>>> 43d2a2fb59d4eff74c8cb44b67203505a7844ec7
         }
 
         [ExcludeFromCodeCoverage]
         public List<ModelData> Queue { get; set; }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 43d2a2fb59d4eff74c8cb44b67203505a7844ec7
     }
 }
