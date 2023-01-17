@@ -17,47 +17,34 @@ namespace DumpingBuffer_Component.Implementations
         List<ModelData> queue = null;
         bool InitServie = false;
 
-       
         public DumpingBuffer()
         {
             queue = new List<ModelData>();
             InitServie = true;
         }
 
-
         public void AddToQueue(ModelData podaci)
         {
-
             if (InitServie)
             {
-<<<<<<< HEAD
                 #pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                 PeriodicCheck();
                 #pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
-=======
-#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
-                 PeriodicCheck();
-#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
->>>>>>> 1418bea625ba4d343d3200a389193827064d18ee
 
                 InitServie = false;
             }
 
             foreach (ModelData data in queue)
             {
-
                 if (data.Equals(podaci)) // prevent double same entry in queue
                 {
                     return;
                 }
-
             }
 
             queue.Add(podaci);
             Console.WriteLine("[Dumping Buffer] Podatak dodat u queue");
-
         }
-
 
         public void RemoveFromQueue()
         {
@@ -65,15 +52,13 @@ namespace DumpingBuffer_Component.Implementations
             Console.WriteLine("[Dumping Buffer] Podatak poslat i uklonjen iz queue");
         }
 
-
         public int QueueSize()
         {
-            // racuna koliko ima redova
+            // calculate how much queue has
             return queue.Count;
         }
 
         [ExcludeFromCodeCoverage]
-
         public async Task PeriodicCheck()
         {
             CancellationToken ct = new CancellationToken();
@@ -96,24 +81,15 @@ namespace DumpingBuffer_Component.Implementations
 
             // wait for next iteration
             await Task.Delay(interval, cancellationToken);
-<<<<<<< HEAD
         }
 
         public bool SendDataToDatabase(Historical HistroicalINode)
         {
-=======
-
-<<<<<<< HEAD
-
->>>>>>> 1418bea625ba4d343d3200a389193827064d18ee
             if (queue.Count >= 7)
-=======
-            public bool SendDataToDatabase(Historical HistroicalINode)
->>>>>>> 43d2a2fb59d4eff74c8cb44b67203505a7844ec7
             {
-                if (queue.Count >= 7)
+                Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
+                for (int i = 0; i < 7; i++)
                 {
-<<<<<<< HEAD
                     HistroicalINode.WriteModelDataToDataBase(queue[0]);
                     RemoveFromQueue(); // remove wrote data
                 }
@@ -124,30 +100,10 @@ namespace DumpingBuffer_Component.Implementations
             }
 
             return false;
-=======
-                    Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
-                    for (int i = 0; i < 7; i++)
-                    {
-                        HistroicalINode.WriteModelDataToDataBase(queue[0]);
-                        RemoveFromQueue(); // remove wrote data
-                    }
-
-                    Console.WriteLine("[Dumping Buffer] Prenos podataka zavrsen");
-                    return true;
-                }
-
-
-                return false;
-            }          
-           
->>>>>>> 43d2a2fb59d4eff74c8cb44b67203505a7844ec7
         }
 
         [ExcludeFromCodeCoverage]
         public List<ModelData> Queue { get; set; }
-<<<<<<< HEAD
 
-=======
->>>>>>> 43d2a2fb59d4eff74c8cb44b67203505a7844ec7
     }
 }

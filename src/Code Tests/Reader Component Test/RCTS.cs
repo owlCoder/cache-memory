@@ -37,11 +37,7 @@ namespace Reader_Component_Test
         }
 
         [Test]
-<<<<<<< HEAD
         [TestCase ("", "")]
-=======
-        [TestCase("", "")]
->>>>>>> 1418bea625ba4d343d3200a389193827064d18ee
         public void ReadAllAvailableData(string criteria, string value)
         {
             Assert.DoesNotThrow(() =>
@@ -69,11 +65,7 @@ namespace Reader_Component_Test
         [TestCase("potroseno", "0")]
         [TestCase("potrosnjaMesec", "Mesec")]
         public void WrongCriteria(string criteria, string value)
-<<<<<<< HEAD
         {            
-=======
-        {
->>>>>>> 1418bea625ba4d343d3200a389193827064d18ee
             List<ModelData> list = (new Reader()).GetPodaciFromHistorical(criteria, value, "NUnit").ToList();
 
             Assert.AreEqual(list.Count, 0);

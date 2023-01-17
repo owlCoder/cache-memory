@@ -4,21 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\User\Desktop\Projekat6\src\WPF UI\obj\Debug\
+D:\repo\src\WPF UI\obj\Debug\
 WPF_UI
 none
 false
 DEBUG;TRACE
-C:\Users\User\Desktop\Projekat6\src\WPF UI\App.xaml
-4-1166386902
+D:\repo\src\WPF UI\App.xaml
+4381859933
 
-<<<<<<< HEAD
 91051252618
 18484788981
-=======
-9-453949504
-18-1186787246
->>>>>>> 1418bea625ba4d343d3200a389193827064d18ee
 MainWindow.xaml;Moduli\Pocetna.xaml;Moduli\Statistika.xaml;Moduli\UpisNovePotrosnje.xaml;
 
 True
