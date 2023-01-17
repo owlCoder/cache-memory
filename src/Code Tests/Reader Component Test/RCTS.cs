@@ -43,5 +43,10 @@ namespace Reader_Component_Test
                 List<ModelData> list = (new Reader()).GetPodaciFromHistorical(criteria, value, "", false).ToList();
             });
         }
+
+        public void WrongCriteria(string criteria, string value)
+        {
+            
+        }
     }
 }
