@@ -50,6 +50,12 @@ namespace Common_Class_Library_Test
         }
 
 
+        [Test]
+        [TestCase(1, null, "addrr", "city", "SE-515", 12, "Januar")]
+        [TestCase(2, "uname", null, "city", "SE-515", 12, "Februar")]
+        [TestCase(3, "uname", "addrr", null, "SE-515", 24, "Mart")]
+        [TestCase(4, "name", "addrr", "city", null, 12, "Januar")]
+
         public void TestModelDataParamsNull(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
         {
             Assert.Throws<ArgumentNullException>(() =>
