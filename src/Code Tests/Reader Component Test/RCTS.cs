@@ -24,7 +24,7 @@ namespace Reader_Component_Test
             });
         }
 
-        public void ReadAllAvailableData(string criteria)
+        public void ReadAllAvailableData(string criteria, string value)
         {
             Assert.DoesNotThrow(() =>
             {
