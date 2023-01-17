@@ -93,7 +93,13 @@ namespace DumpingBuffer_Component.Implementations
 
             public bool SendDataToDatabase(Historical HistroicalINode)
             {
-               
+                if (queue.Count >= 7)
+                {
+                   
+
+                    return true;
+                }
+
 
                 return false;
             }
