@@ -134,8 +134,8 @@
             </StackPanel>
 
             <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="35 30 0 0">
-                <TextBlock FontSize="17" FontWeight="Bold" FontStyle="Italic" FontFamily="Fonts/#OS" Text="Cache Memory 3.3.1" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0"></TextBlock>
-                <TextBlock TextWrapping="Wrap" FontSize="15" FontStyle="Italic" FontFamily="Fonts/#OS" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0">
+                <TextBlock FontSize="17" FontWeight="Bold" FontStyle="Bold" FontFamily="Fonts/#OS" Text="Cache Memory 3.3.1" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0"></TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="15" FontStyle="Bold" FontFamily="Fonts/#OS" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0">
                     <LineBreak/>
                     Cache Memory je projekat iz predmeta Elementi Razvoja Softvera
                     koji se sluša u V semestru na Fakultetu tehničkih nauka u Novom Sadu. <LineBreak/><LineBreak/>
