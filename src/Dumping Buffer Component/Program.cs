@@ -22,7 +22,7 @@ namespace Dumping_Buffer_Component
             string uri = "DumpingBuffer";
             RemotingServices.Marshal(server, uri, server.GetType());
 
-            Console.WriteLine("DUMPING BUFFER KOMPONENTA ZAPOCINJE SA RADOM");
+            Console.WriteLine("DUMPING BUFFER  ZAPOCINJE SA RADOM");
             Console.WriteLine("Interaktivni rezim rada nije podrzan!");
 
             while (true)
