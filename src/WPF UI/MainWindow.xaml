@@ -138,16 +138,16 @@
                 <TextBlock TextWrapping="Wrap" FontSize="15" FontStyle="Italic" FontFamily="Fonts/#OS" Grid.ColumnSpan="2" Foreground="White" Margin="10 4 0 0">
                     <LineBreak/>
                     Cache Memory je projekat iz predmeta Elementi Razvoja Softvera
-                    koji se sluša u V semestru na Fakultetu tehničkih nauka u Novom Sadu. <LineBreak/><LineBreak/>
+                    koji se sluša u V semestru na Fakultetu tehničkih nauka u Novom Sadu.
                     
                     Aplikacija prikuplja podatke od korisnika o trenutnoj potrošnji toplotne energije
-                    ili o potrošnji u nekom od prethodnih perioda.<LineBreak/><LineBreak/>
+                    ili o potrošnji u nekom od prethodnih perioda.
                     
                     Moguća je pretraga podataka po određenim kriterijumima, unos podataka, filtriranje podataka.
                 </TextBlock>
             </StackPanel>
             
-            <Grid Background="Transparent" Margin="20 0 20 20" Grid.Row="0" Grid.Column="2" Grid.RowSpan="4" Grid.ColumnSpan="2">
+            <Grid Background="AliceBlue" Margin="20 0 20 20" Grid.Row="0" Grid.Column="2" Grid.RowSpan="4" Grid.ColumnSpan="2">
                 <Frame NavigationUIVisibility="Hidden" Panel.ZIndex="1" Source="/Moduli/Pocetna.xaml" Name="frame" />
             </Grid>
         </Grid>
