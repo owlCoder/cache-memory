@@ -76,6 +76,9 @@ namespace Dumping_Buffer_Component
                 File.WriteAllText("buffer.json", json);
                 Console.WriteLine("[SAVE] SAVE SUCCESSFULY");
             }
+        }
+
+
 
     }
 }
