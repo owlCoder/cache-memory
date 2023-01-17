@@ -24,13 +24,13 @@ namespace Writer_Component.Implementations
             Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER SUCCESS\n");
         }
 
-        public void DataPassThrough(ModelData data)
+        public void DataPassThrough(DumpingBuffer db, ModelData data)
         {
             // Log Message
             Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER");
 
-            DumpingBuffer DumpingBufferINode = RemotingServices.Connect(typeof(DumpingBuffer), "tcp://localhost:8085/DumpingBuffer") as DumpingBuffer;
-            DumpingBufferINode.AddToQueue(data);
+            if (db != null)
+                db.AddToQueue(data);
 
             // Log Message
             Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER SUCCESS\n");
