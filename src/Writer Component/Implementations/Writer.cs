@@ -9,15 +9,35 @@ namespace Writer_Component.Implementations
 {
     public class Writer : MarshalByRefObject, IWriter
     {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1418bea625ba4d343d3200a389193827064d18ee
         // Ne moze biti testirano - Security Sockets Polisa OS Windows
         [ExcludeFromCodeCoverage]
         public void DataPassThrough(ModelData data)
         {
+            
             // Log Message
             Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER");
 
             DumpingBuffer DumpingBufferINode = RemotingServices.Connect(typeof(DumpingBuffer), "tcp://localhost:8085/DumpingBuffer") as DumpingBuffer;
             DumpingBufferINode.AddToQueue(data);
+
+
+            // Log Message
+            Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER SUCCESS\n");
+
+
+        }
+
+        public void DataPassThrough(DumpingBuffer db, ModelData data)
+        {
+            // Log Message
+            Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER");
+
+            if (db != null)
+                db.AddToQueue(data);
 
             // Log Message
             Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER SUCCESS\n");

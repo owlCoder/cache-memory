@@ -17,34 +17,47 @@ namespace DumpingBuffer_Component.Implementations
         List<ModelData> queue = null;
         bool InitServie = false;
 
+       
         public DumpingBuffer()
         {
             queue = new List<ModelData>();
             InitServie = true;
         }
 
+
         public void AddToQueue(ModelData podaci)
         {
+
             if (InitServie)
             {
+<<<<<<< HEAD
                 #pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                 PeriodicCheck();
                 #pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
+=======
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
+                 PeriodicCheck();
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
+>>>>>>> 1418bea625ba4d343d3200a389193827064d18ee
 
                 InitServie = false;
             }
 
             foreach (ModelData data in queue)
             {
+
                 if (data.Equals(podaci)) // prevent double same entry in queue
                 {
                     return;
                 }
+
             }
 
             queue.Add(podaci);
             Console.WriteLine("[Dumping Buffer] Podatak dodat u queue");
+
         }
+
 
         public void RemoveFromQueue()
         {
@@ -52,13 +65,15 @@ namespace DumpingBuffer_Component.Implementations
             Console.WriteLine("[Dumping Buffer] Podatak poslat i uklonjen iz queue");
         }
 
+
         public int QueueSize()
         {
-            // calculate how much queue has
+            // racuna koliko ima redova
             return queue.Count;
         }
 
         [ExcludeFromCodeCoverage]
+
         public async Task PeriodicCheck()
         {
             CancellationToken ct = new CancellationToken();
@@ -81,10 +96,15 @@ namespace DumpingBuffer_Component.Implementations
 
             // wait for next iteration
             await Task.Delay(interval, cancellationToken);
+<<<<<<< HEAD
         }
 
         public bool SendDataToDatabase(Historical HistroicalINode)
         {
+=======
+
+
+>>>>>>> 1418bea625ba4d343d3200a389193827064d18ee
             if (queue.Count >= 7)
             {
                 Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
