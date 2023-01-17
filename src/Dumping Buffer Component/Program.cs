@@ -1,9 +1,11 @@
-﻿using DumpingBuffer_Component.Implementations;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.IO;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
+using System.Text.Json;
 using System.Threading;
 
 namespace Dumping_Buffer_Component
