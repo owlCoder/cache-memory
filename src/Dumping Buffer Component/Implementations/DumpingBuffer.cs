@@ -83,6 +83,9 @@ namespace DumpingBuffer_Component.Implementations
         {
             Historical HistroicalINode = RemotingServices.Connect(typeof(Historical), "tcp://localhost:8090/Historical") as Historical;
 
+            // provera da li treba slati podatke ka bazi podataka
+            SendDataToDatabase(HistroicalINode);
+
             if (queue.Count >= 7)
             {
                 Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
