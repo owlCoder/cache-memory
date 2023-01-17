@@ -15,7 +15,9 @@ namespace Reader_Component_Test
         [TestCase("userName", "dani")]
         [TestCase("userAddress", "Alekse Santica 4")]
         [TestCase("userCity", "Novi Sad")]
-
+        [TestCase("brojiloId", "SE-6321W")]
+        [TestCase("potroseno", "321")]
+        [TestCase("potrosnjaMesec", "Januar")]
         public void GetDataByCriteria(string criteria, string value)
         {
             Assert.DoesNotThrow(() =>
