@@ -45,5 +45,11 @@ namespace Dumping_Buffer_Component
 
             }
         }
+        private static void ConsoleExit(object sender, EventArgs e, DumpingBuffer server)
+        {
+            // save data on close
+            SaveData(server);
+        }
+
     }
 }
