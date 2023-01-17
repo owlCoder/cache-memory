@@ -24,6 +24,8 @@ namespace Reader_Component_Test
             });
         }
 
+        [Test]
+        [TestCase("", "")]
         public void ReadAllAvailableData(string criteria, string value)
         {
             Assert.DoesNotThrow(() =>
