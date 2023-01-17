@@ -5,6 +5,7 @@ using System.Runtime.Remoting;
 using Common_Class_Library.Implementations;
 using DumpingBuffer_Component.Implementations;
 using Historical_Component.Implementations;
+using NUnit.Framework;
 
 namespace CommonClassLibraryTests
 {
