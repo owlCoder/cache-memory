@@ -137,5 +137,14 @@ namespace Common_Class_Library_Test
 
             Assert.AreEqual(false, modelData.Equals(modelData1));
         }
+
+        [Test]
+        [TestCase()]
+        public void HashCodeTest()
+        {
+            ModelData modelData = new ModelData();
+
+            Assert.AreEqual(-143131610, modelData.GetHashCode());
+        }
     }
 }
