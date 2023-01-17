@@ -100,10 +100,9 @@ namespace DumpingBuffer_Component.Implementations
                     {
                         HistroicalINode.WriteModelDataToDataBase(queue[0]);
                         RemoveFromQueue(); // remove wrote data
-
                     }
 
-
+                    Console.WriteLine("[Dumping Buffer] Prenos podataka zavrsen");
                     return true;
                 }
 
