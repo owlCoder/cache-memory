@@ -34,6 +34,7 @@ namespace Dumping_Buffer_Component
 
             while (true)
             {
+                Thread.Sleep(10000); //svake 30 sekunde prikazi poruku za kraj
 
             }
         }
