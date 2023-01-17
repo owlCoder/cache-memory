@@ -98,7 +98,8 @@ namespace DumpingBuffer_Component.Implementations
                     Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
                     for (int i = 0; i < 7; i++)
                     {
-                        
+                        HistroicalINode.WriteModelDataToDataBase(queue[0]);
+
                     }
 
 
