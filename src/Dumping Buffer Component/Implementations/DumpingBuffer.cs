@@ -39,10 +39,12 @@ namespace DumpingBuffer_Component.Implementations
 
             foreach (ModelData data in queue)
             {
+
                 if (data.Equals(podaci)) // prevent double same entry in queue
                 {
                     return;
                 }
+
             }
 
 
