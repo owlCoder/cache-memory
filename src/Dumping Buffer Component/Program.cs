@@ -50,6 +50,20 @@ namespace Dumping_Buffer_Component
             // save data on close
             SaveData(server);
         }
+        public static void LoadData(DumpingBuffer server)
+        {
+            if (File.Exists("buffer.json"))
+            {
+                Console.WriteLine("[LOAD] READING DATA FROM FILE");
+                string jsonFromFile = File.ReadAllText("buffer.json");
+                server.Queue = JsonSerializer.Deserialize<List<ModelData>>(jsonFromFile);
+                Console.WriteLine("[LOAD] DATA LOADED SUCCESSFULY");
+
+                Console.WriteLine("[Dumping Buffer] Trenutno u redu cekanja {0}", server.QueueSize());
+
+                File.Delete("buffer.json");
+            }
+        }
 
     }
 }
