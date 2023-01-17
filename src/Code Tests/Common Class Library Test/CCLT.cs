@@ -93,6 +93,8 @@ namespace Common_Class_Library_Test
             });
         }
 
+        [Test]
+        [TestCase()]
         public void PropertyTests()
         {
             ModelData modelData = new ModelData();
