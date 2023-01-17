@@ -74,8 +74,8 @@ namespace Dumping_Buffer_Component
             {
                 string json = JsonSerializer.Serialize(server.Queue);
                 File.WriteAllText("buffer.json", json);
-               
-        }
+                Console.WriteLine("[SAVE] SAVE SUCCESSFULY");
+            }
 
     }
 }
