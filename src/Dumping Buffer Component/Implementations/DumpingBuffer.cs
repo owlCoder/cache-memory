@@ -72,6 +72,11 @@ namespace DumpingBuffer_Component.Implementations
         {
             CancellationToken ct = new CancellationToken();
             TimeSpan vreme = new TimeSpan(0, 0, 2); // provera na 2 sekunde
+
+            for (; !ct.IsCancellationRequested;)
+            {
+                await SendToHistorical(vreme, ct);
+            }
         }
 
         public async Task SendToHistorical(TimeSpan interval, CancellationToken cancellationToken)
