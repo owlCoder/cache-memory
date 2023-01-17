@@ -34,6 +34,8 @@ namespace Reader_Component_Test
             });
         }
 
+        [Test]
+        [TestCase("", "")]
         public void ReadAllAvailableDataNonNU(string criteria, string value)
         {
             Assert.DoesNotThrow(() =>
