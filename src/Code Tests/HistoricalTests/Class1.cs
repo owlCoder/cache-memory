@@ -26,6 +26,8 @@ namespace HistoricalTests
         }
         [Test]
         [TestCase("userId", "12")]
+        [TestCase("userName", "dani")]
+        [TestCase("userAddress", "Alekse Santica 4")]
 
         public void GetDataByCriteria(string criteria, string value)
         {
