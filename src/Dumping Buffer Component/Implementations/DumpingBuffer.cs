@@ -59,9 +59,10 @@ namespace DumpingBuffer_Component.Implementations
             Console.WriteLine("[Dumping Buffer] Podatak poslat i uklonjen iz queue");
         }
 
+
         public int QueueSize()
         {
-            // calculate how much queue has
+            // racuna koliko ima redova
             return queue.Count;
         }
 
