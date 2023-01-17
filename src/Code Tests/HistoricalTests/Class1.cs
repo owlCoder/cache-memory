@@ -15,5 +15,16 @@ namespace HistoricalTests
     {
         [Test]
         [TestCase()]
+        public void GetAllCorrect()
+        {
+            Historical hc = new Historical();
+
+            Assert.DoesNotThrow(() =>
+            {
+                List<ModelData> list = hc.GetAllDataFromDataBase().ToList();
+            });
+        }
+        [Test]
+        [TestCase("userId", "12")]
     }
 }
