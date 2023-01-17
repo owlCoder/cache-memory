@@ -17,6 +17,7 @@ namespace DumpingBuffer_Component.Implementations
         List<ModelData> queue = null;
         bool InitServie = false;
 
+       
         public DumpingBuffer()
         {
             queue = new List<ModelData>();
