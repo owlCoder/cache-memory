@@ -8,5 +8,15 @@ namespace CommonClassLibraryTests
 {
     public class CommonTests
     {
+        [Test]
+        [TestCase()]
+        public void GetConnectionTest()
+        {
+            using (IDbConnection konekcija = Connection.GetConnection())
+            {
+                konekcija.Open();
+
+            }
+        }
     }
 }
