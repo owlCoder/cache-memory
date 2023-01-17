@@ -50,5 +50,10 @@ namespace Reader_Component_Test
 
             Assert.AreEqual(list.Count, 0);
         }
+
+        public void ReadMultiData()
+        {
+            
+        }
     }
 }
