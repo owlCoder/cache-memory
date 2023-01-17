@@ -93,5 +93,25 @@ namespace Common_Class_Library_Test
             });
         }
 
+        public void PropertyTests()
+        {
+            ModelData modelData = new ModelData();
+
+            modelData.UserID = 1;
+            modelData.Username = "test";
+            modelData.UserCity = "test";
+            modelData.UserAddress = "test";
+            modelData.BrojiloId = "test";
+            modelData.Mesec = "test";
+            modelData.Potroseno = 1;
+
+            Assert.AreEqual(1, modelData.UserID);
+            Assert.AreEqual("test", modelData.Username);
+            Assert.AreEqual("test", modelData.UserCity);
+            Assert.AreEqual("test", modelData.UserAddress);
+            Assert.AreEqual("test", modelData.BrojiloId);
+            Assert.AreEqual("test", modelData.Mesec);
+            Assert.AreEqual(1, modelData.Potroseno);
+        }
     }
 }
