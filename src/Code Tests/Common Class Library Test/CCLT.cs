@@ -115,5 +115,15 @@ namespace Common_Class_Library_Test
             Assert.AreEqual("test", modelData.Mesec);
             Assert.AreEqual(1, modelData.Potroseno);
         }
+
+        [Test]
+        [TestCase()]
+        public void EqualsTestOk()
+        {
+            ModelData modelData = new ModelData();
+            ModelData modelData1 = new ModelData();
+
+            Assert.AreEqual(true, modelData.Equals(modelData1));
+        }
     }
 }
