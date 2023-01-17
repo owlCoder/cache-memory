@@ -88,6 +88,9 @@ namespace DumpingBuffer_Component.Implementations
 
             Console.WriteLine("[Dumping Buffer] Trenutno u redu cekanja {0}", queue.Count);
 
+            // wait for next iteration
+            await Task.Delay(interval, cancellationToken);
+
 
             if (queue.Count >= 7)
             {
