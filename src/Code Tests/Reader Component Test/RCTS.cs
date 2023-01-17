@@ -46,7 +46,9 @@ namespace Reader_Component_Test
 
         public void WrongCriteria(string criteria, string value)
         {
-            
+            List<ModelData> list = (new Reader()).GetPodaciFromHistorical(criteria, value, "NUnit").ToList();
+
+            Assert.AreEqual(list.Count, 0);
         }
     }
 }
