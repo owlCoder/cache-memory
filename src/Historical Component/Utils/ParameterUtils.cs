@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Data;
 using System.Data.Common;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Historical_Component.Utils
 {
+    [ExcludeFromCodeCoverage]
     class ParameterUtil
     {
         public static void AddParameter(IDbCommand command, string name, DbType type)

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
@@ -7,7 +8,8 @@ using Writer_Component.Implementations;
 
 namespace Writer_Component
 {
-    internal class Program
+    [ExcludeFromCodeCoverage]
+    public class Program
     {
         static void Main(string[] args)
         {

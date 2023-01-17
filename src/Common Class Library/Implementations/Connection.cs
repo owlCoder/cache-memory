@@ -33,7 +33,6 @@ namespace Common_Class_Library.Implementations
             return ocsb;
         }
 
-        [ExcludeFromCodeCoverage]
         private static bool CheckInstance()
         {
             if (instance == null)
@@ -45,7 +44,6 @@ namespace Common_Class_Library.Implementations
             return false;
         }
 
-        [ExcludeFromCodeCoverage]
         private static IDbConnection CheckInstanceConnection()
         {
             if (CheckInstance())

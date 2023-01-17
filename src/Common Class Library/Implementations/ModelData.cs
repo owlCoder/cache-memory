@@ -62,7 +62,6 @@ namespace Common_Class_Library.Implementations
             return hashCode;
         }
 
-        [ExcludeFromCodeCoverage]
         private static void CheckNullArguments(string username, string userAddress, string userCity, string brojiloId, string mesec)
         {
             if (username == null || userAddress == null || userCity == null || brojiloId == null || mesec == null)
@@ -71,7 +70,6 @@ namespace Common_Class_Library.Implementations
             }
         }
 
-        [ExcludeFromCodeCoverage]
         private static void CheckEmptyArguments(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
         {
             if (userID < 1 || username.Trim().Equals("") || userAddress.Trim().Equals("") || userCity.Trim().Equals("") || brojiloId.Trim().Equals("") || mesec.Trim().Equals("") || potroseno < 0)

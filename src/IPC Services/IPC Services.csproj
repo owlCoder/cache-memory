@@ -55,6 +55,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common Class Library\Common Class Library.csproj">
+      <Project>{DC1F3AB7-423D-4015-B5E4-E4ACF2B7C2BD}</Project>
+      <Name>Common Class Library</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Dumping Buffer Component\Dumping Buffer Component.csproj">
       <Project>{b5f5fad7-7a30-4acb-96ff-3d6a8bcde888}</Project>
       <Name>Dumping Buffer Component</Name>

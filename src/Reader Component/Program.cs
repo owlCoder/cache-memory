@@ -1,5 +1,6 @@
 ﻿using Reader_Component.Implementations;
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
@@ -7,6 +8,7 @@ using System.Threading;
 
 namespace Reader_Component
 {
+    [ExcludeFromCodeCoverage]
     public class Program
     {
         static void Main(string[] args)

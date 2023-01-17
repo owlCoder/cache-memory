@@ -44,6 +44,7 @@ namespace WPF_UI.Moduli
                 dataViewDb.ItemsSource = INode.ReaderINode.GetPodaciFromHistorical(
                     data[0],
                     data[1],
+                    "",
                     allData
                 );
             }

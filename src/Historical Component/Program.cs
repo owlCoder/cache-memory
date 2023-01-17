@@ -2,6 +2,7 @@
 using Historical_Component.Implementations;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
@@ -10,6 +11,7 @@ using System.Threading;
 
 namespace Historical_Component
 {
+    [ExcludeFromCodeCoverage]
     public class Program
     {
         static void Main(string[] args)

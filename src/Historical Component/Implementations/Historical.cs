@@ -28,14 +28,17 @@ namespace Historical_Component.Implementations
 
                     using (IDataReader reader = command.ExecuteReader())
                     {
-                        while (reader.Read())
+                        do
                         {
+                            if (!reader.Read())
+                                break;
+
                             ModelData data = new ModelData(reader.GetInt32(0), reader.GetString(1),
                                                            reader.GetString(2), reader.GetString(3),
                                                            reader.GetString(4), reader.GetDecimal(5),
                                                            reader.GetString(6));
                             dataList.Add(data);
-                        }
+                        } while (reader.Read());
                     }
                 }
             }
@@ -70,14 +73,18 @@ namespace Historical_Component.Implementations
 
                         using (IDataReader reader = command.ExecuteReader())
                         {
-                            while (reader.Read())
+
+                            do
                             {
+                                if (!reader.Read())
+                                    break;
+
                                 ModelData data = new ModelData(reader.GetInt32(0), reader.GetString(1),
                                                                reader.GetString(2), reader.GetString(3),
                                                                reader.GetString(4), reader.GetDecimal(5),
                                                                reader.GetString(6));
                                 dataList.Add(data);
-                            }
+                            } while (reader.Read());
                         }
                     }
                     else
@@ -91,14 +98,17 @@ namespace Historical_Component.Implementations
 
                         using (IDataReader reader = command.ExecuteReader())
                         {
-                            while (reader.Read())
+                            do
                             {
+                                if (!reader.Read())
+                                    break;
+
                                 ModelData data = new ModelData(reader.GetInt32(0), reader.GetString(1),
                                                                reader.GetString(2), reader.GetString(3),
                                                                reader.GetString(4), reader.GetDecimal(5),
                                                                reader.GetString(6));
                                 dataList.Add(data);
-                            }
+                            } while (reader.Read());
                         }
                     }
                 }
@@ -110,7 +120,6 @@ namespace Historical_Component.Implementations
             return dataList;
         }
 
-        [ExcludeFromCodeCoverage]
         public int WriteModelDataToDataBase(ModelData data)
         {
             using (IDbConnection connection = Connection.GetConnection())
@@ -120,6 +129,7 @@ namespace Historical_Component.Implementations
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private int Save(ModelData data, IDbConnection connection)
         {
             // Log Message

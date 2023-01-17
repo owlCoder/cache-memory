@@ -5,6 +5,6 @@ namespace Reader_Component.Interfaces
 {
     public interface IReader
     {
-        List<ModelData> GetPodaciFromHistorical(string criteriaName, string criteria, bool allData = false);
+        List<ModelData> GetPodaciFromHistorical(string criteriaName, string criteria, string test, bool allData = false);
     }
 }

@@ -1,9 +1,0 @@
-D:\repo\src\bin\Debug\Historical Component.exe.config
-D:\repo\src\bin\Debug\Historical Component.exe
-D:\repo\src\bin\Debug\Historical Component.pdb
-D:\repo\src\Historical Component\obj\Debug\Historical Component.csproj.AssemblyReference.cache
-D:\repo\src\Historical Component\obj\Debug\Historical Component.csproj.SuggestedBindingRedirects.cache
-D:\repo\src\Historical Component\obj\Debug\Historical Component.csproj.CoreCompileInputs.cache
-D:\repo\src\Historical Component\obj\Debug\Historical Component.csproj.CopyComplete
-D:\repo\src\Historical Component\obj\Debug\Historical Component.exe
-D:\repo\src\Historical Component\obj\Debug\Historical Component.pdb
