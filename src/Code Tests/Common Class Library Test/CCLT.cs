@@ -72,5 +72,14 @@ namespace Common_Class_Library_Test
             });
         }
 
+        public void TestModelDataEmptyParams(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
+        {
+            Assert.Throws<ArgumentException>(() =>
+            {
+                ModelData modelData = new ModelData(userID, username, userAddress, userCity, brojiloId, potroseno, mesec);
+
+            });
+        }
+
     }
 }
