@@ -108,15 +108,11 @@ namespace DumpingBuffer_Component.Implementations
 
 
                 return false;
-            }
-
-            [ExcludeFromCodeCoverage]
-            public List<ModelData> Queue { get; set; }
-            // wait for next iteration
-            await Task.Delay(interval, cancellationToken);
-            Console.WriteLine("[Dumping Buffer] Trenutno u redu cekanja {0}", queue.Count);
+            }          
+           
         }
 
-       
+        [ExcludeFromCodeCoverage]
+        public List<ModelData> Queue { get; set; }
     }
 }
