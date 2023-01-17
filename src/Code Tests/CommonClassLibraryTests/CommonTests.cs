@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Runtime.Remoting;
-using Common_Class_Library.Implementations;
-using DumpingBuffer_Component.Implementations;
-using Historical_Component.Implementations;
+﻿using Common_Class_Library.Implementations;
 using NUnit.Framework;
+using System;
+using System.Data;
+using System.Diagnostics.CodeAnalysis;
 
 namespace CommonClassLibraryTests
 {
