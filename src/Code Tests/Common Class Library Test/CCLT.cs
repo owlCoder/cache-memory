@@ -77,6 +77,11 @@ namespace Common_Class_Library_Test
         [TestCase(2, "uname", "", "city", "SE-515", 12, "Februar")]
         [TestCase(3, "uname", "addrr", "", "SE-515", 24, "Mart")]
         [TestCase(4, "name", "addrr", "city", "", 12, "Januar")]
+        [TestCase(5, "uname", "addrr", "", "SE-64", 152, "Januar")]
+        [TestCase(6, "", "address", "city", "SE-515", 12, "")]
+        [TestCase(7, "uname", "addrr", "", "SE-515", 411, "Januar")]
+        [TestCase(8, "uname", "addrr", "", "SE-515", 12, "Januar")]
+        [TestCase(9, "uname", "", "city", "SE-521", 47, "Januar")]
         public void TestModelDataEmptyParams(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
         {
             Assert.Throws<ArgumentException>(() =>
