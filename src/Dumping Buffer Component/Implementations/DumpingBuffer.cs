@@ -86,6 +86,9 @@ namespace DumpingBuffer_Component.Implementations
             // provera da li treba slati podatke ka bazi podataka
             SendDataToDatabase(HistroicalINode);
 
+            Console.WriteLine("[Dumping Buffer] Trenutno u redu cekanja {0}", queue.Count);
+
+
             if (queue.Count >= 7)
             {
                 Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
