@@ -49,6 +49,7 @@ namespace Common_Class_Library_Test
             Assert.NotNull(modelData);
         }
 
+
         [Test]
         [TestCase(1, null, "addrr", "city", "SE-515", 12, "Januar")]
         [TestCase(2, "uname", null, "city", "SE-515", 12, "Februar")]
@@ -60,6 +61,8 @@ namespace Common_Class_Library_Test
         [TestCase(8, "uname", "addrr", "city square", "SE-515", 12, null)]
         [TestCase(9, null, null, null, null, 47, null)]
         [TestCase(10, null, "addrr", "city", null, 5, "Januar")]
+        [TestCase(14, null, "addrr", "city", null, 5, "Januar")]
+
         public void TestModelDataParamsNull(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
         {
             Assert.Throws<ArgumentNullException>(() =>
@@ -80,6 +83,7 @@ namespace Common_Class_Library_Test
         [TestCase(8, "uname", "addrr", "", "SE-515", 12, "Januar")]
         [TestCase(9, "uname", "", "city", "SE-521", 47, "Januar")]
         [TestCase(10, "", "", "", "", 688, "")]
+
         public void TestModelDataEmptyParams(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
         {
             Assert.Throws<ArgumentException>(() =>
@@ -140,7 +144,7 @@ namespace Common_Class_Library_Test
         {
             ModelData modelData = new ModelData();
 
-            Assert.NotZero(modelData.GetHashCode());
+            Assert.AreEqual(-143131610, modelData.GetHashCode());
         }
     }
 }

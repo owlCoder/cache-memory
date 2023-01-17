@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Compile Include="Historical_Component_Test.cs" />
+>>>>>>> 51c4fc211ec05f986697649769a0e4ec09e8e216
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestFixtureAttribute.cs" />
   </ItemGroup>
