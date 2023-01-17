@@ -32,10 +32,7 @@ namespace Dumping_Buffer_Component
             // load data if exist
             LoadData(server);
 
-            while (true)
-            {
-                Thread.Sleep(2000); // svake druge sekunde ide provera
-            }
+           
         }
     }
 }
