@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Common_Class_Library.Implementations;
+using Moq;
+using NUnit.Framework;
+using Reader_Component;
+using Reader_Component.Implementations;
 
 namespace Reader_Component_Test
 {
