@@ -20,5 +20,15 @@ namespace CommonClassLibraryTests
                 Assert.NotNull(konekcija);
             }
         }
+
+
+        [Test]
+        [TestCase()]
+        public void TestModelData()
+        {
+            ModelData modelData = new ModelData();
+
+            
+        }
     }
 }
