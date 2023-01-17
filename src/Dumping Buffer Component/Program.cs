@@ -67,6 +67,11 @@ namespace Dumping_Buffer_Component
                 File.Delete("buffer.json");
             }
         }
+        public static void SaveData(DumpingBuffer server)
+        {
+            Console.WriteLine("[SAVE] SAVING DATA");
+            
+        }
 
     }
 }
