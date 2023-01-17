@@ -52,6 +52,7 @@ namespace DumpingBuffer_Component.Implementations
 
         }
 
+
         public void RemoveFromQueue()
         {
             queue.RemoveAt(0); // remove first from queue
