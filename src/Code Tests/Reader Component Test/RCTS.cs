@@ -67,6 +67,8 @@ namespace Reader_Component_Test
             {
                 Console.WriteLine("[ERROR] CONNECTION TO SERVER FAILED");
             }
+
+            Assert.AreEqual(true, result);
         }
     }
 }
