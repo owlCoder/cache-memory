@@ -28,6 +28,10 @@ namespace Dumping_Buffer_Component
             // na zatvaranje aplikacije cuvanje podataka
             AppDomain.CurrentDomain.ProcessExit += new EventHandler((sender, e) => ConsoleExit(sender, e, server));
 
+
+            // load data if exist
+            LoadData(server);
+
             while (true)
             {
                 Thread.Sleep(2000); // svake druge sekunde ide provera
