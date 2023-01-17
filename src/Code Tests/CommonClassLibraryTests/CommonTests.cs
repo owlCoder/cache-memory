@@ -28,7 +28,7 @@ namespace CommonClassLibraryTests
         {
             ModelData modelData = new ModelData();
 
-            
+            Assert.NotNull(modelData);
         }
     }
 }
