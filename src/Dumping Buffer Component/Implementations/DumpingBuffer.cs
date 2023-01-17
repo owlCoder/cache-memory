@@ -91,27 +91,28 @@ namespace DumpingBuffer_Component.Implementations
             // wait for next iteration
             await Task.Delay(interval, cancellationToken);
 
-
-            if (queue.Count >= 7)
+            public bool SendDataToDatabase(Historical HistroicalINode)
             {
-                Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
-                for (int i = 0; i < 7; i++)
+                if (queue.Count >= 7)
                 {
-                    HistroicalINode.WriteModelDataToDataBase(queue[i]);
+                    Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
+                    for (int i = 0; i < 7; i++)
+                    {
+                        HistroicalINode.WriteModelDataToDataBase(queue[0]);
+                        RemoveFromQueue(); // remove wrote data
+                    }
+
+                    Console.WriteLine("[Dumping Buffer] Prenos podataka zavrsen");
+                    return true;
                 }
 
-                for (int i = 0; i < 7; i++)
-                {
-                    RemoveFromQueue(); // remove wrote data
-                }
-                Console.WriteLine("[Dumping Buffer] Prenos podataka zavrsen");
-            }
 
-            // wait for next iteration
-            await Task.Delay(interval, cancellationToken);
-            Console.WriteLine("[Dumping Buffer] Trenutno u redu cekanja {0}", queue.Count);
+                return false;
+            }          
+           
         }
 
-        // kada se zatvori dumping buffer preostali ne upisani podaci u bazi se cuvaju u fajl
+        [ExcludeFromCodeCoverage]
+        public List<ModelData> Queue { get; set; }
     }
 }
