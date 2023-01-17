@@ -37,7 +37,7 @@
                     Content="X" Margin="90 3 0 3" Grid.Column="5" Foreground="White">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" />
+                        <Setter Property="Background" Value="Transparent"/>
                         <Setter Property="BorderBrush" Value="#d80000"/>
                         <Setter Property="BorderThickness" Value="1"/>
                         <Setter Property="Template">
