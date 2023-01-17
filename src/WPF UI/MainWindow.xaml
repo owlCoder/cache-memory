@@ -37,14 +37,14 @@
                     Content="X" Margin="90 3 0 3" Grid.Column="5" Foreground="White">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Background" />
                         <Setter Property="BorderBrush" Value="#d80000"/>
                         <Setter Property="BorderThickness" Value="1"/>
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="{x:Type Button}">
                                     <Border Background="{TemplateBinding Background}">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Top"/>
                                     </Border>
                                 </ControlTemplate>
                             </Setter.Value>
