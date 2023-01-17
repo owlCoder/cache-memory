@@ -47,9 +47,9 @@ namespace DumpingBuffer_Component.Implementations
 
             }
 
-
             queue.Add(podaci);
             Console.WriteLine("[Dumping Buffer] Podatak dodat u queue");
+
         }
 
         public void RemoveFromQueue()
