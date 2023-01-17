@@ -25,6 +25,9 @@ namespace Dumping_Buffer_Component
             Console.WriteLine("DUMPING BUFFER  ZAPOCINJE SA RADOM");
             Console.WriteLine("Interaktivni rezim rada nije podrzan!");
 
+            // na zatvaranje aplikacije cuvanje podataka
+            AppDomain.CurrentDomain.ProcessExit += new EventHandler((sender, e) => ConsoleExit(sender, e, server));
+
             while (true)
             {
                 Thread.Sleep(2000); // svake druge sekunde ide provera
