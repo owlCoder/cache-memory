@@ -70,7 +70,11 @@ namespace Dumping_Buffer_Component
         public static void SaveData(DumpingBuffer server)
         {
             Console.WriteLine("[SAVE] SAVING DATA");
-            
+            if (server.QueueSize() > 0)
+            {
+                string json = JsonSerializer.Serialize(server.Queue);
+                File.WriteAllText("buffer.json", json);
+               
         }
 
     }
