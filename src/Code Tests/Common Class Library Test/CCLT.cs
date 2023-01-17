@@ -60,6 +60,8 @@ namespace Common_Class_Library_Test
         [TestCase(7, "uname", "addrr", "city", null, 411, "Januar")]
         [TestCase(8, "uname", "addrr", "city square", "SE-515", 12, null)]
         [TestCase(9, null, null, null, null, 47, null)]
+        [TestCase(10, null, "addrr", "city", null, 5, "Januar")]
+        [TestCase(14, null, "addrr", "city", null, 5, "Januar")]
 
         public void TestModelDataParamsNull(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
         {
