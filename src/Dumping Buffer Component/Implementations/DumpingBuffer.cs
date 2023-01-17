@@ -27,6 +27,7 @@ namespace DumpingBuffer_Component.Implementations
 
         public void AddToQueue(ModelData podaci)
         {
+
             if (InitServie)
             {
 #pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
