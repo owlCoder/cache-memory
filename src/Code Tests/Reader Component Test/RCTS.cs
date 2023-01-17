@@ -44,6 +44,14 @@ namespace Reader_Component_Test
             });
         }
 
+        [Test]
+        [TestCase("userId", "43")]
+        [TestCase("userName", "dai")]
+        [TestCase("userAddress", "Alekse Sanica 4")]
+        [TestCase("userCity", "NoviSad")]
+        [TestCase("brojiloId", "SE-321W")]
+        [TestCase("potroseno", "0")]
+        [TestCase("potrosnjaMesec", "Mesec")]
         public void WrongCriteria(string criteria, string value)
         {
             List<ModelData> list = (new Reader()).GetPodaciFromHistorical(criteria, value, "NUnit").ToList();
