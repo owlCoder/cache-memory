@@ -99,6 +99,7 @@ namespace DumpingBuffer_Component.Implementations
                     for (int i = 0; i < 7; i++)
                     {
                         HistroicalINode.WriteModelDataToDataBase(queue[0]);
+                        RemoveFromQueue(); // remove wrote data
 
                     }
 
