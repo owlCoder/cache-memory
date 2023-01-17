@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\User\Desktop\Projekat6\src\WPF UI\obj\Debug\
+=======
+D:\3. godina\RAZVOJ\Novi\src\WPF UI\obj\Debug\
+>>>>>>> fc511882b88b071de0fa8897172097ed3b742ae7
 WPF_UI
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\User\Desktop\Projekat6\src\WPF UI\App.xaml
 4-1166386902
 
 8-1421876565
 18-1186787246
+=======
+D:\3. godina\RAZVOJ\Novi\src\WPF UI\App.xaml
+4381859933
+
+91051252618
+18-1942270689
+>>>>>>> fc511882b88b071de0fa8897172097ed3b742ae7
 MainWindow.xaml;Moduli\Pocetna.xaml;Moduli\Statistika.xaml;Moduli\UpisNovePotrosnje.xaml;
 
 True

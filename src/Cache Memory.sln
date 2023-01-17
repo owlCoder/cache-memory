@@ -21,7 +21,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[Tests] Dumping Buffer Comp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[Tests] Common Class Library", "Code Tests\Common Class Library Test\[Tests] Common Class Library.csproj", "{B67AA4B2-23AD-4F89-96E0-675760176DB0}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reader Component Test", "Code Tests\Reader Component Test\Reader Component Test.csproj", "{7516B323-A2C7-46E3-ABDB-CB7A1758C80D}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoricalTests", "Code Tests\HistoricalTests\HistoricalTests.csproj", "{931825B2-6EAA-42D6-95CF-00C0CC9691A2}"
+>>>>>>> fc511882b88b071de0fa8897172097ed3b742ae7
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,10 +69,17 @@ Global
 		{B67AA4B2-23AD-4F89-96E0-675760176DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B67AA4B2-23AD-4F89-96E0-675760176DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B67AA4B2-23AD-4F89-96E0-675760176DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{7516B323-A2C7-46E3-ABDB-CB7A1758C80D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7516B323-A2C7-46E3-ABDB-CB7A1758C80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7516B323-A2C7-46E3-ABDB-CB7A1758C80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7516B323-A2C7-46E3-ABDB-CB7A1758C80D}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{931825B2-6EAA-42D6-95CF-00C0CC9691A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{931825B2-6EAA-42D6-95CF-00C0CC9691A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{931825B2-6EAA-42D6-95CF-00C0CC9691A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{931825B2-6EAA-42D6-95CF-00C0CC9691A2}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> fc511882b88b071de0fa8897172097ed3b742ae7
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
