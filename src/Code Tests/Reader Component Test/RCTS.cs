@@ -58,7 +58,10 @@ namespace Reader_Component_Test
 
             try
             {
-                
+                for (int i = 1; i <= 3; i++)
+                {
+                    result = (reader.GetPodaciFromHistorical("userid", "1", "", true)).Count == 0;
+                }
             }
             catch
             {
