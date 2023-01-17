@@ -23,5 +23,10 @@ namespace Reader_Component_Test
                 List<ModelData> list = (new Reader()).GetPodaciFromHistorical(criteria, value, "NUnit").ToList();
             });
         }
+
+        public void ReadAllAvailableData(string criteria)
+        {
+            
+        }
     }
 }
