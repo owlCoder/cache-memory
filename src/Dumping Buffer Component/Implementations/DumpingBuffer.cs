@@ -71,6 +71,7 @@ namespace DumpingBuffer_Component.Implementations
         public async Task PeriodicCheck()
         {
             CancellationToken ct = new CancellationToken();
+            TimeSpan vreme = new TimeSpan(0, 0, 2); // provera na 2 sekunde
         }
 
         public async Task SendToHistorical(TimeSpan interval, CancellationToken cancellationToken)
