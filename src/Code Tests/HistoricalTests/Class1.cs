@@ -36,11 +36,11 @@ namespace HistoricalTests
                 List<ModelData> list = hc.GetSelectedDataByCriteria(criteria, value).ToList();
             });
         }
-        public void MockSaveDb(int userID, string username, string userCity, string brojiloId, decimal potroseno, string mesec)
+        public void MockSaveDb(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
         {
             Mock<IHistorical> mock = new Mock<IHistorical>();
 
-            mock.Setup(p => p.WriteModelDataToDataBase(new ModelData(userID, username, userCity, brojiloId, potroseno, mesec))).Returns(0);
+            mock.Setup(p => p.WriteModelDataToDataBase(new ModelData(userID, username, userAddress, userCity, brojiloId, potroseno, mesec))).Returns(0);
         }
     }
 }
