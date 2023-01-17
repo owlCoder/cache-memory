@@ -30,5 +30,12 @@ namespace CommonClassLibraryTests
 
             Assert.NotNull(modelData);
         }
+
+        public void TestModelDataParams(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
+        {
+            ModelData modelData = new ModelData(userID, username, userAddress, userCity, brojiloId, potroseno, mesec);
+
+            Assert.NotNull(modelData);
+        }
     }
 }
