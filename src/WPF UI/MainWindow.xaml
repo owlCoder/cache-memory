@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_UI"
         mc:Ignorable="d"
-        WindowStyle="SingleBorderWindow"
+        WindowStyle="None"
         ResizeMode="NoResize"
         Background="#181735"
         Title="Cache Memory 3.3.1" Height="450" Width="1000">
