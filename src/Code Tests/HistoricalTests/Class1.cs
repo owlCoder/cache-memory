@@ -27,13 +27,13 @@ namespace HistoricalTests
         [Test]
         [TestCase("userId", "12")]
 
-        public void GetDataByCriteria(string criteria)
+        public void GetDataByCriteria(string criteria, string value)
         {
             Historical hc = new Historical();
 
             Assert.DoesNotThrow(() =>
             {
-                List<ModelData> list = hc.GetSelectedDataByCriteria(criteria).ToList();
+                List<ModelData> list = hc.GetSelectedDataByCriteria(criteria, value).ToList();
             });
         }
     }
