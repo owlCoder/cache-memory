@@ -91,20 +91,11 @@ namespace DumpingBuffer_Component.Implementations
             // wait for next iteration
             await Task.Delay(interval, cancellationToken);
 
-
-            if (queue.Count >= 7)
+            public bool SendDataToDatabase(Historical HistroicalINode)
             {
-                Console.WriteLine("[Dumping Buffer] Slanje podataka ka Historical");
-                for (int i = 0; i < 7; i++)
-                {
-                    HistroicalINode.WriteModelDataToDataBase(queue[i]);
-                }
+               
 
-                for (int i = 0; i < 7; i++)
-                {
-                    RemoveFromQueue(); // remove wrote data
-                }
-                Console.WriteLine("[Dumping Buffer] Prenos podataka zavrsen");
+                return false;
             }
 
             // wait for next iteration
