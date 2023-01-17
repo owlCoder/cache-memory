@@ -55,9 +55,9 @@ namespace Dumping_Buffer_Component
             if (File.Exists("buffer.json"))
             {
                 Console.WriteLine("[LOAD] READING DATA FROM FILE");
-               
-
+                string jsonFromFile = File.ReadAllText("buffer.json");
                 server.Queue = JsonSerializer.Deserialize<List<ModelData>>(jsonFromFile);
+                Console.WriteLine("[LOAD] DATA LOADED SUCCESSFULY");
 
 
                 Console.WriteLine("[LOAD] DATA LOADED SUCCESSFULY");
