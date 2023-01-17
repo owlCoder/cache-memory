@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Common_Class_Library.Implementations;
+using Historical_Component.Implementations;
+using Historical_Component.Interfaces;
+using Moq;
+using NUnit.Framework;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HistoricalTests
 {
