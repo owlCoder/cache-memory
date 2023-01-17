@@ -48,5 +48,9 @@ namespace HistoricalTests
 
             mock.Setup(p => p.WriteModelDataToDataBase(new ModelData(userID, username, userAddress, userCity, brojiloId, potroseno, mesec))).Returns(0);
         }
+
+        [Test]
+        [TestCase(1, "uname", "addrr", "city", "SE-515", 12, "Januar")]
+        [TestCase(2, "uname", "addrr", "city", "SE-515", 12, "Februar")]
     }
 }
