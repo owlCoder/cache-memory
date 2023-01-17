@@ -16,6 +16,8 @@ namespace CommonClassLibraryTests
             {
                 konekcija.Open();
 
+                // Konekcija je otvorena
+                Assert.NotNull(konekcija);
             }
         }
     }
