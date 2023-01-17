@@ -15,5 +15,10 @@ namespace Reader_Component_Test
         [TestCase("userName", "dani")]
         [TestCase("userAddress", "Alekse Santica 4")]
         [TestCase("userCity", "Novi Sad")]
+
+        public void GetDataByCriteria(string criteria, string value)
+        {
+            
+        }
     }
 }
