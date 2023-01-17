@@ -3,6 +3,16 @@ using Moq;
 using NUnit.Framework;
 using Reader_Component;
 using Reader_Component.Implementations;
+using Reader_Component.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Runtime.Remoting;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Reader_Component_Test
 {
