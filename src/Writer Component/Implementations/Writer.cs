@@ -14,6 +14,7 @@ namespace Writer_Component.Implementations
         [ExcludeFromCodeCoverage]
         public void DataPassThrough(ModelData data)
         {
+            
             // Log Message
             Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER");
 
