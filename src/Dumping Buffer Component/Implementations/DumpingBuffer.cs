@@ -24,6 +24,7 @@ namespace DumpingBuffer_Component.Implementations
             InitServie = true;
         }
 
+
         public void AddToQueue(ModelData podaci)
         {
             if (InitServie)
