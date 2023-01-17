@@ -67,6 +67,7 @@ namespace DumpingBuffer_Component.Implementations
         }
 
         [ExcludeFromCodeCoverage]
+
         public async Task PeriodicCheck()
         {
             CancellationToken ct = new CancellationToken();
