@@ -37,6 +37,12 @@ namespace Dumping_Buffer_Component
                 Thread.Sleep(10000); //svake 30 sekunde prikazi poruku za kraj
                 Console.WriteLine("\n[APP] Pritisnite 'q' za izlazak");
 
+                if (str.Equals("q"))
+                {
+                    SaveData(server);
+                    return;
+                }
+
             }
         }
     }
