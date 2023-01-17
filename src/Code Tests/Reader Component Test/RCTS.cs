@@ -55,6 +55,15 @@ namespace Reader_Component_Test
         {
             bool result = false;
             Reader reader = new Reader();
+
+            try
+            {
+                
+            }
+            catch
+            {
+                Console.WriteLine("[ERROR] CONNECTION TO SERVER FAILED");
+            }
         }
     }
 }
