@@ -70,20 +70,19 @@ namespace Writer_Component_Test
         [TestCase(10, "", "addrr", "city", "SE-515", 688, null)]
         public void PassWrongParams(int userID, string username, string userAddress, string userCity, string brojiloId, decimal potroseno, string mesec)
         {
-
             DumpingBuffer db = new DumpingBuffer();
 
             try
             {
                 ModelData modelData = new ModelData(userID, username, userAddress, userCity, brojiloId, potroseno, mesec);
+                Mock<IWriter> mock = new Mock<IWriter>();
 
                 for (int i = 0; i < 8; i++)
                 {
                     // change field value
                     modelData.UserID = userID + i * 8;
 
-                    Writer w = new Writer();
-                    w.DataPassThrough(db, modelData);
+                    mock.Setup(p => p.DataPassThrough(db, modelData));
                 }
             }
             catch (ArgumentNullException)
