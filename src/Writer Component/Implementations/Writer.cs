@@ -28,7 +28,7 @@ namespace Writer_Component.Implementations
             // Log Message
             Console.WriteLine("[REQUEST] SAVE DATA TO BUFFER");
 
-            if(db != null)
+            if (db != null)
                 db.AddToQueue(data);
 
             // Log Message

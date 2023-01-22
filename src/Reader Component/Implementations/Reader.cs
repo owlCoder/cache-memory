@@ -13,7 +13,7 @@ namespace Reader_Component.Implementations
         public List<ModelData> GetPodaciFromHistorical(string criteriaName, string criteria, string test, bool allData = false)
         {
             // check is test mode active
-            if(test.Equals("NUnit"))
+            if (test.Equals("NUnit"))
             {
                 return NUnitTestMode(criteriaName, criteria, allData);
             }

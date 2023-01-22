@@ -1,18 +1,10 @@
 ﻿using Common_Class_Library.Implementations;
-using Moq;
 using NUnit.Framework;
-using Reader_Component;
 using Reader_Component.Implementations;
-using Reader_Component.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using System.Runtime.Remoting;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Reader_Component_Test
 {
@@ -37,7 +29,7 @@ namespace Reader_Component_Test
         }
 
         [Test]
-        [TestCase ("", "")]
+        [TestCase("", "")]
         public void ReadAllAvailableData(string criteria, string value)
         {
             Assert.DoesNotThrow(() =>
@@ -65,7 +57,7 @@ namespace Reader_Component_Test
         [TestCase("potroseno", "0")]
         [TestCase("potrosnjaMesec", "Mesec")]
         public void WrongCriteria(string criteria, string value)
-        {            
+        {
             List<ModelData> list = (new Reader()).GetPodaciFromHistorical(criteria, value, "NUnit").ToList();
 
             Assert.AreEqual(list.Count, 0);

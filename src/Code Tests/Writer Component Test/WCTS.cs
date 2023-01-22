@@ -1,15 +1,9 @@
 ﻿using Common_Class_Library.Implementations;
 using DumpingBuffer_Component.Implementations;
-using DumpingBuffer_Component.Interfaces;
 using Moq;
 using NUnit.Framework;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Writer_Component.Implementations;
 using Writer_Component.Interfaces;
 
 namespace Writer_Component_Test
@@ -48,7 +42,7 @@ namespace Writer_Component_Test
             DumpingBuffer db = new DumpingBuffer();
             Mock<IWriter> mock = new Mock<IWriter>();
 
-            for (int i = 0; i < 8; i++) 
+            for (int i = 0; i < 8; i++)
             {
                 // change field value
                 modelData.UserID = userID + i * 8;

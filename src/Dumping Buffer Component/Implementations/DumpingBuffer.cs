@@ -4,9 +4,7 @@ using Historical_Component.Implementations;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.IO;
 using System.Runtime.Remoting;
-using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -15,23 +13,23 @@ namespace DumpingBuffer_Component.Implementations
     public class DumpingBuffer : MarshalByRefObject, IDumpingBuffer
     {
         List<ModelData> queue = null;
-        bool InitServie = false;
+        bool InitService = false;
 
         public DumpingBuffer()
         {
             queue = new List<ModelData>();
-            InitServie = true;
+            InitService = true;
         }
 
         public void AddToQueue(ModelData podaci)
         {
-            if (InitServie)
+            if (InitService)
             {
-                #pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                 PeriodicCheck();
-                #pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
 
-                InitServie = false;
+                InitService = false;
             }
 
             foreach (ModelData data in queue)

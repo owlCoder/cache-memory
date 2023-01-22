@@ -132,7 +132,7 @@ namespace Dumping_Buffer_Component_Test
             {
                 Console.WriteLine("[ERROR] CONNECTION TO SERVER FAILED");
             }
-            
+
             Assert.AreEqual(false, result);
         }
     }
