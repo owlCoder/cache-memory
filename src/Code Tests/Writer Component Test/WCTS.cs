@@ -46,15 +46,14 @@ namespace Writer_Component_Test
             ModelData modelData = new ModelData(userID, username, userAddress, userCity, brojiloId, potroseno, mesec);
 
             DumpingBuffer db = new DumpingBuffer();
+            Mock<IWriter> mock = new Mock<IWriter>();
 
-            for(int i = 0; i < 8; i++) 
+            for (int i = 0; i < 8; i++) 
             {
                 // change field value
                 modelData.UserID = userID + i * 8;
 
-               Writer w = new Writer();
-               w.DataPassThrough(db, modelData);
-
+                mock.Setup(p => p.DataPassThrough(db, modelData));
             }
         }
 
