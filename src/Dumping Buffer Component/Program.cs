@@ -74,7 +74,7 @@ namespace Dumping_Buffer_Component
             Console.WriteLine("[SAVE] SAVING DATA");
             if (server.QueueSize() > 0)
             {
-                string json = JsonSerializer.Serialize(server.Queue);
+                string json = JsonSerializer.Serialize<List<ModelData>>(server.Queue);
                 File.WriteAllText("buffer.json", json);
                 Console.WriteLine("[SAVE] SAVE SUCCESSFULY");
             }
