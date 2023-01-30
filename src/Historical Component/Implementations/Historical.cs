@@ -38,7 +38,7 @@ namespace Historical_Component.Implementations
                                                            reader.GetString(4), reader.GetDecimal(5),
                                                            reader.GetString(6));
                             dataList.Add(data);
-                        } while (reader.Read());
+                        } while (true);
                     }
                 }
             }
@@ -84,7 +84,7 @@ namespace Historical_Component.Implementations
                                                                reader.GetString(4), reader.GetDecimal(5),
                                                                reader.GetString(6));
                                 dataList.Add(data);
-                            } while (reader.Read());
+                            } while (true);
                         }
                     }
                     else
@@ -108,7 +108,7 @@ namespace Historical_Component.Implementations
                                                                reader.GetString(4), reader.GetDecimal(5),
                                                                reader.GetString(6));
                                 dataList.Add(data);
-                            } while (reader.Read());
+                            } while (true);
                         }
                     }
                 }

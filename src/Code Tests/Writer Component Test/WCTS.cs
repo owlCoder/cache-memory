@@ -4,6 +4,7 @@ using Moq;
 using NUnit.Framework;
 using System;
 using System.Diagnostics.CodeAnalysis;
+using Writer_Component.Implementations;
 using Writer_Component.Interfaces;
 
 namespace Writer_Component_Test
@@ -87,6 +88,20 @@ namespace Writer_Component_Test
             {
                 Console.WriteLine("[ERROR] INVALID DATA PASSED");
             }
+        }
+
+        [Test]
+        [TestCase]
+        public void OtherTests()
+        {
+            try
+            {
+                Writer w = new Writer();
+                w.DataPassThrough(new DumpingBuffer(), new ModelData());
+
+                Assert.NotNull(w);
+            }
+            catch { }
         }
     }
 }

@@ -1,13 +1,9 @@
-﻿using Common_Class_Library.Implementations;
-using DumpingBuffer_Component.Implementations;
+﻿using DumpingBuffer_Component.Implementations;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.IO;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
-using System.Text.Json;
 using System.Threading;
 
 namespace Dumping_Buffer_Component
@@ -35,7 +31,7 @@ namespace Dumping_Buffer_Component
 
             while (true)
             {
-                Thread.Sleep(10000); //svake 30 sekunde prikazi poruku za kraj
+                Thread.Sleep(1000); //svake 1 sekunde prikazi poruku za kraj
                 Console.WriteLine("\n[APP] Pritisnite 'q' za izlazak");
                 string str = Console.ReadLine();
 
@@ -56,28 +52,12 @@ namespace Dumping_Buffer_Component
         // kada se zatvori dumping buffer preostali ne upisani podaci u bazi se cuvaju u fajl
         public static void LoadData(DumpingBuffer server)
         {
-            if (File.Exists("buffer.json"))
-            {
-                Console.WriteLine("[LOAD] READING DATA FROM FILE");
-                string jsonFromFile = File.ReadAllText("buffer.json");
-                server.Queue = JsonSerializer.Deserialize<List<ModelData>>(jsonFromFile);
-                Console.WriteLine("[LOAD] DATA LOADED SUCCESSFULY");
-
-                Console.WriteLine("[Dumping Buffer] Trenutno u redu cekanja {0}", server.QueueSize());
-
-                File.Delete("buffer.json");
-            }
+            server.LoadDataToQueue();
         }
 
         public static void SaveData(DumpingBuffer server)
         {
-            Console.WriteLine("[SAVE] SAVING DATA");
-            if (server.QueueSize() > 0)
-            {
-                string json = JsonSerializer.Serialize<List<ModelData>>(server.Queue);
-                File.WriteAllText("buffer.json", json);
-                Console.WriteLine("[SAVE] SAVE SUCCESSFULY");
-            }
+            server.SaveDataToJson();
         }
     }
 }

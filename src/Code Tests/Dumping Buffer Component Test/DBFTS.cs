@@ -1,6 +1,8 @@
 ﻿using Common_Class_Library.Implementations;
 using DumpingBuffer_Component.Implementations;
+using DumpingBuffer_Component.Interfaces;
 using Historical_Component.Implementations;
+using Moq;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -42,6 +44,28 @@ namespace Dumping_Buffer_Component_Test
             dumpingBuffer.AddToQueue(model);
 
             Assert.AreEqual(1, dumpingBuffer.QueueSize());
+        }
+
+        [Test]
+        [TestCase()]
+        public void DBCAddQueueMocked()
+        {
+            Mock<IDumpingBuffer> mock = new Mock<IDumpingBuffer>();
+            ModelData model = new ModelData();
+
+            mock.Setup(p => p.AddToQueue(model));
+            mock.Setup(p => p.QueueSize()).Returns(1);
+        }
+
+        [Test]
+        [TestCase()]
+        public void DBCAddQueueMockedData()
+        {
+            Mock<IDumpingBuffer> mock = new Mock<IDumpingBuffer>();
+            Mock<ModelData> mdm = new Mock<ModelData>();
+
+            mock.Setup(p => p.AddToQueue(mdm.Object));
+            mock.Setup(p => p.QueueSize()).Returns(1);
         }
 
         [Test]

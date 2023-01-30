@@ -11,6 +11,8 @@ namespace DumpingBuffer_Component.Interfaces
 
         void RemoveFromQueue();
 
+        int QueueSize();
+
         Task SendToHistorical(TimeSpan i, CancellationToken c);
 
         Task PeriodicCheck();
