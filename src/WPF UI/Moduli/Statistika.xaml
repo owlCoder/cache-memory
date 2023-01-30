@@ -73,14 +73,14 @@
                 </Button.Style>
             </Button>
 
-            <ListView Name="dataViewDb" Margin="0 20 0 0">
+            <ListView Name="dataViewDb" Margin="0 20 0 0" Height="200">
                 <ListView.View>
                     <GridView AllowsColumnReorder="true" ColumnHeaderToolTip="Statistika">
-                        <GridViewColumn DisplayMemberBinding="{Binding Path=UserID}" Header="UID" Width="35"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=UserID}" Header="UID" Width="60"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Path=Username}" Header="Username" Width="100"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Path=UserCity}" Header="Grad" Width="100"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Path=Mesec}" Header="Mesec" Width="100"/>
-                        <GridViewColumn DisplayMemberBinding="{Binding Path=Potroseno}" Header="Potrošnja" Width="120"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=Potroseno}" Header="Potrošnja" Width="75"/>
                     </GridView>
                 </ListView.View>
             </ListView>
